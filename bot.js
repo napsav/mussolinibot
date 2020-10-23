@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
-
 const client = new Discord.Client();
+client.login(process.env.BOT_TOKEN);//BOT_TOKEN is the Client Secret
 'use strict';
 var request = require('request');
 var url = "https://api.mcsrvstat.us/2/resetfocus.duckdns.org";
@@ -29,15 +29,16 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
-client.on('message', message => {
+client.on('message', async message => {
     if (message.content === 'viva il duce' || message.content === 'dvx' || message.content === 'duce') {
        message.reply('https://www.youtube.com/watch?v=LBl64DBHtTk');
        }
     if (message.content === 'chi è il frocio?' || message.content === 'chi è il frocio' || message.content === 'kicka il frocio' || message.content === 'kick frocio') {
-	var user = message.guild.members.random();
- 	console.log(`${user.user}`);
-	message.reply("Il frocio fortunato è: " + user.user);
-	user.setVoiceChannel(null);
+	const voiceChannel = message.member.voice.channel;
+	var user = voiceChannel.members.random();
+	console.log(`${user.user}`);
+	message.reply(`Il frocio fortunato è: ${user.user}`);
+	user.voice.setChannel(null);
     }
     if (message.content === 'stato server') {
 request.get({
@@ -68,4 +69,3 @@ message.reply("Il server è offline");
 
 
 // THIS  MUST  BE  THIS  WAY
-client.login(process.env.BOT_TOKEN);//BOT_TOKEN is the Client Secret
