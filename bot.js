@@ -33,6 +33,12 @@ client.on('message', message => {
     if (message.content === 'viva il duce' || message.content === 'dvx' || message.content === 'duce') {
        message.reply('https://www.youtube.com/watch?v=LBl64DBHtTk');
        }
+    if (message.content === 'chi è il frocio?' || message.content === 'chi è il frocio' || message.content === 'kicka il frocio' || message.content === 'kick frocio') {
+	var user = message.guild.members.random();
+ 	console.log(`${user.user}`);
+	message.reply("Il frocio fortunato è: " + user.user);
+	user.setVoiceChannel(null);
+    }
     if (message.content === 'stato server') {
 request.get({
 	url: url,
