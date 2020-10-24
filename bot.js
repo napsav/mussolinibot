@@ -5,7 +5,7 @@ const fs = require('fs');
 var request = require('request');
 var bodyParser = require("body-parser");
 var path = require('path');
-
+var santi = require('./santi.js');
 client.login(process.env.BOT_TOKEN); //BOT_TOKEN is the Client Secret
 var url = "https://api.mcsrvstat.us/2/resetfocus.duckdns.org";
 
@@ -77,6 +77,9 @@ client.on('message', async message => {
 	readCommands(message);
     if (message.content === 'viva il duce' || message.content === 'dvx' || message.content === 'duce') {
         message.reply('https://www.youtube.com/watch?v=LBl64DBHtTk');
+    }
+    if (message.content === 'bestemmia') {
+	message.channel.send(santi.getRandomSanto() + " " + santi.getRandomNome() + " " + santi.getRandomAggettivo());
     }
     if (message.content === 'chi è il frocio?' || message.content === 'chi è il frocio' || message.content === 'kicka il frocio' || message.content === 'kick frocio') {
         const voiceChannel = message.member.voice.channel;
