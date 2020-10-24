@@ -24,7 +24,6 @@ request.get({
 });
 };
 
-
 client.on('ready', () => {
     console.log('I am ready!');
 });
