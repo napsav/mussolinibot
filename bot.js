@@ -40,6 +40,16 @@ client.on('message', async message => {
 	message.reply(`Il frocio fortunato è: ${user.user}`);
 	user.voice.setChannel(null);
     }
+    if (message.content === 'orario') {
+	    const embed = new Discord.RichEmbed()
+.setTitle("Orario della classe con le pause")
+.setAuthor("MussoliniBOT", "https://yagami.xyz/content/uploads/2018/11/discord-512-1.png","https://bestemmie.ga")
+.setColor(#ecff00)
+.setFooter("MussoliniBOT al tuo servizio, "http://i.imgur.com/w1vhFSR.png")
+.setImage("https://i.imgur.com/4mA9ALC.jpeg")
+.setTimestamp()
+message.channel.send({embed})
+    }
     if (message.content === 'stato server') {
 request.get({
 	url: url,
