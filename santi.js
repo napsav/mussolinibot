@@ -1253,9 +1253,5 @@ function getRandomNome () {
 function getRandomAggettivo () {
      var indexagg= Math.floor(Math.random() * (aggettivi.length));
      return aggettivi[indexagg];
-}, render:
-var santi_render = document.getElementById('santi');
-function santifica () {
-	santi_render.innerHTML = getRandomSanto() + " " + getRandomNome() + " " + getRandomAggettivo();
 }
 };
