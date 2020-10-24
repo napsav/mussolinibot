@@ -1,4 +1,4 @@
-module.exports = {
+
 var santi = [
 	"Sant'Ambrogio",
 	"San Francesco Saverio",
@@ -968,10 +968,7 @@ var santi = [
 	"Zaccaria (profeta)",
 	"Zaccheo"
 ];
-function getRandomSanto () {
-    var indexsanto= Math.floor(Math.random() * (santi.length));
-    return santi[indexsanto];
-}
+
 var nomi = [
 	"il bugiardo",
 	"il criminale",
@@ -1026,10 +1023,7 @@ var nomi = [
 	"lo zotico",
 	"lo scostumato"
 ];
-function getRandomNome () {
-    var indexnomi= Math.floor(Math.random() * (nomi.length));
-    return nomi[indexnomi];
-}
+
 var aggettivi = [
 	"bastardo",
 	"fascista",
@@ -1247,6 +1241,15 @@ var aggettivi = [
 	"sovrappeso",
 	"insano"
 ];
+module.exports = {
+function getRandomSanto () {
+    var indexsanto= Math.floor(Math.random() * (santi.length));
+    return santi[indexsanto];
+}
+function getRandomNome () {
+    var indexnomi= Math.floor(Math.random() * (nomi.length));
+    return nomi[indexnomi];
+}
 function getRandomAggettivo () {
      var indexagg= Math.floor(Math.random() * (aggettivi.length));
      return aggettivi[indexagg];
