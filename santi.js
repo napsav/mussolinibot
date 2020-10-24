@@ -1241,19 +1241,19 @@ var aggettivi = [
 	"sovrappeso",
 	"insano"
 ];
-module.exports = {
+module.exports = {santo:
 function getRandomSanto () {
     var indexsanto= Math.floor(Math.random() * (santi.length));
     return santi[indexsanto];
-}
+}, nome:
 function getRandomNome () {
     var indexnomi= Math.floor(Math.random() * (nomi.length));
     return nomi[indexnomi];
-}
+}, agg:
 function getRandomAggettivo () {
      var indexagg= Math.floor(Math.random() * (aggettivi.length));
      return aggettivi[indexagg];
-}
+}, render:
 var santi_render = document.getElementById('santi');
 function santifica () {
 	santi_render.innerHTML = getRandomSanto() + " " + getRandomNome() + " " + getRandomAggettivo();
