@@ -79,7 +79,7 @@ client.on('message', async message => {
         message.reply('https://www.youtube.com/watch?v=LBl64DBHtTk');
     }
     if (message.content === 'bestemmia') {
-	message.channel.send(santi.getRandomSanto() + " " + santi.getRandomNome() + " " + santi.getRandomAggettivo());
+	message.channel.send(santi.santo() + " " + santi.nome() + " " + santi.agg());
     }
     if (message.content === 'chi è il frocio?' || message.content === 'chi è il frocio' || message.content === 'kicka il frocio' || message.content === 'kick frocio') {
         const voiceChannel = message.member.voice.channel;
