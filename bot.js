@@ -1,21 +1,86 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-client.login(process.env.BOT_TOKEN); //BOT_TOKEN is the Client Secret
 'use strict';
+const fs = require('fs');
 var request = require('request');
+var bodyParser = require("body-parser");
+var path = require('path');
+
+client.login(process.env.BOT_TOKEN); //BOT_TOKEN is the Client Secret
 var url = "https://api.mcsrvstat.us/2/resetfocus.duckdns.org";
-var datafinal = 'online';
 
 client.on('ready', () => {
     console.log('I am ready!');
 });
 
+function printCommands(commands, message) {
+    	for(key in commands) {
+		var value = commands[key];
+		if (message.content === key) {
+			message.channel.send(value);
+		}
+    	}
+}
+
+function readCommands(message) {
+fs.readFile('commands.json', (err, data) => {
+	    if (err) throw err;
+	    let commands = JSON.parse(data);
+	    printCommands(commands, message);
+});
+}
+
+function updateFile() {
+let data = fs.readFileSync('commands.json', 'utf8');
+let webcommands = JSON.parse(data);
+return webcommands;
+}
+
+
+const express = require('express')
+const app = express()
+const port = 80
+app.set('view engine', 'pug');
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+app.get('/', (req, res) => {
+	  var com = updateFile();
+	  console.log();
+	  delete com[req.query.remove]
+	  fs.writeFileSync('commands.json', JSON.stringify(com))
+	  res.render('index', {commands: com});
+	  
+})
+
+app.listen(port, () => {
+	  console.log(`Example app listening at http://localhost:${port}`)
+})
+
+app.post("/", function(req,res){
+    console.log("Ricevuto una richiesta POST");
+	console.log(req.body);
+    var newdata = {};
+	var comando = req.body.comando 
+	var risposta = req.body.risposta
+	newdata = {comando, risposta}
+	var com;
+	com = updateFile();
+	com[comando] = risposta;
+    console.log(req.body.risposta);
+	fs.writeFileSync('commands.json', JSON.stringify(com))
+	res.render('index', {commands: com});
+});
+
+
+
 client.on('message', async message => {
+	readCommands(message);
     if (message.content === 'viva il duce' || message.content === 'dvx' || message.content === 'duce') {
         message.reply('https://www.youtube.com/watch?v=LBl64DBHtTk');
     }
     if (message.content === 'chi è il frocio?' || message.content === 'chi è il frocio' || message.content === 'kicka il frocio' || message.content === 'kick frocio') {
         const voiceChannel = message.member.voice.channel;
+	if (voiceChannel === null) {message.reply("Devi stare in un canale vocale affinchè il comando funzioni");}
         var user = voiceChannel.members.random();
         console.log(`${user.user}`);
         message.reply(`Il frocio fortunato è: ${user.user}`);
@@ -58,4 +123,5 @@ client.on('message', async message => {
             };
         });
     }
+    
 });
