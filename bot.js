@@ -41,12 +41,13 @@ client.on('message', async message => {
 	user.voice.setChannel(null);
     }
     if (message.content === 'orario') {
-	    const embed = new Discord.RichEmbed()
+	    const embed = new Discord.MessageEmbed()
 .setTitle("Orario della classe con le pause")
-.setAuthor("MussoliniBOT", "https://yagami.xyz/content/uploads/2018/11/discord-512-1.png","https://bestemmie.ga")
-.setColor(#ecff00)
-.setFooter("MussoliniBOT al tuo servizio, "http://i.imgur.com/w1vhFSR.png")
-.setImage("https://i.imgur.com/4mA9ALC.jpeg")
+.setDescription("**1.** 9:10 - 10:10\n**2.** 10:00 - 10:40 **PAUSA** 10:40 - 10.50\n**3.** 10:50 - 11.40\n**4.** 11:40 - 12:20 **PAUSA** 12:20-12:30\n**5.** 12:30 - 13:20")
+.setAuthor("MussoliniBOT", "https://www.sottosoprabrindisi.it/wp-content/uploads/2016/06/Orari_LP.png","https://bestemmie.ga")
+.setColor("#ecff00")
+.setFooter("MussoliniBOT al tuo servizio", "https://www.sottosoprabrindisi.it/wp-content/uploads/2016/06/Orari_LP.png")
+.setImage("https://i.imgur.com/4yl1j1C.png")
 .setTimestamp()
 message.channel.send({embed})
     }
