@@ -1,3 +1,4 @@
+require('dotenv').config()
 const Discord = require('discord.js');
 const client = new Discord.Client();
 'use strict';
@@ -53,7 +54,7 @@ app.get('/', (req, res) => {
 })
 
 app.listen(port, () => {
-	  console.log(`Example app listening at http://localhost:${port}`)
+	  console.log(`Panel listening at http://localhost:${port}`)
 })
 
 app.post("/", function(req,res){

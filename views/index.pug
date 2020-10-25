@@ -2,16 +2,57 @@ doctype html
 html(lang='it')
   head
     title MussoliniBOT
-  body
-    h1 MussoliniBOT Pannello per aggiungere comandi
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css')
+  style.
+    /* Style the form - display items horizontally */
+    .form-inline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    }
+    /* Add some margins for each label */
+    .form-inline label {
+    margin: 5px 10px 5px 0;
+    }
+    .form-inline input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    }
+    /* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
+    @media (max-width: 800px) {
+    .form-inline input {
+    margin: 10px 0;
+    }
+    .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+    }
+    }
+.container
+    br
+    h1 MussoliniBOT 
+    h2 Pannello per aggiungere comandi
     #container.col
-      form(method='POST' action='/')
+      form(method='POST' action='/' class="form-inline")
         label(for='comando') Comando: 
         input#comando(type='text' name='comando' required='')
         label(for='risposta')  Risposta: 
         input#risposta(type='text' name='risposta' required='')
-        input(type='submit' value='Submit')
-      ul
-        each val, key in commands
-          li= key + ': ' + val
-          a(href=`?remove=${key}`) Cancella
+        input(type='submit' value='Invia')
+      table
+        thead
+          tr
+            th Comando
+            th Risposta
+            th 
+              span(style='float:right') Azione
+        tbody
+          each val, key in commands
+            tr
+              td #{key}
+              td #{val}
+              td 
+                span(style='float:right')
+                  a(href=`?remove=${key}`) Cancella
