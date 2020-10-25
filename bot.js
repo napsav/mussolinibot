@@ -9,7 +9,7 @@ var path = require('path');
 var santi = require('./santi.js');
 client.login(process.env.BOT_TOKEN); //BOT_TOKEN is the Client Secret
 var url = "https://api.mcsrvstat.us/2/resetfocus.duckdns.org";
-
+const logChannel = client.channels.cache.find(channel => channel.name === 'mussolinibot-updates');
 client.on('ready', () => {
   console.log('I am ready!');
 });
@@ -54,7 +54,8 @@ app.get('/', (req, res) => {
   res.render('index', {
     commands: com
   });
-
+  logChannel.send("Comando "+req.query.remove+": "+com[req.query.remove]+" rimosso");
+  
 })
 
 app.listen(port, () => {
@@ -79,6 +80,7 @@ app.post("/", function(req, res) {
   res.render('index', {
     commands: com
   });
+  logChannel.send("Comando "+comando+": "+risposta+" aggiunto");
 });
 
 
