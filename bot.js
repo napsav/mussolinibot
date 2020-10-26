@@ -70,8 +70,8 @@ app.post("/", function(req, res) {
   console.log("Ricevuto una richiesta POST");
   console.log(req.body);
   var newdata = {};
-  var comando = req.body.comando
-  var risposta = req.body.risposta
+  var comando = req.body.comando.trim();
+  var risposta = req.body.risposta.trim();
   newdata = {
     comando,
     risposta
