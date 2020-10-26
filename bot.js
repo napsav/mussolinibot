@@ -89,13 +89,14 @@ app.post("/", function(req, res) {
 
 client.on('message', async message => {
   readCommands(message);
-  if (message.content === 'viva il duce' || message.content === 'dvx' || message.content === 'duce') {
+  var mess = message.content.toLowerCase();
+  if (mess === 'viva il duce' || mess === 'dvx' || mess === 'duce') {
     message.reply('https://www.youtube.com/watch?v=LBl64DBHtTk');
   }
-  if (message.content === 'bestemmia') {
+  if (mess === 'bestemmia') {
     message.channel.send(santi.santo() + " " + santi.nome() + " " + santi.agg());
   }
-  if (message.content === 'chi è il frocio?' || message.content === 'chi è il frocio' || message.content === 'kicka il frocio' || message.content === 'kick frocio') {
+  if (mess === 'chi è il frocio?' || mess === 'chi è il frocio' || mess === 'kicka il frocio' || mess === 'kick frocio') {
     const voiceChannel = message.member.voice.channel;
     if (voiceChannel === null) {
       message.reply("Devi stare in un canale vocale affinchè il comando funzioni");
@@ -105,7 +106,7 @@ client.on('message', async message => {
     message.reply(`Il frocio fortunato è: ${user.user}`);
     user.voice.setChannel(null);
   }
-  if (message.content === 'orario') {
+  if (mess === 'orario') {
     const embed = new Discord.MessageEmbed()
       .setTitle("Orario della classe con le pause")
       .setDescription("**1.** 9:10 - 10:00\n**2.** 10:00 - 10:40 **PAUSA** 10:40 - 10.50\n**3.** 10:50 - 11.40\n**4.** 11:40 - 12:20 **PAUSA** 12:20-12:30\n**5.** 12:30 - 13:20")
@@ -118,7 +119,7 @@ client.on('message', async message => {
       embed
     })
   }
-  if (message.content === 'stato server') {
+  if (mess === 'stato server') {
     request.get({
       url: url,
       json: true,
