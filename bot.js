@@ -49,16 +49,19 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json());
 app.get('/', (req, res) => {
   var com = updateFile();
-  console.log();
-  logChannel.send("Comando "+req.query.remove+": "+com[req.query.remove]+" rimosso");
-  delete com[req.query.remove]
-  fs.writeFileSync('commands.json', JSON.stringify(com))
   res.render('index', {
     commands: com
   });
   
 })
 
+app.get('/delete', (req, res) => {
+  var com = updateFile();
+  logChannel.send("Comando "+req.query.remove+": "+com[req.query.remove]+" rimosso");
+  delete com[req.query.remove]
+  fs.writeFileSync('commands.json', JSON.stringify(com))
+  res.redirect('/');
+})
 app.listen(port, () => {
   console.log(`Panel listening at http://localhost:${port}`)
 })
@@ -78,9 +81,7 @@ app.post("/", function(req, res) {
   com[comando] = risposta;
   console.log(req.body.risposta);
   fs.writeFileSync('commands.json', JSON.stringify(com))
-  res.render('index', {
-    commands: com
-  });
+  res.redirect('/')
   logChannel.send("Comando "+comando+": "+risposta+" aggiunto");
 });
 

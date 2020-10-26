@@ -31,7 +31,6 @@ html(lang='it')
     }
     }
 .container
-    br
     h1 MussoliniBOT 
     h2 Pannello per aggiungere comandi
     #container.col
@@ -55,4 +54,4 @@ html(lang='it')
               td #{val}
               td 
                 span(style='float:right')
-                  a(href=`?remove=${key}`) Cancella
+                  a(href=`/delete?remove=${key}`) Cancella
