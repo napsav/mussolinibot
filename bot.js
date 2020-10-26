@@ -66,7 +66,7 @@ app.get('/', (req, res) => {
 
 app.get('/delete', (req, res) => {
   var com = updateFile();
-  logChannel.send("Comando "+req.query.remove+": "+com[req.query.remove]+" rimosso");
+  logChannel.send(":x: "+req.query.remove+": "+com[req.query.remove]+" rimosso");
   delete com[req.query.remove]
   fs.writeFileSync('commands.json', JSON.stringify(com))
   res.redirect('/');
@@ -91,7 +91,7 @@ app.post("/", function(req, res) {
   console.log(req.body.risposta);
   fs.writeFileSync('commands.json', JSON.stringify(com))
   res.redirect('/')
-  logChannel.send("Comando "+comando+": "+risposta+" aggiunto");
+  logChannel.send(":white_check_mark: "+comando+": "+risposta+" aggiunto");
 });
 
 
