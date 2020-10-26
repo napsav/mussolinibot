@@ -10,10 +10,19 @@ var santi = require('./santi.js');
 client.login(process.env.BOT_TOKEN); //BOT_TOKEN is the Client Secret
 var url = "https://api.mcsrvstat.us/2/resetfocus.duckdns.org";
 var logChannel; 
+
+const { Aki } = require('aki-api');
+const region = 'it';
+const aki = new Aki(region);
+
+
+
 client.on('ready', () => {
   console.log('I am ready!');
   logChannel = client.channels.cache.get('770021533208805377');
 });
+
+
 
 function printCommands(commands, message) {
   for (key in commands) {
@@ -142,6 +151,59 @@ client.on('message', async message => {
 
       };
     });
+  }
+  if (mess === 'akinator') {
+  aki.start();
+  }
+  if (mess === 'continua') {
+  var answer = 0;
+                    message.channel.send(aki.question + '\n'
+                            + '👍 per sì, 👎 per no.');
+
+                    // Reacts so the user only have to click the emojis
+                    message.react('👍').then(r => {
+                            message.react('👎');
+                    });
+
+// First argument is a filter function
+message.awaitReactions((reaction, user) => user.id == message.author.id && (reaction.emoji.name == '👍' || reaction.emoji.name == '👎'),
+                            { max: 1, time: 30000 }).then(collected => {
+                                    if (collected.first().emoji.name == '👍') {
+                                            answer = 1;
+                                            aki.step(answer);
+                                            message.reactions.removeAll().catch(error => console.error('Failed to clear reactions: ', error));
+                                            
+                                            
+                                            
+                                    } else {
+                                            answer = 0;
+                                            aki.step(answer);
+                                            message.reactions.removeAll().catch(error => console.error('Failed to clear reactions: ', error));
+                                            
+                                            
+                                    }
+                            }).catch(() => {
+                                    message.reply('Nessuna reazione dopo 30 secondo, annullo il gioco.');
+                            });
+if (aki.progress >= 70 || aki.currentStep >= 78) {
+  await aki.win();
+  
+  console.log('firstGuess:', aki.answers);
+  console.log('guessCount:', aki.guessCount);
+}
+
+
+/*
+
+
+await aki.step(myAnswer);
+
+if (aki.progress >= 70 || aki.currentStep >= 78) {
+  await aki.win();
+  console.log('firstGuess:', aki.answers);
+  console.log('guessCount:', aki.guessCount);
+}
+*/
   }
 
 });
