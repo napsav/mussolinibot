@@ -10,11 +10,11 @@ var santi = require('./santi.js');
 client.login(process.env.BOT_TOKEN); //BOT_TOKEN is the Client Secret
 var url = "https://api.mcsrvstat.us/2/resetfocus.duckdns.org";
 var logChannel; 
-
+/*
 const { Aki } = require('aki-api');
 const region = 'it';
 const aki = new Aki(region);
-
+*/
 
 
 client.on('ready', () => {
@@ -152,6 +152,7 @@ client.on('message', async message => {
       };
     });
   }
+	/*
   if (mess === 'akinator') {
   aki.start();
   }
@@ -184,6 +185,7 @@ message.awaitReactions((reaction, user) => user.id == message.author.id && (reac
                                     }
                             }).catch(() => {
                                     message.reply('Nessuna reazione dopo 30 secondo, annullo il gioco.');
+				    aki.win();
                             });
 if (aki.progress >= 70 || aki.currentStep >= 78) {
   await aki.win();
@@ -192,7 +194,7 @@ if (aki.progress >= 70 || aki.currentStep >= 78) {
   console.log('guessCount:', aki.guessCount);
 }
 
-
+*/
 /*
 
 
@@ -204,6 +206,6 @@ if (aki.progress >= 70 || aki.currentStep >= 78) {
   console.log('guessCount:', aki.guessCount);
 }
 */
-  }
+//  }
 
 });
