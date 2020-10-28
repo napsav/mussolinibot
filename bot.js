@@ -211,6 +211,7 @@ client.on('message', async message => {
           }
         }
 
+	      addReactions();
         // First argument is a filter function
         const filter = (reaction, user) => (user.id == message.author.id) && (reaction.emoji.name == '👍' || reaction.emoji.name == '👎' || reaction.emoji.name == '🤔')
         const collector = msg.createReactionCollector(filter, {time: 300000});
