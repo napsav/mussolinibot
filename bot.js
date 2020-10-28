@@ -241,9 +241,9 @@ client.on('message', async message => {
             })()
 
             // ---------------NO--------------------  
-          } else if (reaction.emoji.name == '👍') {
+          } else if (reaction.emoji.name == '👎') {
             (async function() {
-              answer = 0;
+              answer = 1;
               await aki.step(answer);
               const newEmbd = new Discord.MessageEmbed();
               newEmbd.setDescription(`${aki.question}`);
