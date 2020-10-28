@@ -100,63 +100,63 @@ app.post("/", function(req, res) {
 let msg = null;
 
 client.on('message', async message => {
-      readCommands(message);
-      var mess = message.content.toLowerCase();
-      if (mess === 'viva il duce' || mess === 'dvx' || mess === 'duce') {
-        message.reply('https://www.youtube.com/watch?v=LBl64DBHtTk');
+  readCommands(message);
+  var mess = message.content.toLowerCase();
+  if (mess === 'viva il duce' || mess === 'dvx' || mess === 'duce') {
+    message.reply('https://www.youtube.com/watch?v=LBl64DBHtTk');
+  }
+  if (mess === 'bestemmia') {
+    message.channel.send(santi.santo() + " " + santi.nome() + " " + santi.agg());
+  }
+  if (mess === 'chi è il frocio?' || mess === 'chi è il frocio' || mess === 'kicka il frocio' || mess === 'kick frocio') {
+    const voiceChannel = message.member.voice.channel;
+    if (voiceChannel === null) {
+      message.reply("Devi stare in un canale vocale affinchè il comando funzioni");
+    }
+    var user = voiceChannel.members.random();
+    console.log(`${user.user}`);
+    message.reply(`Il frocio fortunato è: ${user.user}`);
+    user.voice.setChannel(null);
+  }
+  if (mess === 'orario') {
+    const embed = new Discord.MessageEmbed()
+      .setTitle("Orario della classe con le pause")
+      .setDescription("**1.** 9:10 - 10:00\n**2.** 10:00 - 10:40 **PAUSA** 10:40 - 10.50\n**3.** 10:50 - 11.40\n**4.** 11:40 - 12:20 **PAUSA** 12:20-12:30\n**5.** 12:30 - 13:20")
+      .setAuthor("MussoliniBOT", "https://www.sottosoprabrindisi.it/wp-content/uploads/2016/06/Orari_LP.png", "https://bestemmie.ga")
+      .setColor("#ecff00")
+      .setFooter("MussoliniBOT al tuo servizio", "https://www.sottosoprabrindisi.it/wp-content/uploads/2016/06/Orari_LP.png")
+      .setImage("https://i.imgur.com/4yl1j1C.png")
+      .setTimestamp()
+    message.channel.send({
+      embed
+    })
+  }
+  if (mess === 'stato server') {
+    request.get({
+      url: url,
+      json: true,
+      headers: {
+        'User-Agent': 'request'
       }
-      if (mess === 'bestemmia') {
-        message.channel.send(santi.santo() + " " + santi.nome() + " " + santi.agg());
-      }
-      if (mess === 'chi è il frocio?' || mess === 'chi è il frocio' || mess === 'kicka il frocio' || mess === 'kick frocio') {
-        const voiceChannel = message.member.voice.channel;
-        if (voiceChannel === null) {
-          message.reply("Devi stare in un canale vocale affinchè il comando funzioni");
+    }, (err, res, data) => {
+      if (err) {
+        console.log('Error:', err);
+      } else if (res.statusCode !== 200) {
+        console.log('Status:', res.statusCode);
+      } else {
+        // data is already parsed as JSON:
+        // return "Il server è ".data.ip;
+        if (data.online) {
+          message.reply("Il server " + data.hostname + " è online | IP: " + data.ip);
+        } else {
+          message.reply("Il server è offline");
         }
-        var user = voiceChannel.members.random();
-        console.log(`${user.user}`);
-        message.reply(`Il frocio fortunato è: ${user.user}`);
-        user.voice.setChannel(null);
-      }
-      if (mess === 'orario') {
-        const embed = new Discord.MessageEmbed()
-          .setTitle("Orario della classe con le pause")
-          .setDescription("**1.** 9:10 - 10:00\n**2.** 10:00 - 10:40 **PAUSA** 10:40 - 10.50\n**3.** 10:50 - 11.40\n**4.** 11:40 - 12:20 **PAUSA** 12:20-12:30\n**5.** 12:30 - 13:20")
-          .setAuthor("MussoliniBOT", "https://www.sottosoprabrindisi.it/wp-content/uploads/2016/06/Orari_LP.png", "https://bestemmie.ga")
-          .setColor("#ecff00")
-          .setFooter("MussoliniBOT al tuo servizio", "https://www.sottosoprabrindisi.it/wp-content/uploads/2016/06/Orari_LP.png")
-          .setImage("https://i.imgur.com/4yl1j1C.png")
-          .setTimestamp()
-        message.channel.send({
-          embed
-        })
-      }
-      if (mess === 'stato server') {
-        request.get({
-          url: url,
-          json: true,
-          headers: {
-            'User-Agent': 'request'
-          }
-        }, (err, res, data) => {
-          if (err) {
-            console.log('Error:', err);
-          } else if (res.statusCode !== 200) {
-            console.log('Status:', res.statusCode);
-          } else {
-            // data is already parsed as JSON:
-            // return "Il server è ".data.ip;
-            if (data.online) {
-              message.reply("Il server " + data.hostname + " è online | IP: " + data.ip);
-            } else {
-              message.reply("Il server è offline");
-            }
 
-          };
-        });
-      }
-      if (mess === 'akinator') {
-      (async function() {
+      };
+    });
+  }
+  if (mess === 'akinator') {
+    (async function() {
       try {
         await aki.start();
         var embed = {
@@ -179,7 +179,7 @@ client.on('message', async message => {
               "value": "👍 Sì\n👎 No\n🤔 Non lo so"
             },
             {
-              "name": "Per cancellare il gioco, scrivi annulla!",
+              "name": "Per cancellare il gioco, semplicemente non aggiungere reazioni. Il bot chiuderà la partita da solo.",
               "value": "kek debug"
             }
           ]
@@ -187,139 +187,123 @@ client.on('message', async message => {
         msg = await message.channel.send({
           embed
         });
-      
-      	var finished = 0;
+        const newEmbdFinal = new Discord.MessageEmbed();
+
+        var finished = 0;
         var answer = 0;
 
-		try {
-			await msg.react('👍');
-			await msg.react('👎');
-			await msg.react('🤔');
-		} catch (error) {
-			console.error('One of the emojis failed to react.');
-		}
+        try {
+          await msg.react('👍');
+          await msg.react('👎');
+          await msg.react('🤔');
+        } catch (error) {
+          console.error('One of the emojis failed to react.');
+        }
 
 
         // First argument is a filter function
-	const filter = (reaction, user) => (user.id == message.author.id) && (reaction.emoji.name == '👍' || reaction.emoji.name == '👎' || reaction.emoji.name == '🤔' )
-        const collector = msg.createReactionCollector(filter, {time: 300000});
-          collector.on('collect', (reaction, user) => {
-          
-            // ---------------SI--------------------
-            if (reaction.emoji.name == '👍') {
-              (async function() {
-                answer = 0;
-                await aki.step(answer);
-                const newEmbd = new Discord.MessageEmbed(); 
-                newEmbd.setDescription(`${aki.question}`);
-                newEmbd.setTitle(`${aki.progress}`);
-                msg.edit(newEmbd);
-                              msg.reactions.removeAll().catch(error => console.error('Failed to clear reactions: ', error));
-		try {
-			await msg.react('👍');
-			await msg.react('👎');
-			await msg.react('🤔');
-		} catch (error) {
-			console.error('One of the emojis failed to react.');
-		}
-              })()
-
-              
-            // ---------------NO--------------------  
-            } else if (reaction.emoji.name == '👍') {
-              (async function() {
-                answer = 0;
-                await aki.step(answer);
-                const newEmbd = new Discord.MessageEmbed();
-                newEmbd.setDescription(`${aki.question}`);
-                newEmbd.setTitle(`${aki.progress}`);
-                msg.edit(newEmbd);
-                              msg.reactions.removeAll().catch(error => console.error('Failed to clear reactions: ', error));
-		try {
-			await msg.react('👍');
-			await msg.react('👎');
-			await msg.react('🤔');
-		} catch (error) {
-			console.error('One of the emojis failed to react.');
-		}
-              })()
-
-            } else if (reaction.emoji.name == '👎') {
-            	(async function() {
-                answer = 1;
-                await aki.step(answer);
-                const newEmbd = new Discord.MessageEmbed();
-                newEmbd.setDescription(`${aki.question}`);
-                newEmbd.setTitle(`${aki.progress}`);
-                msg.edit(newEmbd);
-                              msg.reactions.removeAll().catch(error => console.error('Failed to clear reactions: ', error));
-		try {
-			await msg.react('👍');
-			await msg.react('👎');
-			await msg.react('🤔');
-		} catch (error) {
-			console.error('One of the emojis failed to react.');
-		}
-              })()
-
-            }  else if (reaction.emoji.name == '🤔') {
-            	(async function() {
-                answer = 2;
-                await aki.step(answer);
-                const newEmbd = new Discord.MessageEmbed();
-                newEmbd.setDescription(`${aki.question}`);
-                newEmbd.setTitle(`${aki.progress}`);
-                msg.edit(newEmbd);
-                              msg.reactions.removeAll().catch(error => console.error('Failed to clear reactions: ', error));
-		try {
-			await msg.react('👍');
-			await msg.react('👎');
-			await msg.react('🤔');
-		} catch (error) {
-			console.error('One of the emojis failed to react.');
-		}
-              })()
-
-            }
-const newEmbdFinal = new Discord.MessageEmbed();
-if (aki.progress >= 70 || aki.currentStep >= 78) {
-            (async function() {
-            await aki.win();
-console.log('firstGuess:', aki.answers);
-console.log('guessCount:', aki.guessCount);
-                
-                newEmbdFinal.setTitle(`${aki.answers[0].name}`);
-                newEmbdFinal.setDescription(`Ho indovinato? Numero di personaggi possibili: ${aki.guessCount}`);
-                message.channel.send(newEmbdFinal); 
-                collector.stop();
-                })()
-            
-          } 
-          }); 
-          
-          
-          // ---------------TIMEOUT--------------------
-          collector.on('end', collected => {
-            message.reply('Nessuna reazione dopo 30 secondi, annullo il gioco.');
-            aki.win();
-          });
-
-
-
-          /*
-          await aki.step(myAnswer);
-
+        const filter = (reaction, user) => (user.id == message.author.id) && (reaction.emoji.name == '👍' || reaction.emoji.name == '👎' || reaction.emoji.name == '🤔')
+        const collector = msg.createReactionCollector(filter, {
+          time: 300000
+        });
+        collector.on('collect', (reaction, user) => {
           if (aki.progress >= 70 || aki.currentStep >= 78) {
-            await aki.win();
-            console.log('firstGuess:', aki.answers);
-            console.log('guessCount:', aki.guessCount);
+            (async function() {
+              await aki.win();
+              console.log('firstGuess:', aki.answers);
+              console.log('guessCount:', aki.guessCount);
+              newEmbdFinal.setTitle(`${aki.answers[0].name}`);
+              newEmbdFinal.setDescription(`Ho indovinato? Numero di personaggi possibili: ${aki.guessCount}`);
+              message.channel.send(newEmbdFinal);
+              collector.stop();
+            })()
           }
-          */
-          } catch(err) {
-          	throw console.log(err);
-          }
-   })()     
-}
+          // ---------------SI--------------------
+          else if (reaction.emoji.name == '👍') {
+            (async function() {
+              answer = 0;
+              await aki.step(answer);
+              const newEmbd = new Discord.MessageEmbed();
+              newEmbd.setDescription(`${aki.question}`);
+              newEmbd.setTitle(`${aki.progress}`);
+              msg.edit(newEmbd);
+              msg.reactions.removeAll().catch(error => console.error('Failed to clear reactions: ', error));
+              try {
+                await msg.react('👍');
+                await msg.react('👎');
+                await msg.react('🤔');
+              } catch (error) {
+                console.error('One of the emojis failed to react.');
+              }
+            })()
 
 
-      });
+            // ---------------NO--------------------  
+          } else if (reaction.emoji.name == '👍') {
+            (async function() {
+              answer = 0;
+              await aki.step(answer);
+              const newEmbd = new Discord.MessageEmbed();
+              newEmbd.setDescription(`${aki.question}`);
+              newEmbd.setTitle(`${aki.progress}`);
+              msg.edit(newEmbd);
+              msg.reactions.removeAll().catch(error => console.error('Failed to clear reactions: ', error));
+              try {
+                await msg.react('👍');
+                await msg.react('👎');
+                await msg.react('🤔');
+              } catch (error) {
+                console.error('One of the emojis failed to react.');
+              }
+            })()
+
+            // ---------------NON LO SO--------------------  
+          } else if (reaction.emoji.name == '🤔') {
+            (async function() {
+              answer = 2;
+              await aki.step(answer);
+              const newEmbd = new Discord.MessageEmbed();
+              newEmbd.setDescription(`${aki.question}`);
+              newEmbd.setTitle(`${aki.progress}`);
+              msg.edit(newEmbd);
+              msg.reactions.removeAll().catch(error => console.error('Failed to clear reactions: ', error));
+              try {
+                await msg.react('👍');
+                await msg.react('👎');
+                await msg.react('🤔');
+              } catch (error) {
+                console.error('One of the emojis failed to react.');
+              }
+            })()
+
+          }
+
+
+        });
+
+
+        // ---------------TIMEOUT--------------------
+        collector.on('end', collected => {
+          message.reply('Nessuna reazione dopo 30 secondi, annullo il gioco.');
+          aki.win();
+        });
+
+
+
+        /*
+        await aki.step(myAnswer);
+
+        if (aki.progress >= 70 || aki.currentStep >= 78) {
+          await aki.win();
+          console.log('firstGuess:', aki.answers);
+          console.log('guessCount:', aki.guessCount);
+        }
+        */
+      } catch (err) {
+        throw console.log(err);
+      }
+    })()
+  }
+
+
+});
