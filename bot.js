@@ -201,7 +201,7 @@ client.on('message', async message => {
         
         var answer = 0;
 
-        function addReactions() {
+        async function addReactions() {
           try {
             await msg.react('👍');
             await msg.react('👎');
