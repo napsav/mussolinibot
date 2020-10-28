@@ -189,7 +189,7 @@ client.on('message', async message => {
         });
         
         function genFinalMessage(title, tentativi) {
-          const newEmbdFinal = new Discord.MessageEmbed();
+          const newEmbdFinal = new Discord.MessageEmbed()
             .setTitle(`${title}`)
             .setDescription(`Ho indovinato? Numero di personaggi possibili: ${tentativi}`)
             .setAuthor("MussoliniBOT", "https://i.ibb.co/VYt8mSx/akinator.png", "https://bestemmie.ga")
