@@ -7,6 +7,7 @@ var request = require('request');
 var bodyParser = require("body-parser");
 var path = require('path');
 var santi = require('./santi.js');
+var morse = require('./morse.js');
 client.login(process.env.BOT_TOKEN); //BOT_TOKEN is the Client Secret
 var url = "https://api.mcsrvstat.us/2/resetfocus.duckdns.org";
 var logChannel;
@@ -100,7 +101,21 @@ app.post("/", function(req, res) {
 let msg = null;
 
 client.on('message', async message => {
-  readCommands(message);
+	if(message.author.bot) {return;}
+	
+	if (message.content.startsWith('morse')) {
+	const args = message.content.slice(6).trim();
+	if (!args.length) {
+		return message.channel.send(`Il messaggio non può essere vuoto! ${message.author}!`);
+	} else if(args.startsWith("-") || args.startsWith(".")) {
+		const messaggioMorse = morse.decrypt(args);
+		message.channel.send(messaggioMorse);
+	} else {
+		const messaggioMorse = morse.crypt(args);
+		message.channel.send(messaggioMorse);
+	}
+	}
+	readCommands(message);
   var mess = message.content.toLowerCase();
   if (mess === 'viva il duce' || mess === 'dvx' || mess === 'duce') {
     message.reply('https://www.youtube.com/watch?v=LBl64DBHtTk');
