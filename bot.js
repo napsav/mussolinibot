@@ -166,13 +166,13 @@ client.on('message', async message => {
           "color": 10598833,
           "timestamp": "2020-10-27T11:22:42.331Z",
           "footer": {
-            "icon_url": "https://cdn.discordapp.com/embed/avatars/0.png",
+            "icon_url": "https://i.ibb.co/VYt8mSx/akinator.png",
             "text": "MussoliniBOT approva i patti Lateranensi"
           },
           "author": {
             "name": "Akinator (impiegato di MussoliniBOT)",
             "url": "https://discordapp.com",
-            "icon_url": "https://cdn.discordapp.com/embed/avatars/0.png"
+            "icon_url": "https://i.ibb.co/VYt8mSx/akinator.png"
           },
           "fields": [{
               "name": "Risposte:",
@@ -187,37 +187,45 @@ client.on('message', async message => {
         msg = await message.channel.send({
           embed
         });
-        const newEmbdFinal = new Discord.MessageEmbed();
-
-        var finished = 0;
+        
+        function genFinalMessage(var title, var tentativi) {
+          const newEmbdFinal = new Discord.MessageEmbed();
+            .setTitle(`${title}`)
+            .setDescription(`Ho indovinato? Numero di personaggi possibili: ${tentativi}`)
+            .setAuthor("MussoliniBOT", "https://i.ibb.co/VYt8mSx/akinator.png", "https://bestemmie.ga")
+            .setColor("#ecff00")
+            .setFooter("MussoliniBOT approva i patti Lateranensi", "https://i.ibb.co/VYt8mSx/akinator.png")
+            .setTimestamp()
+            return newEmbdFinal;
+        }
+        
         var answer = 0;
 
-        try {
-          await msg.react('👍');
-          await msg.react('👎');
-          await msg.react('🤔');
-        } catch (error) {
-          console.error('One of the emojis failed to react.');
+        function addReactions() {
+          try {
+            await msg.react('👍');
+            await msg.react('👎');
+            await msg.react('🤔');
+          } catch (error) {
+            console.error('One of the emojis failed to react.');
+          }
         }
-
 
         // First argument is a filter function
         const filter = (reaction, user) => (user.id == message.author.id) && (reaction.emoji.name == '👍' || reaction.emoji.name == '👎' || reaction.emoji.name == '🤔')
-        const collector = msg.createReactionCollector(filter, {
-          time: 300000
-        });
+        const collector = msg.createReactionCollector(filter, {time: 300000});
         collector.on('collect', (reaction, user) => {
           if (aki.progress >= 70 || aki.currentStep >= 78) {
             (async function() {
               await aki.win();
               console.log('firstGuess:', aki.answers);
               console.log('guessCount:', aki.guessCount);
-              newEmbdFinal.setTitle(`${aki.answers[0].name}`);
-              newEmbdFinal.setDescription(`Ho indovinato? Numero di personaggi possibili: ${aki.guessCount}`);
-              message.channel.send(newEmbdFinal);
+              const messaggioFinale = genFinalMessage(aki.answers[0].name, aki.guessCount);
+              message.channel.send(messaggioFinale);
               collector.stop();
             })()
           }
+          
           // ---------------SI--------------------
           else if (reaction.emoji.name == '👍') {
             (async function() {
@@ -228,15 +236,8 @@ client.on('message', async message => {
               newEmbd.setTitle(`${aki.progress}`);
               msg.edit(newEmbd);
               msg.reactions.removeAll().catch(error => console.error('Failed to clear reactions: ', error));
-              try {
-                await msg.react('👍');
-                await msg.react('👎');
-                await msg.react('🤔');
-              } catch (error) {
-                console.error('One of the emojis failed to react.');
-              }
+              addReactions()
             })()
-
 
             // ---------------NO--------------------  
           } else if (reaction.emoji.name == '👍') {
@@ -248,13 +249,7 @@ client.on('message', async message => {
               newEmbd.setTitle(`${aki.progress}`);
               msg.edit(newEmbd);
               msg.reactions.removeAll().catch(error => console.error('Failed to clear reactions: ', error));
-              try {
-                await msg.react('👍');
-                await msg.react('👎');
-                await msg.react('🤔');
-              } catch (error) {
-                console.error('One of the emojis failed to react.');
-              }
+              addReactions()
             })()
 
             // ---------------NON LO SO--------------------  
@@ -267,43 +262,19 @@ client.on('message', async message => {
               newEmbd.setTitle(`${aki.progress}`);
               msg.edit(newEmbd);
               msg.reactions.removeAll().catch(error => console.error('Failed to clear reactions: ', error));
-              try {
-                await msg.react('👍');
-                await msg.react('👎');
-                await msg.react('🤔');
-              } catch (error) {
-                console.error('One of the emojis failed to react.');
-              }
+              addReactions()
             })()
-
           }
-
-
         });
-
 
         // ---------------TIMEOUT--------------------
         collector.on('end', collected => {
           message.reply('Nessuna reazione dopo 30 secondi, annullo il gioco.');
           aki.win();
         });
-
-
-
-        /*
-        await aki.step(myAnswer);
-
-        if (aki.progress >= 70 || aki.currentStep >= 78) {
-          await aki.win();
-          console.log('firstGuess:', aki.answers);
-          console.log('guessCount:', aki.guessCount);
-        }
-        */
       } catch (err) {
         throw console.log(err);
       }
     })()
   }
-
-
 });
