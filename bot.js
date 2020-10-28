@@ -188,7 +188,7 @@ client.on('message', async message => {
           embed
         });
         
-        function genFinalMessage(var title, var tentativi) {
+        function genFinalMessage(title, tentativi) {
           const newEmbdFinal = new Discord.MessageEmbed();
             .setTitle(`${title}`)
             .setDescription(`Ho indovinato? Numero di personaggi possibili: ${tentativi}`)
