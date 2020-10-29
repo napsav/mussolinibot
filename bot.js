@@ -27,6 +27,10 @@ client.on('ready', () => {
 
 
 
+// --------------PANNELLO MUSSOLINIBOT---------------
+
+
+// Funzioni per il parsing dei comandi dal file commands.json
 function printCommands(commands, message) {
   for (key in commands) {
     var value = commands[key];
@@ -50,7 +54,7 @@ function updateFile() {
   return webcommands;
 }
 
-
+// Webserver express
 const express = require('express')
 const app = express()
 const port = process.env.PORT || 8080
@@ -59,6 +63,8 @@ app.use(bodyParser.urlencoded({
   extended: false
 }));
 app.use(bodyParser.json());
+
+// Index
 app.get('/', (req, res) => {
   var com = updateFile();
   res.render('index', {
@@ -67,6 +73,7 @@ app.get('/', (req, res) => {
 
 })
 
+// Cancella comandi
 app.get('/delete', (req, res) => {
   var com = updateFile();
   logChannel.send(":x: " + req.query.remove + ": " + com[req.query.remove] + " rimosso");
@@ -78,16 +85,12 @@ app.listen(port, () => {
   console.log(`Panel listening at http://localhost:${port}`)
 })
 
+// Aggiunta comandi
 app.post("/", function(req, res) {
   console.log("Ricevuto una richiesta POST");
   console.log(req.body);
-  var newdata = {};
   var comando = req.body.comando.trim();
   var risposta = req.body.risposta.trim();
-  newdata = {
-    comando,
-    risposta
-  }
   var com;
   com = updateFile();
   com[comando] = risposta;
@@ -98,11 +101,18 @@ app.post("/", function(req, res) {
 });
 
 
+
+
+
+// ------------------COMANDI DEL BOT---------------------
 let msg = null;
 
 client.on('message', async message => {
-	if(message.author.bot) {return;}
+	// Se il messaggio è stato scritto dal bot, verrà ignorato
+	if(message.author.bot) return;
 	
+
+	// Codice morse, permette di tradurre in tutti e due i versi
 	if (message.content.startsWith('morse')) {
 	const args = message.content.slice(6).trim();
 	if (!args.length) {
@@ -202,7 +212,7 @@ client.on('message', async message => {
         msg = await message.channel.send({
           embed
         });
-        
+       // Funzione per generare il messaggio finale di vittoria 
         function genFinalMessage(title, tentativi) {
           const newEmbdFinal = new Discord.MessageEmbed()
             .setTitle(`${title}`)
@@ -215,7 +225,7 @@ client.on('message', async message => {
         }
         
         var answer = 0;
-
+	// Funzione per aggiungere le reazioni all'embed della domanda
         async function addReactions() {
           try {
             await msg.react('👍');
@@ -226,9 +236,10 @@ client.on('message', async message => {
           }
         }
 
-	      addReactions();
-        // First argument is a filter function
-        const filter = (reaction, user) => (user.id == message.author.id) && (reaction.emoji.name == '👍' || reaction.emoji.name == '👎' || reaction.emoji.name == '🤔')
+	addReactions();
+        
+	// Collector di reazioni per ottenere la risposta dell'utente      
+	const filter = (reaction, user) => (user.id == message.author.id) && (reaction.emoji.name == '👍' || reaction.emoji.name == '👎' || reaction.emoji.name == '🤔')
         const collector = msg.createReactionCollector(filter, {time: 300000});
         collector.on('collect', (reaction, user) => {
           if (aki.progress >= 70 || aki.currentStep >= 78) {
