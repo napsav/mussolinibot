@@ -34,7 +34,7 @@ client.on('ready', () => {
 function printCommands(commands, message) {
   for (key in commands) {
     var value = commands[key];
-    if (message.content === key) {
+    if (message.content.toLowerCase() === key) {
       message.channel.send(value);
     }
   }
