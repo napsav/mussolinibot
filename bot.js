@@ -3,7 +3,6 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 'use strict';
 const fs = require('fs');
-var request = require('request');
 var bodyParser = require("body-parser");
 var path = require('path');
 var santi = require('./santi.js');
@@ -154,30 +153,6 @@ client.on('message', async message => {
     message.channel.send({
       embed
     })
-  }
-  if (message.content.toLowerCase()=== 'stato server') {
-    request.get({
-      url: url,
-      json: true,
-      headers: {
-        'User-Agent': 'request'
-      }
-    }, (err, res, data) => {
-      if (err) {
-        console.log('Error:', err);
-      } else if (res.statusCode !== 200) {
-        console.log('Status:', res.statusCode);
-      } else {
-        // data is already parsed as JSON:
-        // return "Il server è ".data.ip;
-        if (data.online) {
-          message.reply("Il server " + data.hostname + " è online | IP: " + data.ip);
-        } else {
-          message.reply("Il server è offline");
-        }
-
-      };
-    });
   }
   if (message.content.toLowerCase()=== 'akinator') {
     (async function() {
