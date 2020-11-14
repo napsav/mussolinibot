@@ -1,3 +1,3 @@
-# mussolinibot
+# GiacomoBOT
 
-A Discord.js bot. A very dumb one.
+La versione family-friendly del famoso MUSSOLINIBOT. Incredibile.
