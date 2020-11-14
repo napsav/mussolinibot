@@ -22,7 +22,7 @@ const aki = new Aki(region);
 
 client.on('ready', () => {
   console.log('I am ready!');
-  logChannel = client.channels.cache.get('770021533208805377');
+  logChannel = client.channels.cache.get('777307224564695071');
 });
 
 
@@ -57,7 +57,7 @@ function updateFile() {
 // Webserver express
 const express = require('express')
 const app = express()
-const port = process.env.PORT || 8080
+const port = process.env.PORT || 8070
 app.set('view engine', 'pug');
 app.use(bodyParser.urlencoded({
   extended: false
@@ -89,7 +89,7 @@ app.listen(port, () => {
 app.post("/", function(req, res) {
   console.log("Ricevuto una richiesta POST");
   console.log(req.body);
-  var comando = req.body.comando.trim();
+  var comando = req.body.comando.trim().toLowerCase();
   var risposta = req.body.risposta.trim();
   var com;
   com = updateFile();
@@ -132,14 +132,14 @@ client.on('message', async message => {
   if (message.content.toLowerCase()=== 'bestemmia') {
     message.channel.send(santi.santo() + " " + santi.nome() + " " + santi.agg());
   }
-  if (message.content.toLowerCase()=== 'chi è il frocio?' || message.content.toLowerCase()=== 'chi è il frocio' || message.content.toLowerCase()=== 'kicka il frocio' || message.content.toLowerCase()=== 'kick frocio') {
+  if (message.content.toLowerCase().includes("broccolo") || message.content.toLowerCase().includes("broccoli")) {
     const voiceChannel = message.member.voice.channel;
     if (voiceChannel === null) {
       message.reply("Devi stare in un canale vocale affinchè il comando funzioni");
     }
     var user = voiceChannel.members.random();
     console.log(`${user.user}`);
-    message.reply(`Il frocio fortunato è: ${user.user}`);
+    message.reply(`Il broccolo in mezzo al cerchio è: ${user.user}`);
     user.voice.setChannel(null);
   }
   if (message.content.toLowerCase()=== 'orario') {
