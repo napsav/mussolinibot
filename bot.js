@@ -88,15 +88,23 @@ app.listen(port, () => {
 app.post("/", function(req, res) {
   console.log("Ricevuto una richiesta POST");
   console.log(req.body);
-  var comando = req.body.comando.trim().toLowerCase();
-  var risposta = req.body.risposta.trim();
   var com;
   com = updateFile();
-  com[comando] = risposta;
-  console.log(req.body.risposta);
-  fs.writeFileSync('commands.json', JSON.stringify(com))
-  res.redirect('/')
-  logChannel.send(":white_check_mark: " + comando + ": " + risposta + " aggiunto");
+  var comando = req.body.comando.trim().toLowerCase();
+  var risposta = req.body.risposta.trim();
+	if (comando.length === 0 || risposta.length === 0) {
+		var alert = "Il comando e la risposta non possono essere vuoti!";
+		res.render('index', {
+			commands:com,
+			alert:alert
+		});
+	} else {
+		  com[comando] = risposta;
+		  console.log(req.body.risposta);
+		  fs.writeFileSync('commands.json', JSON.stringify(com))
+		  res.redirect('/')
+		  logChannel.send(":white_check_mark: " + comando + ": " + risposta + " aggiunto");
+	}
 });
 
 
@@ -137,8 +145,8 @@ client.on('message', async message => {
       message.reply("Devi stare in un canale vocale affinchè il comando funzioni");
     }
     var user = voiceChannel.members.random();
-    console.log(`${user.user}`);
-    message.reply(`Il broccolo in mezzo al cerchio è: ${user.user}`);
+    console.log(`${user}`);
+    message.reply(`Il broccolo in mezzo al cerchio è: ${user}`);
     user.voice.setChannel(null);
   }
   if (message.content.toLowerCase()=== 'orario') {

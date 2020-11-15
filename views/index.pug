@@ -5,13 +5,11 @@ html(lang='it')
   meta(name='viewport' content='width=device-width, initial-scale=1.0')
   link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css')
   style.
-    /* Style the form - display items horizontally */
     .form-inline {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     }
-    /* Add some margins for each label */
     .form-inline label {
     margin: 5px 10px 5px 0;
     }
@@ -20,7 +18,6 @@ html(lang='it')
     margin: 5px 10px 5px 0;
     padding: 10px;
     }
-    /* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
     @media (max-width: 800px) {
     .form-inline input {
     margin: 10px 0;
@@ -33,6 +30,8 @@ html(lang='it')
 .container
     h1 GiacomoBOT 
     h2 Pannello per aggiungere comandi
+    if alert
+      p #{alert}
     #container.col
       form(method='POST' action='/' class="form-inline")
         label(for='comando') Comando: 
