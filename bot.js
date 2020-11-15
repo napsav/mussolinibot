@@ -218,20 +218,23 @@ client.on('message', async message => {
     var punti = refreshPuntiFile(message);
     if (!isEmpty(punti)) {
       var descr = "";
-      for (entry in punti) {
-        var str = `${entry} : ${punti[entry]}\n`;
-        descr.concat(str);
+      var sorted = [];
+      punti = Object.entries(punti).sort(([,a],[,b]) => a - b);
+      console.log(punti);
+      for (entry of punti) {
+        var str = `${entry[0]}: ${entry[1]}\n`;
+        descr += str;
       }
-      const embed = new Discord.MessageEmbed()
-      .setTitle("Punteggi")
-      .setDescription(descr)
-      .setAuthor("GiacomoBOT x Filtro Ferrenz", "https://i.imgur.com/1FmyBHi.jpeg", "https://saverio.ga")
-      .setColor("#ecff00")
-      .setFooter("Sponsorizzato da LilFerrenz", "https://i.imgur.com/1FmyBHi.jpeg")
-      .setTimestamp()
-    message.channel.send({
-      embed
-    })
+        var embed = new Discord.MessageEmbed()
+          .setTitle("Punteggi")
+          .setDescription(descr)
+          .setAuthor("GiacomoBOT x Filtro Ferrenz", "https://i.imgur.com/1FmyBHi.jpeg", "https://saverio.ga")
+          .setColor("#ecff00")
+          .setFooter("Sponsorizzato da LilFerrenz", "https://i.imgur.com/1FmyBHi.jpeg")
+          .setTimestamp()
+        message.channel.send({
+          embed
+        })
     } else {
       message.channel.send("Tabella dei punti vuota");
     }
