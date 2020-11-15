@@ -217,9 +217,21 @@ client.on('message', async message => {
   if (message.content.toLowerCase() === 'punteggi' || message.content.toLowerCase() === 'punteggio' || message.content.toLowerCase() === 'punti') {
     var punti = refreshPuntiFile(message);
     if (!isEmpty(punti)) {
+      var descr = "";
       for (entry in punti) {
-        message.channel.send(`${entry} = ${punti[entry]}`);
+        var str = `${entry} : ${punti[entry]}\n`;
+        descr.concat(str);
       }
+      const embed = new Discord.MessageEmbed()
+      .setTitle("Punteggi")
+      .setDescription(descr)
+      .setAuthor("GiacomoBOT x Filtro Ferrenz", "https://i.imgur.com/1FmyBHi.jpeg", "https://saverio.ga")
+      .setColor("#ecff00")
+      .setFooter("Sponsorizzato da LilFerrenz", "https://i.imgur.com/1FmyBHi.jpeg")
+      .setTimestamp()
+    message.channel.send({
+      embed
+    })
     } else {
       message.channel.send("Tabella dei punti vuota");
     }
