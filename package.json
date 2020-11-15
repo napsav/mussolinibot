@@ -1,6 +1,6 @@
 {
-  "name": "ScoutBOT",
-  "description": "Il fratello del bot che sopprime la libertà di parola",
+  "name": "mussolinibot",
+  "description": "Il bot che sopprime la libertà di parola",
   "version": "0.0.1",
   "main": "bot.js",
   "scripts": {
