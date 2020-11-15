@@ -1,0 +1,58 @@
+doctype html
+html(lang='it')
+  head
+    title GiacomoBOT - Ferrenz Filter
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css')
+  style.
+    .form-inline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    }
+    .form-inline label {
+    margin: 5px 10px 5px 0;
+    }
+    .form-inline input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    }
+    @media (max-width: 800px) {
+    .form-inline input {
+    margin: 10px 0;
+    }
+    .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+    }
+    }
+.container
+    h1 GiacomoBOT - Ferrenz Filter 1.0
+    h2 Pannello per aggiungere parole e i rispettivi punti (ispirato alla legge Ferrentino 2020)
+    if alert
+      p #{alert}
+    h3
+      a(href="/") Torna alla pagina principale
+    #container.col
+      form(method='POST' action='/ferrenz' class="form-inline")
+        label(for='parola') Parola: 
+        input#comando(type='text' name='parola' required='')
+        label(for='punteggio')  Punti di demerito (es: -10, 5): 
+        input#risposta(type='number' name='punteggio' required='')
+        input(type='submit' value='Invia')
+      table
+        thead
+          tr
+            th Parola
+            th Punti di demerito
+            th 
+              span(style='float:right') Azione
+        tbody
+          each val, key in parole
+            tr
+              td #{key}
+              td #{val}
+              td 
+                span(style='float:right')
+                  a(href=`/ferrenz/delete?remove=${key}`) Cancella

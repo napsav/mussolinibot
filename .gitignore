@@ -2,3 +2,5 @@ node_modules/
 package-lock.json
 .env
 commands.json
+parole.json
+punti.json

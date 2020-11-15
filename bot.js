@@ -18,40 +18,75 @@ const region = 'it';
 const aki = new Aki(region);
 
 
-
 client.on('ready', () => {
   console.log('I am ready!');
   logChannel = client.channels.cache.get('777307224564695071');
 });
 
-
+function isEmpty(obj) {
+  return Object.keys(obj).length === 0;
+}
 
 // --------------PANNELLO MUSSOLINIBOT---------------
 
 
 // Funzioni per il parsing dei comandi dal file commands.json
-function printCommands(commands, message) {
-  for (key in commands) {
-    var value = commands[key];
-    if (message.content.toLowerCase() === key) {
-      message.channel.send(value);
-    }
-  }
-}
 
-function readCommands(message) {
+function parseCommands(message) {
   fs.readFile('commands.json', (err, data) => {
     if (err) throw err;
     let commands = JSON.parse(data);
-    printCommands(commands, message);
+    for (key in commands) {
+      var value = commands[key];
+      if (message.content.toLowerCase() === key) {
+        message.channel.send(value);
+      }
+    }
   });
 }
 
-function updateFile() {
+function refreshCommandsFile() {
   let data = fs.readFileSync('commands.json', 'utf8');
   let webcommands = JSON.parse(data);
   return webcommands;
 }
+
+// Filtro parole
+function parseParole(message) {
+  fs.readFile('parole.json', (err, data) => {
+    if (err) throw err;
+    var parole = JSON.parse(data);
+    var puntiraw = fs.readFileSync('punti.json', 'utf8');
+    var punti = JSON.parse(puntiraw);
+    for (p in parole) {
+      if (message.content.trim().toLowerCase().includes(p)) {
+        message.channel.send(`${message.author}, ${parole[p]} per aver detto "${p}"!`)
+        if (message.author in punti) {
+          punti[message.author] += parole[p];
+        } else {
+          punti[message.author] = parole[p];
+        }
+        fs.writeFileSync('punti.json', JSON.stringify(punti))
+      }
+    }
+  });
+}
+
+// Punti file
+function refreshPuntiFile() {
+  let data = fs.readFileSync('punti.json', 'utf8');
+  let punti = JSON.parse(data);
+  return punti;
+}
+
+// File delle parole
+function refreshParoleFile() {
+  let data = fs.readFileSync('parole.json', 'utf8');
+  let parole = JSON.parse(data);
+  return parole;
+}
+
+// ------------------ ROUTING ------------------------
 
 // Webserver express
 const express = require('express')
@@ -65,31 +100,45 @@ app.use(bodyParser.json());
 
 // Index
 app.get('/', (req, res) => {
-  var com = updateFile();
+  var com = refreshCommandsFile();
   res.render('index', {
     commands: com
   });
+})
 
+// Ferrenz filter
+app.get('/ferrenz', (req, res) => {
+  var par = refreshParoleFile();
+  res.render('parole', {
+    parole: par
+  });
 })
 
 // Cancella comandi
 app.get('/delete', (req, res) => {
-  var com = updateFile();
+  var com = refreshCommandsFile();
   logChannel.send(":x: " + req.query.remove + ": " + com[req.query.remove] + " rimosso");
   delete com[req.query.remove]
   fs.writeFileSync('commands.json', JSON.stringify(com))
   res.redirect('/');
 })
-app.listen(port, () => {
-  console.log(`Panel listening at http://localhost:${port}`)
+
+// Cancella parole
+app.get('/ferrenz/delete', (req, res) => {
+  var par = refreshParoleFile();
+  logChannel.send(":x: " + req.query.remove + ": " + par[req.query.remove] + " rimosso");
+  delete par[req.query.remove]
+  fs.writeFileSync('parole.json', JSON.stringify(par))
+  res.redirect('/ferrenz');
 })
+
 
 // Aggiunta comandi
 app.post("/", function(req, res) {
   console.log("Ricevuto una richiesta POST");
   console.log(req.body);
   var com;
-  com = updateFile();
+  com = refreshCommandsFile();
   var comando = req.body.comando.trim().toLowerCase();
   var risposta = req.body.risposta.trim();
 	if (comando.length === 0 || risposta.length === 0) {
@@ -107,8 +156,38 @@ app.post("/", function(req, res) {
 	}
 });
 
+// Aggiunta parole filtrate
+app.post("/ferrenz", function(req, res) {
+  console.log("Ricevuto una richiesta POST a Ferrenz Filter");
+  console.log(req.body);
+  var par;
+  par = refreshParoleFile();
+  var parola = req.body.parola.trim().toLowerCase();
+  var punteggio = parseInt(req.body.punteggio);
+	if (parola.length === 0 || punteggio.length === 0) {
+		var alert = "La parola e il punteggio devono avere un valore";
+		res.render('parole', {
+			parole:par,
+			alert:alert
+		});
+	} else if (!Number.isInteger(punteggio)) {
+    var alert = "Il punteggio deve essere un numero senza valori decimali, ad esempio -10, +10 o 5";
+		res.render('parole', {
+			parole:par,
+			alert:alert
+		});
+  } else {
+		  par[parola] = punteggio;
+		  fs.writeFileSync('parole.json', JSON.stringify(par))
+		  res.redirect('/ferrenz')
+		  logChannel.send(":white_check_mark: " + parola + " - " + punteggio + " aggiunto");
+	}
+});
 
 
+app.listen(port, () => {
+  console.log(`Panel listening at http://localhost:${port}`)
+})
 
 
 // ------------------COMANDI DEL BOT---------------------
@@ -116,23 +195,35 @@ let msg = null;
 
 client.on('message', async message => {
 	// Se il messaggio è stato scritto dal bot, verrà ignorato
-	if(message.author.bot) return;
-	
+  if(message.author.bot) return;
+  
+  // Parsing comandi e parole
+  parseCommands(message);
+  parseParole(message);
 
 	// Codice morse, permette di tradurre in tutti e due i versi
 	if (message.content.startsWith('morse')) {
 	const args = message.content.slice(6).trim();
-	if (!args.length) {
-		return message.channel.send(`Il messaggio non può essere vuoto! ${message.author}!`);
-	} else if(args.startsWith("-") || args.startsWith(".")) {
-		const messaggioMorse = morse.decrypt(args);
-		message.channel.send(messaggioMorse);
-	} else {
-		const messaggioMorse = morse.crypt(args);
-		message.channel.send(messaggioMorse);
+    if (!args.length) {
+      return message.channel.send(`Il messaggio non può essere vuoto! ${message.author}!`);
+    } else if(args.startsWith("-") || args.startsWith(".")) {
+      const messaggioMorse = morse.decrypt(args);
+      message.channel.send(messaggioMorse);
+    } else {
+      const messaggioMorse = morse.crypt(args);
+      message.channel.send(messaggioMorse);
+    }
 	}
-	}
-	readCommands(message);
+  if (message.content.toLowerCase() === 'punteggi' || message.content.toLowerCase() === 'punteggio' || message.content.toLowerCase() === 'punti') {
+    var punti = refreshPuntiFile(message);
+    if (!isEmpty(punti)) {
+      for (entry in punti) {
+        message.channel.send(`${entry} = ${punti[entry]}`);
+      }
+    } else {
+      message.channel.send("Tabella dei punti vuota");
+    }
+  }
   if (message.content.toLowerCase()=== 'viva il duce' || message.content.toLowerCase()=== 'dvx' || message.content.toLowerCase()=== 'duce') {
     message.reply('https://www.youtube.com/watch?v=LBl64DBHtTk');
   }
