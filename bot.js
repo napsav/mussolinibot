@@ -228,7 +228,7 @@ client.on('message', async message => {
         var embed = new Discord.MessageEmbed()
           .setTitle("Punteggi")
           .setDescription(descr)
-          .setAuthor("GiacomoBOT x Filtro Ferrenz", "https://i.imgur.com/1FmyBHi.jpeg", "https://saverio.ga")
+          .setAuthor("GiacomoBOT x Filtro Ferrenz", "https://i.imgur.com/1FmyBHi.jpeg", "http://resetfocus.duckdns.org:8070/ferrenz")
           .setColor("#ecff00")
           .setFooter("Sponsorizzato da LilFerrenz", "https://i.imgur.com/1FmyBHi.jpeg")
           .setTimestamp()
