@@ -29,6 +29,10 @@ function isEmpty(obj) {
 
 // --------------PANNELLO MUSSOLINIBOT---------------
 
+// Bans
+
+const bans_data = fs.readFileSync('bans.json', 'utf-8');
+const bans = JSON.parse(bans_data);
 
 // Funzioni per il parsing dei comandi dal file commands.json
 
@@ -97,7 +101,6 @@ app.use(bodyParser.urlencoded({
   extended: false
 }));
 app.use(bodyParser.json());
-
 // Index
 app.get('/', (req, res) => {
   var com = refreshCommandsFile();
@@ -214,6 +217,32 @@ client.on('message', async message => {
       message.channel.send(messaggioMorse);
     }
 	}
+if (message.content.toLowerCase().includes("ban")) {
+var ban = bans[Math.floor(Math.random()*bans.length)];
+var embed = new Discord.MessageEmbed()
+.setTitle(`${ban["titolo"]}`)
+    .setDescription(`${ban["descrizione"]}`)
+    .setTimestamp()
+    .setFooter("Ho sprecato una notte per questa funzione", "https://cdn.discordapp.com/embed/avatars/0.png")
+    .setAuthor("GiacomoBOT x bansiamoscraper","https://cdn.discordapp.com/embed/avatars/0.png", "https://github.com/napsav/bansiamoscraper")
+	if (ban["testo"].length < 1023) {
+    embed.addField("Testo", `${ban["testo"]}`, false)
+	} else {
+message.channel.send("Sì è verificato un problema che al momento non voglio risolvere");
+	}
+	if (ban["youtube"]) {
+    	embed.addField("Video", `${ban["video"]}`, false)
+	} else {
+		if (ban.hasOwnProperty('video')) {
+	embed.addField("Video", `${ban["video"]}\n${ban["video-audio"]}`, true)
+		}
+		if (ban.hasOwnProperty('audio')) {
+	embed.addField("Audio", `${ban["audio"]}`, true)
+		}
+	}
+console.log("kek");
+message.channel.send({embed});
+}
   if (message.content.toLowerCase() === 'punteggi' || message.content.toLowerCase() === 'punteggio' || message.content.toLowerCase() === 'punti') {
     var punti = refreshPuntiFile(message);
     if (!isEmpty(punti)) {
