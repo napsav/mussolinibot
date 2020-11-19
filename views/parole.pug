@@ -36,9 +36,9 @@ html(lang='it')
       a(href="/") Torna alla pagina principale
     #container.col
       form(method='POST' action='/ferrenz' class="form-inline")
-        label(for='parola') Parola: 
+        label(for='parola') Parola:
         input#comando(type='text' name='parola' required='')
-        label(for='punteggio')  Punti di demerito (es: -10, 5): 
+        label(for='punteggio') Punti (es: -10, 5):
         input#risposta(type='number' name='punteggio' required='')
         input(type='submit' value='Invia')
       table
