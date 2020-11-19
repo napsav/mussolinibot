@@ -20,7 +20,7 @@
     "titolo": "La Zia di Forl\u00ec",
     "descrizione": "Dovete sapere che ho una zia molto strana, conosciuta in tutta forl\u00ec e tutte le volte che la vado a trovare mi porta a ballare con lei...ma balla i un modo molto particolare...cos\u00ec...",
     "testo": "Tutti insieme si canta tenendo il ritmo scchioccando le dita:\nIo ho una zia\nuna zia che sta a forl\u00ec\nche quando va a ballare con il braccio fa cos\u00ec( si agita il braccio su e gi\u00f9, fino alla fine del ban)\ncos\u00ec cos\u00ec\ncon il braccio fa cos\u00ec\nSi cntinua il ban continuando a cantare la canzoncina e cambiando ogni volta parte del corpo(gambe, testa, sedere....) mantenendo per\u00f2 le parti precedenti fino alla fine del ban",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20La%20Zia%20Di%20Forli.mp3"
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/La%20Zia%20Di%20Forli.mp3"
   },
   {
     "titolo": "Gatto Mammone",
@@ -32,16 +32,16 @@
     "descrizione": "Filipper era conosciuto nella sua cittadina per le sue grandi doti di ballerino e mi insegn\u00f2 questa danza...",
     "testo": "Si canta tutti insieme:\nEn filipper dancer\nsu nu piede danze\nEn filipper dancer\nsu nu piede danze,\nsu nu pieede,\nsu nu pieede,\nquesta \u00e8 la danza de filibert\nNu piede: saltellare sul piede destro, sul primo movimento di ogni battuta.\nSostituire successivamente la frase nu piede con:\ndu piedi: Saltellare su due piedi.\nlu culu: Stendersi e battere il sedere ritmicamente a terra. Rialzarsi immediatamente per riprendere la strofa.\nnu gomitu: abbassarsi e battere ritmicamente il gomito",
     "youtube": false,
-    "video": "https://www.bansiamo.it/video/en_filipper_dancer.mp4",
-    "video-audio": "https://www.bansiamo.it/video/en_filipper_dancer.webm"
+    "video": "https://mp4.s3.eu-de.cloud-object-storage.appdomain.cloud/en_filipper_dancer.mp4",
+    "video-webm": "https://webm.s3.eu-de.cloud-object-storage.appdomain.cloud/en_filipper_dancer.webm"
   },
   {
     "titolo": "Agaciuf",
     "descrizione": "viaggiando molto....arrivando ad haiti scoprii il vero modo di fare il caff\u00e8",
     "testo": "Si canta tutti insieme:\nAgaciuf-ciuf-ciuf (simulare il gesto della corsa)\nAgaciuf-ciuf-ciuf\nSe macina o caff\u00e8 (far finta di girare con un grande mestolo i chicchi di caff\u00e8)\nSe macina o caff\u00e8\nAd Haiti se fa cos\u00ec-cos\u00ec (mettere le braccia dietro alle spalle del compagno di setra e poi sinistra)\nAd Haiti se fa cos\u00ec\nSi ripete mettendosi prima abbassati, poi in ginocchio ed infine sdraiati",
     "youtube": false,
-    "video": "https://www.bansiamo.it/video/agaciuf.mp4",
-    "video-audio": "https://www.bansiamo.it/video/agaciuf.webm"
+    "video": "https://mp4.s3.eu-de.cloud-object-storage.appdomain.cloud/agaciuf.mp4",
+    "video-webm": "https://webm.s3.eu-de.cloud-object-storage.appdomain.cloud/agaciuf.webm"
   },
   {
     "titolo": "Mosquito",
@@ -53,8 +53,8 @@
     "descrizione": "Andando in mozambico...per fortuna feci le dovute vaccinazioni, perch\u00e8 ebbi la sfortuna di tagliarmi un dito e infetarmi",
     "testo": "Quando in mozambico ( facendo il gesto dell'ok)\nio mi punzi un dito ( fare il gesto dell'ok indcando con l'altra mano il dito )\nfece infezione ( fare il gesto dell'ok e imitare il pollice che si gonfia con l'altra mano )\nnecessaria amputazione (fare il gesto dell'ok e con l'altra mano imitare l'azione dell'amputazone del dito )\nnecessaria amputazione\nahi il dito (scuotere il dito )\nahi il braccio ( scuotere il braccio)\nahi il gamba (scuotere la braccia)\ne non si balla pi\u00f9 la samba ( simulare il ballo della samba)\ne non si balla pi\u00f9 la samba\nRipetere cambiando tono e usare altri parti del corpo al posto del dito",
     "youtube": false,
-    "video": "https://www.bansiamo.it/video/quando_in_mozambico.mp4",
-    "video-audio": "https://www.bansiamo.it/video/quando_in_mozambico.webm"
+    "video": "https://mp4.s3.eu-de.cloud-object-storage.appdomain.cloud/quando_in_mozambico.mp4",
+    "video-webm": "https://webm.s3.eu-de.cloud-object-storage.appdomain.cloud/quando_in_mozambico.webm"
   },
   {
     "titolo": "Oh Alele (cover)",
@@ -88,9 +88,9 @@
     "descrizione": "La gallina Cesarina parla delle preoccupazioni e delle gioie di Cesarina,prima si preoccupa per il cacciatore che le vuole tirare il collo e poi del gufo che le vuole rubare le uova.Alla fine per\u00f2 arriva il gallo e lei si innamora.",
     "testo": "La gallina cesarina, appollaiata se ne sta.\nEd ecco arriva il gufo nero, che le uova le vuol rubar!\nNOOOOOOOOOOOOOOOO...COCCODE COCCODE COCCODEE.\nMa Cesarina 7 vite ha.\nLa gallina Cesarina, appollaiata se ne sta.\nEd ecco arriva il cacciatore, che il collo le vuol tirar!\nNOOOOOOOOOOOOOOOO...COCCODE COCCODE COCCODEE.\nMa Cesarina 7 vite ha.\nLa gallina Cesarina, appollaiata se ne sta.\nEd ecco arriva il bel galletto, che il cuore le vuol rubar!\nSIIIIIIIIIIIIIIII...COCCODE COCCODE COCCODEE.\nCesarina felice sar\u00e0.",
     "youtube": false,
-    "video": "https://www.bansiamo.it/video/la_gallina_cesarina.mp4",
-    "video-audio": "https://www.bansiamo.it/video/la_gallina_cesarina.webm",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20La%20Gallina%20Cesarina.mp3"
+    "video": "https://mp4.s3.eu-de.cloud-object-storage.appdomain.cloud/la_gallina_cesarina.mp4",
+    "video-webm": "https://webm.s3.eu-de.cloud-object-storage.appdomain.cloud/la_gallina_cesarina.webm",
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/La%20Gallina%20Cesarina.mp3"
   },
   {
     "titolo": "Dalla nascita del sol",
@@ -98,7 +98,7 @@
     "testo": "1) Dalla nascita del sol\n2) fino al suo tramonto\n3) vorrei,\n4) lodare il Signor,lodare il Signor\n5) con tutto il cuor, con tutto il cuor\n1) imitare il percorso del sole\n2) percorso al contrario\n3) battere le mani\n4) palmi aperti verso l'alto\n5) battere sul cuore",
     "youtube": true,
     "video": "https://www.youtube.com/watch?v=pJxN2HsF9s4",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20User_dalla%20nascita%20del%20sol.mp3"
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/User_dalla%20nascita%20del%20sol.mp3"
   },
   {
     "titolo": "Un animal particular",
@@ -113,7 +113,7 @@
     "testo": "Jack va in cucina con Tina (battere le mani sulle proprie gambe e muoverle verso destra e sinistra)\nJack va in cucina con Tina\nJack va in cucina con Tina\ne suona il suo vecchio bangio. (simulare la suonata di una chitarra)\nBom bom bom bom.\nFli fly filayo(x3) (suonare l'armonica a bocca)\ne suona il suo vecchio bangio.\nSi ripete aumentando di velocita.",
     "youtube": true,
     "video": "https://www.youtube.com/watch?v=VvCxzmCWscc",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20Jack%20e%20In%20Cucina%20Con%20Tina.mp3"
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/Jack%20e%20In%20Cucina%20Con%20Tina.mp3"
   },
   {
     "titolo": "Tram elettrico",
@@ -135,7 +135,7 @@
     "testo": "Stendi panni, stendi panni (imitare di stendere)\nStendi panni, stendi panni (imitare di stendere)\nBodom, bodom (muovere i fianchi)\nAsciuga il sole li asciuga (muovere le mani disegnando cerchi)\nAsciuga il sole li asciuga (muovere le mani disegnando cerchi)\nBau bau Fido (2 volte)\nChi la vuole la bella verdura (guardando a destra e a sinistra)\nChi la vuole la bella verdura (guardando a destra e a sinistra)",
     "youtube": true,
     "video": "https://www.youtube.com/watch?v=RRpBpyFpWDM",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20Stendi%20I%20Panni.mp3"
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/Stendi%20I%20Panni.mp3"
   },
   {
     "titolo": "Tiaja",
@@ -156,24 +156,24 @@
     "descrizione": "Il ban serve per imparare i nomi dei ragazzi e degli animatori. Si svogle in piedi o seduti,cantando la canzone come nel video. Per concluderlo,non serve aver finito tutto il giro dei nomi. Consiglio di fare un giro dei nomi,almeno per sapere quali ci sono.",
     "testo": "Dovete eseguire questa serie di movimenti ogni volta che incontrate il tag [Movimenti]\n- battere le mani sulle ginocchia\n- battere le mani\n- pollice sinistro sopra la spalla sinistra\n- pollice destro sopra la spalla destra\nPer far andare a ritmo tutti i ragazzi eseguire:\nAttenzione...[Movimenti]\nConcentrazione...[Movimenti]\nRitmo e...[Movimenti]\nVelocit\u00e0...[Movimenti]\nEsempio:\nAndrea Andrea [Movimenti]\nAndrea Andrea [Movimenti]\nAndrea Andrea [Movimenti]\nAndrea Francesca (Francesca \u00e8 il nome del ragazzo a cui dovr\u00e0 passare la parola)\nPs.Vi consiglio di fare un giro di nomi se il gruppo non si conosce!",
     "youtube": false,
-    "video": "https://www.bansiamo.it/video/attenzione_e_concentrazione.mp4",
-    "video-audio": "https://www.bansiamo.it/video/attenzione_e_concentrazione.webm"
+    "video": "https://mp4.s3.eu-de.cloud-object-storage.appdomain.cloud/attenzione_e_concentrazione.mp4",
+    "video-webm": "https://webm.s3.eu-de.cloud-object-storage.appdomain.cloud/attenzione_e_concentrazione.webm"
   },
   {
     "titolo": "La gallina del fattore",
     "descrizione": "Il ban \u00e8 molto semplice, si svolge seduti o in piedi e consiste nel ripetere una frase al proprio vicino. Viene messa alla prova la nostra attenzione, ad ogni giro infatti la frase viene detta al vicino successivo,ma lui ripeter\u00e0 una domanda che noi dovremmo porre al nostro vicino precedente...ci riusciremo tutti?",
     "testo": "A ->prima persona\nB ->seconda persona\nC ->terza persona\nA verso B\nA:La gallina del fattore ha fatto l'uovo.\nB:Cosa?\nA:L'uovo\nB verso C\nB:La gallina del fattore ha fatto l'uovo.\nC:Che cosa?\nB:Che cosa?(verso A)\nA:L'uovo.(verso B)\nB:L'uovo.(verso C)",
     "youtube": false,
-    "video": "https://www.bansiamo.it/video/la_gallina_del_fattore.mp4",
-    "video-audio": "https://www.bansiamo.it/video/la_gallina_del_fattore.webm"
+    "video": "https://mp4.s3.eu-de.cloud-object-storage.appdomain.cloud/la_gallina_del_fattore.mp4",
+    "video-webm": "https://webm.s3.eu-de.cloud-object-storage.appdomain.cloud/la_gallina_del_fattore.webm"
   },
   {
     "titolo": "Un tortellino",
     "descrizione": "Questo \u00e8 un simpatico ban che parla di un tortellino...che si far\u00e0 mangiare,tutto condito solo se andrete a ballare con chi ve lo proporr\u00e0!",
     "testo": "AAAAAAAAAAAAAAAAAAAA\nUn tortellin, (si aprono le braccia  lungo il corpo e si muovono le mani guardando in faccia la persona con cui si fa il ban)\nun tortellin, (ci si gira di schiena con un balzo continuando il movimento precedente)\nche si muove un po' di qui, (ci si sposta da un lato accompagnandosi con le mani)\nche si muove un po' di li,(ci si sposta dall'altro lato accompagnandosi con le mani)\ne tutto ben condito con un poco d'aceto,con un poco di sale... (col pollice si versano i prodotti sul tortellino)\n...e te lo mangi tu, (si indica una persona dal cerchio e la si va a prendere)\nse vieni qui a ballar! (ricomincia il balletto)",
     "youtube": false,
-    "video": "https://www.bansiamo.it/video/iltortellino.mp4",
-    "video-audio": "https://www.bansiamo.it/video/iltortellino.webm"
+    "video": "https://mp4.s3.eu-de.cloud-object-storage.appdomain.cloud/iltortellino.mp4",
+    "video-webm": "https://webm.s3.eu-de.cloud-object-storage.appdomain.cloud/iltortellino.webm"
   },
   {
     "titolo": "Le sardine",
@@ -188,33 +188,33 @@
     "testo": "Un cocomero tondo tondo,(disegnare un cerchio con i due indici)\nche voleva essere il pi\u00f9 forte del mondo,(fare il gesto dei muscoli)\nche voleva tutti quanti superare,(fare finta di camminare)\nun bel giorno si mise a [azione da fare]\nNuotare:\nSplash Splash (imitare la bracciata)\nsi mise a nuotare\nSplash Splash (imitare la bracciata)\nsi mise a nuotare\nA questo punto si continua inventando le azioni,ve ne propongo alcune:\nMangiare:\nGnam Gnam (fare finta di mangiare)\nsi mise a mangiare\nGnam Gnam (fare finta di mangiare)\nsi mise a mangiare\nVolare:\nFlap flap (fare finta di volare)\nsi mise a volare\nFlap flap (fare finta di volare)\nsi mise a volare",
     "youtube": true,
     "video": "https://www.youtube.com/watch?v=kItq7g0a0tg",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20Un%20Cocomero%20Tondo%20Tondo.mp3"
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/Un%20Cocomero%20Tondo%20Tondo.mp3"
   },
   {
     "titolo": "Un austriaco felice",
     "descrizione": "Il nostro amico austriaco, \u00e8 felice e cammina per i boschi, ogni volta che incontra un animale,lo saluta in maniera differente e simpatica.",
     "testo": "Un austriaco felice (imitare dei baffi lunghi)\nsulla cima dei monti (disegnare con le dita le montagne)\nquando vede un cuculo (portarsi iol palmo della mano sulla fronte per guardare lontano)\nlui lo imita cos\u00ec:\njo la li\njollala li alli olla la cuc\u00f9,\njollala li alli olla la cuc\u00f9,\njollala li alli olla la cuc\u00f9,\njollala li alli oh.\n(battere le mani sule gambe, incrociarle, incrociare le braccia sulle spalle, imitare il picchio con una mano battendo sul gomito con l'altra. Da ripetere quattro volte e nell'ultima fermarsi alle braccia sulle spalle)\nUn austriaco felice\nsulla cima del monte\nquando vede un'aquila\nlui la imita cos\u00ec:\njo la li\njollala li alli olla la vuum,\njollala li alli olla la vuum,\njollala li alli olla la vuum,\njollala li alli oh.\n(battere le mani sule gambe, incrociarle, incrociare le braccia sulle spalle, imitare le ali dell'aquila.Da ripetere quattro volte e nell'ultima fermarsi alle braccia sulle spalle)\nUn austriaco felice\nsulla cima del monte\nquando vede una valanga\nlui la imita cos\u00ec:\njo la li\njollala li alli olla la cuc\u00f9, scium,\njollala li alli olla la cuc\u00f9, scium,\njollala li alli olla la cuc\u00f9, scium,\njollala li alli oh.\n(battere le mani sule gambe, incrociarle, incrociare le braccia sulle spalle, imitare una valanga che scende violenta.Da ripetere quattro volte e nell'ultima fermarsi alle braccia sulle spalle)\nUn austriaco felice\nsulla cima del monte\nquando vede una ragazza\nlui la imita cos\u00ec:\njo la li\njollala li alli olla la cuc\u00f9, \"baci\",\njollala li alli olla la cuc\u00f9, \"baci\",\njollala li alli olla la cuc\u00f9, \"baci\",\njollala li alli oh.\n(battere le mani sule gambe, incrociarle, incrociare le braccia sulle spalle, mandare dei baci.Da ripetere quattro volte e nell'ultima fermarsi alle braccia sulle spalle)\nSi possono inserire altre cose da far vedere all'austriaco come un orso, il sole",
     "youtube": false,
-    "video": "https://www.bansiamo.it/video/un_austriaco_felice.mp4",
-    "video-audio": "https://www.bansiamo.it/video/un_austriaco_felice.webm",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20Un%20Austriaco%20Felice.mp3"
+    "video": "https://mp4.s3.eu-de.cloud-object-storage.appdomain.cloud/un_austriaco_felice.mp4",
+    "video-webm": "https://webm.s3.eu-de.cloud-object-storage.appdomain.cloud/un_austriaco_felice.webm",
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/Un%20Austriaco%20Felice.mp3"
   },
   {
     "titolo": "Figlia ti voglio dar in sposa",
     "descrizione": "Questo \u00e8 un ban particolare...descrive sarcasticamente la visione dello scoutismo tra FSE,CNGEI,AGESCI, con un risvolto positivo solo per l'AGESCI.",
     "testo": "Figlia ti voglio dar in sposa lo scout d'europa\nFiglia ti voglio dar in sposa lo scout d'europa\nFiglia ti voglio dar in sposa lo scout d'europa\noh mamma no\noh mamma no\nlo scout d'europa non lo voglio no...\nPERCHEEEEEEEE???\nTutta la notte lui pensa alla preghiera\nTutta la notte lui pensa alla preghiera\nTutta la notte lui pensa alla preghiera\noh mamma no\noh mamma no\nlo scout d'europa non lo voglio no\nFiglia ti voglio dar in sposa lo scout CNGEI\nFiglia ti voglio dar in sposa lo scout CNGEI\nFiglia ti voglio dar in sposa lo scout CNGEI\noh mamma no o mamma no lo scout CNGEI non lo voglio no...\nPERCHEEEEEEEE???\nTutta la notte lui pensa alla politica\nTutta la notte lui pensa alla politica\nTutta la notte lui pensa alla politica\noh mamma no\noh mamma no\nlo scout CNGEI non lo voglio no\nFiglia ti voglio dar in sposa lo scout AGESCI\nFiglia ti voglio dar in sposa lo scout AGESCI\nfiglia ti voglio dar in sposa lo scout AGESCI\noh mamma SI\noh mamma SI\nlo scout AGESCI lo voglio SI...\nPERCHEEEEEEEE???\nTutta la notte lui pensa al MOVIMENTO\nTutta la notte lui pensa al MOVIMENTO\nTutta la notte lui pensa al MOVIMENTO\noh mamma si\noh mamma si\nlo scout AGESCI lo voglio si!",
     "youtube": false,
-    "video": "https://www.bansiamo.it/video/FigliaSposa.mp4",
-    "video-audio": "https://www.bansiamo.it/video/FigliaSposa.webm"
+    "video": "https://mp4.s3.eu-de.cloud-object-storage.appdomain.cloud/FigliaSposa.mp4",
+    "video-webm": "https://webm.s3.eu-de.cloud-object-storage.appdomain.cloud/FigliaSposa.webm"
   },
   {
     "titolo": "Padrone non mi mettere in pentola",
     "descrizione": "Ecco il grido di aiuto di una persona catturata dagli indigeni, che come loro usanza....SE LO VOGLIONO MANGIARE!!!",
     "testo": "Badrone\nnon mi meddere in bendola (mescolare con un grosso mestolo)\nl\u2019acqua bolle (mani dal basso verso l\u2019alto)\nle patate (sbucciare le patate)\nnon sono (mimare il gesto del no)\nbuone (muovendo l'indice sulla guancia)\ncon me! (indicare se stessi con i pollici)\nBon bon bon... (giravolta)\nPer continuare il ban, eseguirlo cambiando le vocali.",
     "youtube": false,
-    "video": "https://www.bansiamo.it/video/padrone_non_mi_mettere_in_pentola.mp4",
-    "video-audio": "https://www.bansiamo.it/video/padrone_non_mi_mettere_in_pentola.webm",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20Padrone.mp3"
+    "video": "https://mp4.s3.eu-de.cloud-object-storage.appdomain.cloud/padrone_non_mi_mettere_in_pentola.mp4",
+    "video-webm": "https://webm.s3.eu-de.cloud-object-storage.appdomain.cloud/padrone_non_mi_mettere_in_pentola.webm",
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/Padrone.mp3"
   },
   {
     "titolo": "Aram sam sam",
@@ -222,7 +222,7 @@
     "testo": "Aram sam sam, (battere sulle ginocchia)\naram sam sam  (battere sulle ginocchia)\nguli guli guli guli guli (battere sul petto)\naram sam sam. (battere sulle ginocchia)\nAram sam sam, (battere sulle ginocchia)\naram sam sam  (battere sulle ginocchia)\nguli guli guli guli guli (battere sul petto)\naram sam sam. (battere sulle ginocchia)\nArabi (inchino)\narabi (inchino)\nguli guli guli guli guli (battere sul petto)\naram sam sam. (battere sulle ginocchia)\nArabi (inchino)\narabi (inchino)\nguli guli guli guli guli (battere sul petto)\naram sam sam. (battere sulle ginocchia)\nRipetere tutto sempre pi\u00f9 velocemente.",
     "youtube": true,
     "video": "https://www.youtube.com/watch?v=VEW-xbyzVao",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20Aram%20Sam%20Sam.mp3"
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/Aram%20Sam%20Sam.mp3"
   },
   {
     "titolo": "Bughi Bughi",
@@ -230,7 +230,7 @@
     "testo": "Mani avanti,\nMani indietro.\nMani a zigo zago,\nMani in su e in gi\u00f9.\nBallando il bughi bughi\ncol dito sulla testa, (girando su se stessi)\nscambiamoci di posto io e te.\nANDARE AVANTI CON:\ngomito,ginocchio,piede,lingua,sedere",
     "youtube": true,
     "video": "https://www.youtube.com/watch?v=PZCCiuKrSFI",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20Bughi%20Bughi.mp3"
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/Bughi%20Bughi.mp3"
   },
   {
     "titolo": "Il campo di bocce",
@@ -238,13 +238,13 @@
     "testo": "In un campo di bocc bocc bocc (lanciare la boccia)\nse c'\u00e9 un ape che scocc scocc scocc (smulare l'ape che gironzola sbattendo le ali e girandosi a destra e sinistra)\nse c'\u00e9 un ape che scocc scocc scocc\nIn un campo di bocc bocc bocc\nI polpettoni oni oni (fare un cerchio con le mani)\nsono molto buoni oni oni (girarsi l'indice sulla guancia)\nse ci metti l' ovi ovi ovi (mettere le uova)\nsono ancora pi\u00f9 buoni oni oh (girarsi entrambi i pollici sulle guance)",
     "youtube": true,
     "video": "https://www.youtube.com/watch?v=8aeEMErby9c",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20In%20Un%20Campo%20Di%20Bocc.mp3%0D%0A%0D%0A"
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/In%20Un%20Campo%20Di%20Bocc.mp3%0D%0A%0D%0A"
   },
   {
     "titolo": "Carulin fa il lacc",
     "descrizione": "Lo sapevate che non tutte le mucche fanno lo stesso tipo di latte?Diciamo che quelle di Giangranco, Nicola e Alberto sono davvero particolari...",
     "testo": "Carulin fa il lacc, c\u00ecc\u00ec\nche mi far\u00f2 il furmacc. c\u00ecc\u00ec\nCarulin fa il lacc, c\u00ecc\u00ec\nche mi far\u00f2 il furmacc. c\u00ecc\u00ec\nLa mucca di Gianfranco l'ha fatta sotto il banco\nCarulin fa il lacc, c\u00ecc\u00ec\nche mi far\u00f2 il furmacc. c\u00ecc\u00ec\nCarulin fa il lacc, c\u00ecc\u00ec\nche mi far\u00f2 il furmacc. c\u00ecc\u00ec\nLa mucca di Nicola fa invece coca cola\nCarulin fa il lacc, c\u00ecc\u00ec\nche mi far\u00f2 il furmacc. c\u00ecc\u00ec\nCarulin fa il lacc, c\u00ecc\u00ec\nche mi far\u00f2 il furmacc. c\u00ecc\u00ec\nLa mucca di Alberto, l'ha fatta all\u2019aperto...",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20Carulin%20Fa%20Il%20Lat.mp3"
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/Carulin%20Fa%20Il%20Lat.mp3"
   },
   {
     "titolo": "Awanagana",
@@ -257,7 +257,7 @@
     "titolo": "Belinda",
     "descrizione": "Avete mai ballato con Belinda?\n             \n\n             Ancora non l'avete mai fatto?...seguite le parole e il ritmo,Belinda vi conquister\u00e0!",
     "testo": "Ci si divide tra ragazzi e ragazze, si inizia facendo un tunnel umano e ogni coppia passer\u00e0 sotto, intanto si canta...\nCiao, ciao, ciao, Belinda\nCiao, ciao, ciao, Belinda\nCiao, ciao, ciao, Belinda\nvuoi ballar con me?\ni due gruppi si disporranno frontalmente e a turno il primo dei ragazzi e l'ultima delle ragazze si incontreranno al centro e seguiranno le indicazioni della canzone! Si prenderanno sotto braccio destro e girando in tondo:\nDammi la mano destra, Belinda\nDammi la mano destra, Belinda\nDammi la mano destra, Belinda\nvuoi ballar con me?\nL'altra coppia far\u00e0 lo stesso con il braccio sinistro:\nDammi la mano sinistra, Belinda\nDammi la mano sinistra, Belinda\nDammi la mano sinistra, Belinda\nvuoi ballar con me?\nLa terza coppia far\u00e0 lo stesso battendo i talloni a terra:\nBatti forte i tuoi piedini\nBatti forte i tuoi piedini\nBatti forte i tuoi piedini\nvuoi ballar con me?\nSi continua finch\u00e8 non finiscono le coppie",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20Belinda.mp3"
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/Belinda.mp3"
   },
   {
     "titolo": "Corro corro",
@@ -305,7 +305,7 @@
     "titolo": "One Banana",
     "descrizione": "Esistono diversi tipi di banane...e alcune alzano anche troppo il gomito!",
     "testo": "One Banana(sbuccia la banana)\nTwo Banana(sbuccia la banana)\nThree Banana(sbuccia la banana)\nFour(mangia la banana)\nFive Banana(butta la banana)\nSix Banana(digerisci la banana)\nSeven any more(allargare le braccia)\nA questo punto si continua con:\nGrande(aumentare i movimenti)\nPiccola(rimpicciolire i gesti)\nUbriaca e cos\u00ec via.",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20One%20Banana.mp3"
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/One%20Banana.mp3"
   },
   {
     "titolo": "Zignagna",
@@ -313,7 +313,7 @@
     "testo": "Oh al\u00e8(battere sulle ginocchia)\nZignagna oh(battere le mani)\nZignagna eh(battere sulle ginocchia)\nZignagna oh(battere le mani)\nRuotare:\nA destra e al centro\nA sinistra e al centro\nvoltarsi e al centro\nOh al\u00e8(battere sulle ginocchia)\nZignagna oh(battere le mani)\nZignagna eh(battere sulle ginocchia)\nZignagna oh(battere le mani)\nA questo punto al posto di battere le mani, farlo su quelle dei vicini e al posto di girare camminare tutti insieme a destra e poi a sinistra",
     "youtube": true,
     "video": "https://www.youtube.com/watch?v=9qj5utyueqM",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20Zignagna.mp3"
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/Zignagna.mp3"
   },
   {
     "titolo": "Blue jeans",
@@ -321,7 +321,7 @@
     "testo": "Mannaggia a \u2018sti blue jeans, stretti come si fa?\nTeik the jeans!\nInfail the jeans!\nMannaggia a \u2018sti blue jeans, stretti come si fa?\nMannaggia a \u2018sti blue jeans, stretti come si fa?\nTeik the jeans!\nInfail the jeans!\nString the cicc!\nMannaggia a \u2018sti blue jeans, stretti come si fa?\nMannaggia a \u2018sti blue jeans, stretti come si fa?\nTeik the jeans!\nInfail the jeans!\nString the cicc!\nAllacc the botton!\nMannaggia a \u2018sti blue jeans, stretti come si fa?\nMannaggia a \u2018sti blue jeans, stretti come si fa?\nTeik the jeans!\nInfail the jeans!\nString the cicc!\nAllacc the botton!\nAnd scopp the botton!!!!\nMannaggia a \u2018sti blue jeans, stretti come si fa?\nSi balla tipo can can: battito di mani e lancio della gamba in direzione del moto\nTeik the jeans!\nSi stendono le braccia coi pugni chiusi all\u2019altezza delle spalle, mimando cos\u00ec l\u2019aver preso un jeans\nInfail the jeans!\nAccentuare il movimento \u201cpedalata\u201d col quale ci si infilano i jeans (una gamba per volta!!!!) e tirarli su\nString the cicc!\nMimare il tentativo di avvicinare asola e bottone tirando indietro la pancia\nAllacc the botton!\nMimare l\u2019allacciare il bottone (sempre a panza tirata) e la chiusura di una cerniera\nAnd scopp the botton!!!!\nRilasciare la pancia e allontanare rapidamente le mani dall\u2019addome (il bottone sta in orbita)",
     "youtube": true,
     "video": "https://www.youtube.com/watch?v=Kj8qJ9iad3E",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20Take%20The%20Jeans.mp3"
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/Take%20The%20Jeans.mp3"
   },
   {
     "titolo": "Bella Per\u00f2 Sta Macchina",
@@ -336,7 +336,7 @@
     "testo": "A:Sono un pollo e mi chiamo Giovanni\nTUTTI:Sono un pollo e mi chiamo Giovanni\nA:Tu mi hai arrostito e io ti chiedo i danni.\nTUTTI:Tu mi hai arrostito e io ti chiedo i danni.\nA:Tu mi hai arrostito e mi brucia il petto.\nTUTTI:Tu mi hai arrostito e mi brucia il petto.\nA:Quello che ti chiedo \u00e8 un po di rispetto.\nTUTTI:Quello che ti chiedo \u00e8 un po di rispetto.\n-------------------------\nA:Sono un pollo e mi chiamo Arturo\nTUTTI:Sono un pollo e mi chiamo Arturo\nA:E ho sbattuto contro il muro.\nTUTTI:E ho sbattuto contro il muro.\nA:Sono diventato tutto gassoso\nTUTTI:Sono diventato tutto gassoso\nA:Perch\u00e8 ho mangiato il fungo...velenoso!\nTUTTI:Perch\u00e8 ho mangiato il fungo...velenoso!\n-------------------------\nA:Sono un pollo e mi chiamo Vito\nTUTTI:Sono un pollo e mi chiamo Vito\nA:Suono serenate da tempo infinito\nTUTTI:Suono serenate da tempo infinito\nA:Sono innamorato di una gallina\nTUTTI:Sono innamorato di una gallina\nA:che di nome fa..\nTUTTI:Cesarina!",
     "youtube": true,
     "video": "https://www.youtube.com/watch?v=XbWAeUyfFl8",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20Pollo%20Fritto.mp3"
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/Pollo%20Fritto.mp3"
   },
   {
     "titolo": "Oma G\u00e8 G\u00e8",
@@ -350,17 +350,17 @@
     "descrizione": "Avete mai conosciuto un serpente sbadato?\n             \n             Eccolo...\u00e8 proprio lui, si \u00e8 perso la sua piccola coda e sta tornando indietro sui suoi passi per ritrovarla...vogliamo aiutarlo?",
     "testo": "(girando per il cerchio)\nQuesta \u00e8 la storia del serpenteche viene gi\u00f9 dal monte\nper ritrovare la sua coda\nche aveva perso un d\u00ec.\n(Ci si ferma davanti una persona)\nMa guarda un po' sei proprio tu\nquel pezzettin del mio codin?\nS\u00ec o No?\n(A risposta affermativa la perona passa sotto le gambe di tutto il serpente e va a fare la coda)",
     "youtube": false,
-    "video": "https://www.bansiamo.it/video/la_coda_del_serpente.mp4",
-    "video-audio": "https://www.bansiamo.it/video/la_coda_del_serpente.webm"
+    "video": "https://mp4.s3.eu-de.cloud-object-storage.appdomain.cloud/la_coda_del_serpente.mp4",
+    "video-webm": "https://webm.s3.eu-de.cloud-object-storage.appdomain.cloud/la_coda_del_serpente.webm"
   },
   {
     "titolo": "I pirati",
     "descrizione": "Conoscete i pirati e le loro ambizioni nel cercare tesori nascosti...ma non conoscete questo gruppo di pirati, diciamo non troppo agili che si avventurano sul mar dei Sargassi.",
     "testo": "Quattro pirati sul mar dei Sargassi (simulare la benda)\nsopra una zattera fatta di assi (simulare le assi)\nvanno remando (remare)\ndicono loro (alzare il dito al cielo)\nalla ricerca di un grande tesoro (soldi)\nPEROO'...\nuno \u00e8 alto,(alto)\nuno \u00e8 basso,(basso)\nuno \u00e8 zoppo (colpire la caviglia con la mano)\nmentre il quarto ha una benda sull'occhio(simulare la benda)\nvanno remando(remare)\ndicono loro(alzare il dito)\nalla ricerca di un grande tesoro (soldi)",
     "youtube": false,
-    "video": "https://www.bansiamo.it/video/4pirati.mp4",
-    "video-audio": "https://www.bansiamo.it/video/4pirati.webm",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20Quattro%20Pirati.mp3"
+    "video": "https://mp4.s3.eu-de.cloud-object-storage.appdomain.cloud/4pirati.mp4",
+    "video-webm": "https://webm.s3.eu-de.cloud-object-storage.appdomain.cloud/4pirati.webm",
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/Quattro%20Pirati.mp3"
   },
   {
     "titolo": "La battaglia di Magenta",
@@ -368,42 +368,42 @@
     "testo": "Era un bel d\u00ec\nLa battaglia di Magenta\nOh che piacere\nCaricare i cavalieri.\nCavalieri, caricate!\nAl passo!\nAl trotto!\nAl galoppo!\nA una mano! (battere con una mano)\nAogni ripetizione aggiungere nua parte del corpo e battere anche con quest'ultima:\nA due mani!\nA un piede!\nA due piedi!\nA...",
     "youtube": true,
     "video": "https://www.youtube.com/watch?v=isWfKzzsjzE",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20La%20Battaglia%20Di%20Magenta.mp3"
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/La%20Battaglia%20Di%20Magenta.mp3"
   },
   {
     "titolo": "Il becco dell'anatra",
     "descrizione": "Avete mangiato voi l'anatra?\n             \n             no???come no?allora chi \u00e8 stato?\n             \n             Sono stato io, io, io....Becco mio, becco tuo.\n             \n             Becco su becco fa battibecco.",
     "testo": "Chi ha mangiato il becco dell\u2019anatra? (battere le mani a m\u00f2 di becco)\nSono stato io, io, io. (2) (indicarsi)\nBecco mio, becco tuo. (battere le mani a m\u00f2 di becco in un verso e poi nell'altro)\nBecco su becco fa battibecco.\nVieni con me a mangiare l\u2019anatra, (muoversi verso destra e poi tornare indietro)\nvieni con me tralallall\u00e0.\nChi ha mangiato l'ala dell\u2019anatra?\nSono stato io, io, io. (2)\nAla mia, ala tua,\nBecco mio, becco tuo.\nBecco su becco fa battibecco.\nVieni con me a mangiare l\u2019anatra,\nvieni con me tralallall\u00e0.\nContinuare con altre parti del corpo dell'anatra indicandone la mossa:\n(naso, occhio, gamba, tutta l'anatra...)",
     "youtube": false,
-    "video": "https://www.bansiamo.it/video/il_becco_dellanatra.mp4",
-    "video-audio": "https://www.bansiamo.it/video/il_becco_dellanatra.webm",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20Chi%20Ha%20Mangiato%20Il%20Becco%20Dell%27anatra.mp3"
+    "video": "https://mp4.s3.eu-de.cloud-object-storage.appdomain.cloud/il_becco_dellanatra.mp4",
+    "video-webm": "https://webm.s3.eu-de.cloud-object-storage.appdomain.cloud/il_becco_dellanatra.webm",
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/Chi%20Ha%20Mangiato%20Il%20Becco%20Dell%27anatra.mp3"
   },
   {
     "titolo": "La polonnese",
     "descrizione": "La polonnese \u00e8 una danza di gruppo, per essere fatta correttamente c'\u00e8 bisogno che i ragazzi siano di numero pari!",
     "testo": "Dividere i ragazzi in modo alternato tra 1 e 2,\nI numeri 1 iniziano a cantare la strofa,mentre i 2 sono fermi al loro posto.\n1)\nVuoi tu venir con me (battere le mani)\na ballar la polonnese (andare al posto dell'1 successivo)\n\u00e8 una danza bella bella bella (andare verso il centro del cerchio alzando le mani al cielo)\n\u00e8 una danza bella bella s\u00ec (tornare al proprio posto)\n2)\nNon c'\u00e8 cosa pi\u00f9 gioiosa(battere le mani)\nche ballar la polonnese (andare al posto del 2 successivo)\n\u00e8 una danza bella bella bella (andare verso il centro del cerchio alzando le mani al cielo)\n\u00e8 una danza bella bella s\u00ec.(tornare al proprio posto)",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20La%20Polonnese.mp3"
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/La%20Polonnese.mp3"
   },
   {
     "titolo": "L'omino Ugo",
     "descrizione": "Volete sapere cosa fa Ugo quando si alza?",
     "testo": "L'omino Ugo,\nsi sta svegliando,\nsi lava i denti,\nfaccia e ascelle puzzolenti,\nsaluta tutti,\ncorre nei prati,\nil suo trattore lo aspetta l\u00e0!\nUgo, con la sua semplicit\u00e0!\nUgo, viva la felicit\u00e0!",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20L%27omino%20Ugo.mp3"
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/L%27omino%20Ugo.mp3"
   },
   {
     "titolo": "Ciao ciao signorina",
     "descrizione": "Un ban da fare in cerchio, \u00e8 molto breve, ma anche simpatico!Provate anche voi a ballare l'humba humba chacha",
     "testo": "(girando per il cerchio)\nciao ciao ciao\nsignorina dove vai\nfacciamo humba humba chacha (darsi delle \"sederate\" di fianco)\nhumba humba chacha\" (2 v.)\nLa persona che \u00e8 all'interno del cerchio chiude gli occhi e inizia a girare tenendo il braccio teso in modo da indicare le altre persone del cerchio. Mentre gira urla:\"I love you\" e la persona che viene indicata alla fine della frase va all'interno del cerchio.",
     "youtube": false,
-    "video": "https://www.bansiamo.it/video/ciao_ciao_signorina.mp4",
-    "video-audio": "https://www.bansiamo.it/video/ciao_ciao_signorina.webm"
+    "video": "https://mp4.s3.eu-de.cloud-object-storage.appdomain.cloud/ciao_ciao_signorina.mp4",
+    "video-webm": "https://webm.s3.eu-de.cloud-object-storage.appdomain.cloud/ciao_ciao_signorina.webm"
   },
   {
     "titolo": "Nell'isola di creta",
     "descrizione": "La conoscete la storia dell'isola di creta...del minotauro...e cos\u00ec via?B\u00e8 fatela conoscere anche ai vostri ragazzi!",
     "testo": "Nell\u2019isola di Creta-ta (disegnare un'isola con le dita)\nc\u2019\u00e8 Mino\u2019  (farsi le corna sulla fronte)\nc\u2019\u00e8 Mino\u2019\nc\u2019\u00e8 Minosse-ss\u00e9\nAiuuto aiuuto (alzare le braccia a palmi aperti)\nMinota\u2019 Minota\u2019 Minotauro-ro  (metteri l'unicorno e la coda con le mani e fare un giro su s\u00ec stessi)\nAiuuto aiuuto\nMinota\u2019 Minota\u2019 Minotauro-ro",
-    "audio": "https://www.bansiamo.it/http%3Aaudio/Bansiamo.it%20-%20Nell%27isola%20Di%20Creta.mp3"
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/http%3ANell%27isola%20Di%20Creta.mp3"
   },
   {
     "titolo": "Do Re Mi",
@@ -429,8 +429,8 @@
     "descrizione": "Ognuno di noi ha un sogno nel cassetto...diciamo che questo \u00e8 un sogno...molto particolare!\n             \n             DIVENTARE UNA VACCA!",
     "testo": "Come vorrei (con i pugni chiusi muoversi tipo sciata)\nessere una vacca (mettersi le corna)\nda latte WOW (mungere la vacca)\ne fare tanta cacca  (piegarsi sulle ginocchia)\ne passeggiare poi nella prateria  (allungare e aprire le braccia in avanti)\ninsieme WOW\nal toro geremia (mettersi le corna ed imitare il toro)\nsapendo che\nlui ama solo me... (disegnare un cuore)\nporompompom poromporompo cacca (piegarsi sulle ginocchia)\nporompompom porompo la natura  (allungare e aprire le braccia in avanti)\nporompompom tie'\nCome vorrei\nessere un vitello\nda carne WOW\nma proprio bello bello\ne passeggiare poi nella prateria\ninsieme WOW\nalla vacca mia\ngoder con lei\ndi tutta la natura\nsapendo che\nlei ama solo me...\nporompompom ma proprio bello bello\nporompompom porompo la natura",
     "youtube": false,
-    "video": "https://www.bansiamo.it/video/vorrei_essere_una_vacca.mp4",
-    "video-audio": "https://www.bansiamo.it/video/vorrei_essere_una_vacca.webm"
+    "video": "https://mp4.s3.eu-de.cloud-object-storage.appdomain.cloud/vorrei_essere_una_vacca.mp4",
+    "video-webm": "https://webm.s3.eu-de.cloud-object-storage.appdomain.cloud/vorrei_essere_una_vacca.webm"
   },
   {
     "titolo": "Il cammello tartaran",
@@ -465,17 +465,17 @@
     "descrizione": "C'\u00e8 un lago pieno di strani animali, tra coccodrilli, piragna e piroghe...bisogna fare molta attenzione!",
     "testo": "Sul lago tanganica ca (passo in avanti allargando le braccia)\nCi stanno i caimani ni (imitare i coccodrilli)\nCaimani alquanto strani (girare l'indice su una tempia)\nCaimani a testa in gi\u00f9 (ribaltare il gesto dei coccodrilli)\nRit:\nE chiunba, e chiumba e chiumba baba (saltare alzando le braccia)\nE chiunba, e chiumba e chiumba baba (saltare alzando le braccia)\nE giri giri giri ganga (indice sulla testa e si gira su se stessi)\nAnd wash, wash, wash, wash,(allargare le braccia verso l'alto)\nSul lago tanganica ca (passo in avanti allargando le braccia)\nCi stanno i piragna gna (imitare la bocca con le mani)\nPiragna che si lagna (piangere)\nSi lagna sempre pi\u00f9 (piangere di pi\u00f9)\nRit\nSul lago tanganica ca (passo in avanti allargando le braccia)\nCi stanno le piroghe ghe (imitare la remata)\nPiroghe alquanto toghe (girare l'indice destro sulla guancia)\nPiroghe degli Zul\u00f9 (saltare e alzare le ginocchia)\nRit\nSTROFA SUPPLEMENTARE:\nSul lago tanganica ca (passo in avanti allargando le braccia)\nCi stanno tanti amici ci (allungare le mani verso gli altri)\nAmici per la pelle (tirarsi la maglietta)\nNe voglio sempre pi\u00f9 (incitare gli altri)",
     "youtube": false,
-    "video": "https://www.bansiamo.it/video/lagotanganicaca.mp4",
-    "video-audio": "https://www.bansiamo.it/video/lagotanganicaca.webm"
+    "video": "https://mp4.s3.eu-de.cloud-object-storage.appdomain.cloud/lagotanganicaca.mp4",
+    "video-webm": "https://webm.s3.eu-de.cloud-object-storage.appdomain.cloud/lagotanganicaca.webm"
   },
   {
     "titolo": "Piccolo pipistrello mio",
     "descrizione": "I pipistrelli che volano di notte, non sono tutti cos\u00ec 'svegli'...ne combinano davvero di tutti i colori!\n             \n             Chi ne pagher\u00e0 le conseguenze \u00e8 il povero Vittorio!\n             \n\n             Ps.Questo \u00e8 un ban molto lungo e con molti gesti, vi consiglio di rileggerlo molte volte prima di presentarlo ai ragazzi!",
     "testo": "Piccolo, (con i due indici)\npipistrello (imirare le ali), mio (mani sul petto).\nChe hai fatto stanotte(gesto:\"cosa?\" con entrambi le mani),\nche occhiaie che hai(indicare gli occhi).\nPiccolo, pipistrello mio,\nsediamoci(sedersi)\ne parliamone un po\u2019,\nshaba daba da (movimento alternato di bacino)\nRit:\nSvulazza, svulazza (volare)\nSvulazza, svulazza (volare)\nA volo radente (mano destra a terra imitando il volo),\nsotto un cielo fetente (tappandosi le narici).\nSvulazza, svulazza (volare)\nSvulazza, svulazza (volare)\nSvulazz, svolazz, Uhm!!!\nshaba daba da (movimento alternato di bacino)\nPiccolo, pipistrello mio,\nsei andato all\u2019obitori (dita a croce),\ne hai succhiato (indice e medio sul collo)\nVittorio (indice e medio a V).\nPiccolo, pipistrello mio,\nVittorio (indice e medio a V),\nse l\u2019\u00e8 presa con me (indicare se stessi)\nshaba daba da (movimento alternato di bacino)\nRit\nPiccolo, pipistrello mio,\ndi notte hai volato (volare)\ned un tir hai beccato (imitare l'impatto)\nPiccolo, pipistrello mio,\nVittorio (indice e medio a V),\nguidava quel tir (guidare).\nRit 2:\nAdesso ti attacchi (aggrapparsi al tram)\nE pi\u00f9 (segno di no)\nnon svulazzi (allargare le braccia)\nA volo radente (mano destra a terra imitando il volo),\nsotto un cielo fetente (tappandosi le narici).\nE sull\u2019obitorio (dita a croce),\nsvulazza (volare)\nVittorio (indice e medio e meno a V).\nSvulazza (volare)\nmolto meglio di te (indicando verso il centro)\nshaba daba da (movimento alternato di bacino)",
     "youtube": false,
-    "video": "https://www.bansiamo.it/video/piccolo_pipistrello_mio.mp4",
-    "video-audio": "https://www.bansiamo.it/video/piccolo_pipistrello_mio.webm",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20Piccolo%20Pipistrello.mp3"
+    "video": "https://mp4.s3.eu-de.cloud-object-storage.appdomain.cloud/piccolo_pipistrello_mio.mp4",
+    "video-webm": "https://webm.s3.eu-de.cloud-object-storage.appdomain.cloud/piccolo_pipistrello_mio.webm",
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/Piccolo%20Pipistrello.mp3"
   },
   {
     "titolo": "Ti ringraziamo",
@@ -495,7 +495,7 @@
     "testo": "Ciao (fare ciao)\nMi chiamo Gi\u00f2, (indicarsi)\nho una moglie, (fare 1 con la mano)\nsette figli,   (fare 7 con le mani)\ne lavoro in una fabbrica (disegnare un quadrato con gli indici)\nun giorno il capo venne da me: (alzare la mano, fare il saluto militare e indicarsi)\n\"Ehi Gi\u00f2,che c'hai da fare?\" (far toccare le dita a dire \"che stai a fa?\")\ngli dissi:\"no\" (fare no)\ne allora spingi il bottone con [parte del corpo]\ndove c'\u00e8  [parte del corpo] inserire la mano destra, sinistra, il piede destro ecc..\nLe azioni si sommano, ogni volta si aggiunge un'azione e si ripetono quelle precedenti.",
     "youtube": true,
     "video": "https://www.youtube.com/watch?v=Z6YojZ5o56s",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20Joe.mp3"
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/Joe.mp3"
   },
   {
     "titolo": "Fuego",
@@ -530,7 +530,7 @@
     "testo": "Per qusto pane bianco,\nper l\u2019acqua fresca e chiara,\nper il cibo che ci dai,\ngrazie o buon Ges\u00f9",
     "youtube": true,
     "video": "https://www.youtube.com/watch?v=pRWsQO1_U_0",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20Per%20Questo%20Pane%20Bianco.mp3"
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/Per%20Questo%20Pane%20Bianco.mp3"
   },
   {
     "titolo": "Avana delux",
@@ -576,7 +576,7 @@
     "titolo": "Per questo pan",
     "descrizione": "Una preghiera molto semplice...",
     "testo": "Per questo pan-pan-pan\nPer ogni don-don-don\nNoi ti lodiam-lodiam-lodiam Signor\nPer questo pan-pan-pan\nPer ogni don-don-don\nNoi ti lodiam-lodiam-lodiam Signor",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20Per%20Questo%20Pan%20Pan%20Pan.mp3"
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/Per%20Questo%20Pan%20Pan%20Pan.mp3"
   },
   {
     "titolo": "L'albero in mezzo al prato",
@@ -584,7 +584,7 @@
     "testo": "- c'\u00e8 un albero piantato in mezzo al prato\n- c'\u00e8 un albero piantato in mezzo al prato\n- e sopra l'albero sapete cosa c'era?\n- c'erano i rami, i rami sopra l'albero\n- c'\u00e8 un albero piantato in mezzo al prato (2volte)\n- e sopra i rami sapete cosa c'era?\n- c'erano le foglie, le foglie sopra i rami, i rami sopra l'albero\n- c'\u00e8 un albero piantato in mezzo al prato (2volte)\n- e sopra le foglie sapete cosa c'era? c'era un nido, un nido fra le foglie, le foglie sopra i rami, i rami sopra l'albero\n- c'\u00e8 un albero piantato in mezzo al prato (2volte)\n- e dentro il nido sapete cosa c'era? c'era un uccellino, un uccellino dentro il nido, un nido fra le foglie, le foglie sopra i rami, i rami sopra l'albero\n- c'\u00e8 un albero piantato in mezzo al prato (2volte)\n- e dentro l'uccellino sapete cosa c'era? c'era un cuore, un cuore d'uccellino, un uccellino dentro il nido, un nido fra le foglie, le foglie sopra i rami, i rami sopra l'albero\n- c'\u00e8 un albero piantato in mezzo al prato (2volte)\n- e dentro il cuore sapete cosa c'era? c'era il mondo, il mondo dentro il cuore, un cuore d'uccellino, un uccellino dentro il nido, un nido fra le foglie, le foglie sopra i rami, i rami sopra l'albero\n- c'\u00e8 un albero piantato in mezzo al prato (2volte)\n- e dentro il mondo sapete cosa c'era? c'era un prato, un prato dentro il mondo, il mondo dentro il cuore, un cuore d'uccellino, un uccellino dentro il nido, un nido fra le foglie, le foglie sopra i rami, i rami sopra l'albero.\n- c'\u00e8 un albero piantato in mezzo al prato (2volte) e dentro il prato sapete cosa c'era?\n- c'\u00e8 un albero piantato in mezzo al prato (2volte)\nCome mimare:\n\"C'\u00e8 un albero...\" battere il piede destro per terra, leggermente in avanti, mentre si indica il suolo.\n\"Albero...\" in piedi con le braccia sui fianchi.\n\"Rami\" alzare le braccia.\n\"Foglie\" Mani in alto con dita aperte.\n\"Nido\" mani giunte a formare un 'nido'.\n\"Uccellino\" con una mano si simula il nodo, con l'altra l'uccellino dentro al nido.\n\"Cuore\" mani giunte all'altezza del cuore.\n\"Mondo\" con le dita disegnare nell'aria una circonferenza.\n\"Prato\" con le mani disegnare nell'aria una linea retta orizzontale.",
     "youtube": true,
     "video": "https://www.youtube.com/watch?v=agnfB2FzZp0?rel=0",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20Un%20Albero%20Piantato.mp3"
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/Un%20Albero%20Piantato.mp3"
   },
   {
     "titolo": "Uomini della filibusta",
@@ -597,7 +597,7 @@
     "titolo": "O signore ti ringraziamo",
     "descrizione": "Una preghiera per i pasti ritmata!\n             \n             Solitamente per tenere il ritmo si utilizza un piano d'appoggio....diciamo UN TAVOLO!\n             \n             (anche le gambe vanno bene!)",
     "testo": "Tenere il ritmo:\nbatti le mani 2 volte sulle gambe e 1 tra loro!\nO signore ti ringraziamo\nper il pane quotidiano\nAlle-alle-luia luia\nAlle-alle-luia luia\nO signore ti ringraziamo\nper il pane quotidiano\nAlle-alle-luia luia\nAlle-alle-luia luia",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20Ti%20Ringraziamo%20Blues.mp3"
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/Ti%20Ringraziamo%20Blues.mp3"
   },
   {
     "titolo": "Fli Fly Flo",
@@ -605,7 +605,7 @@
     "testo": "A: Fly\nT: Fly\nA: Fly flay\nT: Fly flay\nA: Fly flay flo\nT: Fly flay flo\nA: Cummala cummala cummala de vista\nT: Cummala cummala cummala de vista\nA: Oh no, no, no de vista\nT: Oh no, no, no de vista\nA: Minni esta, minni esta, minni esta oh!\nT: Minni esta, minni esta, minni esta oh!\n(si ripete accelerando, cambiando espressione, ecc.)",
     "youtube": true,
     "video": "https://www.youtube.com/watch?v=yiTnK1MoSdY",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20Fli%20Fly%20Jo.mp3"
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/Fli%20Fly%20Jo.mp3"
   },
   {
     "titolo": "Il cow-boy Piero",
@@ -613,7 +613,7 @@
     "testo": "L\u00e0 nella capanna, (fare una casa con le mani)\nlaggi\u00f9 nel bosco nero, (guardare lontano)\nc\u2019era un cow-boy che si chiamava Piero.(imitare il lazo)\nE la sua cavalla (fare le orecchie)\ndormiva nella stalla, (dormire)\nmentre lui beveva allegramente il the.(bere il the!)\nMa il cow-boy Arturo (fare i baffi)\npian pian scavalca il muro (imitare)\nla cavalla a Piero gli rub\u00f2, ohib\u00f2! (simbolo universale \"rubare\")\nMa l\u2019indiano bello, (fare l'indiano!)\ncol chiodo nel cervello, (indicare la testa)\nla cavalla a Piero riport\u00f2 ohib\u00f2!(\"riportare\")\nSi continua esaltando i gesti e aumentando la velocit\u00e0: Grandissimo, Piccolissimo...\nSuggerimenti:\n1)nell'ultima strofa quando si dice \"cavalla\" e \"Piero\" rifare velocemente i gesti associati...\n2)Quando si rifanno le strofe esaltando i gesti, diminuire o aumentare anche la grandezza degli oggetti chiodo->trave/chiodo->spillo",
     "youtube": true,
     "video": "https://www.youtube.com/watch?v=em4pmDWTH_I",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20Il%20Cowboy%20Piero.mp3"
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/Il%20Cowboy%20Piero.mp3"
   },
   {
     "titolo": "Sai cosa ti dico",
@@ -646,7 +646,7 @@
     "titolo": "Oh alele",
     "descrizione": "canto di ripetizione che va incrementato alzando il volume o dimunuendolo senza un ordine preciso (es. urlando e poi cantando a bassa voce)",
     "testo": "A: OH ALELE\nT: OH ALELE\nA: ALELECICHETONGA\nT: ALELECICHETONGA\nA: AMBASSA AMBASSA AMBASSA\nT: AMBASSA AMBASSA AMBASSA\nA: OH ALE balo\u00e0 balo\u00e8\nT: OH ALE balo\u00e0 balo\u00e8",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20Oh%20Alele.mp3"
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/Oh%20Alele.mp3"
   },
   {
     "titolo": "Avevo un tic",
@@ -654,7 +654,7 @@
     "testo": "avevo un tic (si schioccano le dita di una mano, a ritmo)\nso-no-an-da-to-dal-do-tto-re-che-mi-ha-det-to-po-po-po-po-po-pom\nmuova l altra mano, muova l altra mano, la muova cosi' (si inizia a muovere anche l altra mano, a ritmo)\navevo 2 tic\nso-no-an-da-to-dal-do-tto-re-che-mi-ha-det-to-po-po-po-po-po-pom\nmuova anche la testa, muova anche la testa, la muova cosi' (si inizia a muovere anche la testa, a ritmo)\navevo 3 tic\nso-no-an-da-to-dal-do-tto-re-che-mi-ha-det-to-po-po-po-po-po-pom\nmuova anche.. il sedere / la lingua / il piede / etc",
     "youtube": true,
     "video": "https://www.youtube.com/watch?v=fCbYjoKnKwM",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20Avevo%20Un%20Tic.mp3"
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/Avevo%20Un%20Tic.mp3"
   },
   {
     "titolo": "Il rubinetto",
@@ -673,8 +673,8 @@
     "descrizione": "Questo ban \u00e8 stato inventato dalla sq. Volpi del riparto Santa Filippa Mareri \r\n\r\nQuesto ban nasce con lo scopo di coinvolgere tutta la sq. durante la presentazione dello stesso. \r\nQuindi partendo dal capo sq. ognuno lancia una parte!",
     "testo": "A: La televisione\nTutti: La televisione\nA: E' una fantastica cosa quadrata\nTutti: ripetono\nB: Che si accende col telecomando\nTutti: ripetono\nC: E ti sdrai sul divano\nTutti: ripetono\nD: Cosa c'\u00e8 in televisione?\nTutti: ripetono\nE: Programmi di cucina\nF: Le fantastiche modelle\nG: Eeee BUM TRACK E YO\nSi riparte cambiando le voci...anziano, camionisti, urlato, sotto voce ecc",
     "youtube": false,
-    "video": "https://www.bansiamo.it/video/la_televisione.mp4",
-    "video-audio": "https://www.bansiamo.it/video/la_televisione.webm"
+    "video": "https://mp4.s3.eu-de.cloud-object-storage.appdomain.cloud/la_televisione.mp4",
+    "video-webm": "https://webm.s3.eu-de.cloud-object-storage.appdomain.cloud/la_televisione.webm"
   },
   {
     "titolo": "Danza di Tabaqui 1",
@@ -695,17 +695,17 @@
     "descrizione": "\u00e8 un ban di movimento ideale per le giornate afose!",
     "testo": "guarda questo sole come picchia forte (si indica in alto e si fa segno con la mano aperta del sole che picchia)\na pensarci bene il mi faccio un blues (Si fa segno di pensare e si muove il bacino a tempo di musica)\nRIT:\nSiccit\u00e0 uoh oh, siccit\u00e0 uoh oh, (Si muovono le braccia in alto in basso a tempo di musica)\nsiccitaaaa\u00e0 uohh oh oh,\nsiccit\u00e0 in blues!\nprendo una pala scavo una fossa (si mima la presa di una pala e si finge di scavare una fossa)\nE mi butto in faccia un po' di terra mossa(con le mani si fa finta di buttarsi della terra in faccia)\nRIT\nprendo il treno vado a  Milano ( si alza il braccio destro come se stessimo su un treno e si mimano dei passi)\nin mezzo a tanta gente io mi sento deficiente (ci si spinge a vicenda)\nRIT",
     "youtube": false,
-    "video": "https://www.bansiamo.it/video/siccita.mp4",
-    "video-audio": "https://www.bansiamo.it/video/siccita.webm",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20Siccit%C3%A0%20Blues.mp3"
+    "video": "https://mp4.s3.eu-de.cloud-object-storage.appdomain.cloud/siccita.mp4",
+    "video-webm": "https://webm.s3.eu-de.cloud-object-storage.appdomain.cloud/siccita.webm",
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/Siccit%C3%A0%20Blues.mp3"
   },
   {
     "titolo": "Il ballo della frutta",
     "descrizione": "Un ban urlato, ideale per quano si hanno molte persone in cerchio!",
     "testo": "Melon! (Si spinge il bacino in avanti)\nMelon! Melon! Melon!\nQuesto \u00e8 il ballo della frutta parapapa X2 (Si corre verso il centro del cerchio e ci si cambia di posto)\nMelon! (Bacino in avanti) Sandia! (Bacino indietro)\nMelon! Sandia! Melon! Sandia! Melon! Sandia!\nQuesto \u00e8 il ballo della frutta parapapa X2\nMelon! (Bacino in avanti) Sandia! (Bacino indietro) Melocot\u00f2n! (Bacino a destra)\nMelon! Sandia! Melocot\u00f2n! Melon! Sandia! Melocot\u00f2n! Melon! Sandia! Melocot\u00f2n!\nQuesto \u00e8 il ballo della frutta parapapa X2\nMelon! (Bacino in avanti) Sandia! (Bacino indietro)  Melocot\u00f2n! (Bacino a destra) Pera! (Bacino a sinistra)\nMelon! Sandia! Melocot\u00f2n! Pera! Melon! Sandia! Melocot\u00f2n! Pera! Melon! Sandia! Melocot\u00f2n! Pera!\nQuesto \u00e8 il ballo della frutta parapapa X2\nMelon! (Bacino in avanti) Sandia! (Bacino indietro) Melocot\u00f2n! (Bacino a destra) Pera! (Bacino a sinistra) Un poquito para aqu\u00ec!  Un Poquito para aca! (Si fa finta di prendere qualcosa in alto prima con la mano destra e poi con la mano sinistra)\nMelon! Sandia! Melocot\u00f2n! Pera! Un poquito para aqu\u00ec! Un Poquito para aca! Melon! Sandia! Melocot\u00f2n! Pera! Un poquito para aqu\u00ec! Un Poquito para aca! Melon! Sandia! Melocot\u00f2n! Pera! Un poquito para aqu\u00ec! Un Poquito para aca!\nQuesto \u00e8 il ballo della frutta parapapa X2\nMelon! (Bacino in avanti) Sandia! (Bacino indietro) Melocot\u00f2n! (Bacino a destra) Pera! (Bacino a sinistra) Un poquito para aqu\u00ec! Un Poquito para aca!(Si fa finta di prendere qualcosa in alto prima con la mano destra e poi con la mano sinistra) Ramecito de uva! (Si fa finta di raccogliere qualcosa per terra)\nMelon! Sandia! Melocot\u00f2n! Pera! Un poquito para aqu\u00ec! Un Poquito para aca! Ramecito de uva! Melon! Sandia! Melocot\u00f2n! Pera! Un poquito para aqu\u00ec! Un Poquito para aca! Ramecito de uva! Melon! Sandia! Melocot\u00f2n! Pera! Un poquito para aqu\u00ec! Un Poquito para aca! Ramecito de uva!\nQuesto \u00e8 il ballo della frutta parapapa X2\nMelon! (Bacino in avanti) Sandia! (Bacino indietro) Melocot\u00f2n! (Bacino a destra) Pera! (Bacino a sinistra) Un poquito para aqu\u00ec! Un Poquito para aca! (Si fa finta di prendere qualcosa in alto prima con la mano destra e poi con la mano sinistra) Ramecito de uva! (Si fa finta di raccogliere qualcosa per terra) Cocktail de fruta! (Si fa un giro col bacino)\nMelon! Sandia! Melocot\u00f2n! Pera! Un poquito para aqu\u00ec! Un Poquito para aca! Ramecito de uva! Cocktail de fruta! Melon! Sandia! Melocot\u00f2n! Pera! Un poquito para aqu\u00ec! Un Poquito para aca! Ramecito de uva! Cocktail de fruta! Melon! Sandia! Melocot\u00f2n! Pera! Un poquito para aqu\u00ec! Un Poquito para aca! Ramecito de uva! Cocktail de fruta!",
     "youtube": false,
-    "video": "https://www.bansiamo.it/video/il_ballo_della_frutta.mp4",
-    "video-audio": "https://www.bansiamo.it/video/il_ballo_della_frutta.webm"
+    "video": "https://mp4.s3.eu-de.cloud-object-storage.appdomain.cloud/il_ballo_della_frutta.mp4",
+    "video-webm": "https://webm.s3.eu-de.cloud-object-storage.appdomain.cloud/il_ballo_della_frutta.webm"
   },
   {
     "titolo": "Onci-Onci",
@@ -719,16 +719,16 @@
     "descrizione": "Questo giardino \u00e8 custodito da un popolo molto partcolare di folletti e invitano tutti i loro amici a giocare con loro.",
     "testo": "in un giardino (si allargano le braccia) ciucciua ciucciua (si sgrullano le mani a destra e sinistra)\nche sembra quasi tropicale (si uniscono le mani e ci si abbassa facendole ondeggiare) ciucciua ciucciua\ndove ci sono i fiori (si muovono le mani verso l'alto disegnando un cerchio)\ne i ciclamini (con le mani si mima un fiore)\nCorriamo insieme nel giardino (si fa finta di correre) ciucciua ciucciua\nche sembra quasi tropicale (si uniscono le mani e ci si abbassa facendole ondeggiare) ciucciua ciucciua\ndove ci son le rooooooooooseeeee (si muovono le mani verso l'alto disegnando un cerchio)\ne dove c'\u00e8 l'amore (si mima il battito del cuore)",
     "youtube": false,
-    "video": "https://www.bansiamo.it/video/il_giardino.mp4",
-    "video-audio": "https://www.bansiamo.it/video/il_giardino.webm"
+    "video": "https://mp4.s3.eu-de.cloud-object-storage.appdomain.cloud/il_giardino.mp4",
+    "video-webm": "https://webm.s3.eu-de.cloud-object-storage.appdomain.cloud/il_giardino.webm"
   },
   {
     "titolo": "Plin Plin",
     "descrizione": "ban da fare in cerchio, si mimano delle persone che si guardano al specchio!",
     "testo": "Plin plin plin plin plin plin plin plin plin plin plin  plin plin plin plin  plin plin plin plin\nplin plin plin plin plin plin plin plin plin  plin plin plin plin pliiii\n(si gira per il cerchio muovendo gli indici s\u00f9 e gi\u00f9)\n(ci si ferma davanti una persona e si fa un urlo) aaaaaaaaaaahhhhhh\n(questa persona fa un altro urlo) aaaaaaaaaaaaaahhhhhhhh\n(si cambia l'ordine della fila, l'ultimo diventa il primo e si ricomincia)",
     "youtube": false,
-    "video": "https://www.bansiamo.it/video/plin_plin.mp4",
-    "video-audio": "https://www.bansiamo.it/video/plin_plin.webm"
+    "video": "https://mp4.s3.eu-de.cloud-object-storage.appdomain.cloud/plin_plin.mp4",
+    "video-webm": "https://webm.s3.eu-de.cloud-object-storage.appdomain.cloud/plin_plin.webm"
   },
   {
     "titolo": "El arbol",
@@ -747,8 +747,8 @@
     "descrizione": "Questo ban \u00e8 molto usato nelle varie feste di paese e pgni volta ci si diverte molto...",
     "testo": "Prima di iniziare il ban una coppia si mette al centro del cerchio,uno di fronte all\u2019altro e si tengono per mano .\nTacco punta tacco punta   (uno di fronte all\u2019altro si alza prima il tacco poi la punta del piede a specchio rispetto al compagno di fronte )\n1,2,3  lall\u00e0   (ci si sposta,mano nella mano,verso dx)\nTacco punta tacco punta  (si alza tacco poi la punta a specchio rispetto al compagno di fronte)\n1,2,3  lall\u00e0  (ci si sposta verso sx)\nLallall\u00e0  (a tempo di musica si battono le mani 3 volte sulle proprie gambe)\nLallall\u00e0  (si battono le mani 3 volte a tempo di musica)\nL\u00e0  (si battono le mani 1 volta cotro quelle del vicino)\nLallalla (si fa un giro su se stessi)\nLallall\u00e0  (si battono le mani 3 volte contro quelle del vicino)\n(tutto questo si ripete 2 volte)",
     "youtube": false,
-    "video": "https://www.bansiamo.it/video/tacco_punta.mp4",
-    "video-audio": "https://www.bansiamo.it/video/tacco_punta.webm"
+    "video": "https://mp4.s3.eu-de.cloud-object-storage.appdomain.cloud/tacco_punta.mp4",
+    "video-webm": "https://webm.s3.eu-de.cloud-object-storage.appdomain.cloud/tacco_punta.webm"
   },
   {
     "titolo": "onda",
@@ -759,7 +759,7 @@
     "titolo": "Tocca la spalla",
     "descrizione": "Un bans da cantare tutti insieme in cerchio. I gesti..li dice la canzone!",
     "testo": "Tocca la spalla, tocca il ginocchio\nficca un dito dentro l'occhio\ntira il naso, fai ganascino\ntorci l'orecchio pian pianino!\nRIT.lallall\u00e0 lallall\u00e0 lallall\u00e0 lallall\u00e0 (x2) [si alternano 3 battiti di mani e 3 battiti sulle ginocchia]\nPesta un piede, stringi la mano\nd\u00ec: \"Sei scemo!\" da buon villano\ntira un calcio, sferra un pugno\nchiedi perdono baciando il grugno [smack! smack!]\nRIT.\n[Si ripete facendo i gesti prima sul vicino di destra, poi quello di sinistra e infine su entrambi]",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20Tocca%20La%20Spalla.mp3"
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/Tocca%20La%20Spalla.mp3"
   },
   {
     "titolo": "yattata",
@@ -771,30 +771,30 @@
     "descrizione": "Divertentissima \"danza\" da fare con i piedi sulle note di Oleanna!",
     "testo": "Ole oleanna\nole oleannana\nole ole ole ole\nole oleannana.\nOle, Oleanna\nvecchia terra del Far-West\ntra le terre la pi\u00f9 strana\ntutta ti vorrei per me. RIT\nShe-nengo il caballero,\nquando ad Oleanna fu\nmise in piedi un grattacielo\ncon le fondamenta in su. RIT\nLe mucche campagnole\ntutte migran in citt\u00e0,\nvi frequentano le scuole\ndove imparano a ballar. RIT\nSe un vino tu vuoi bere\nche ti faccia inebriar\ndalle pompe di un pompiere\nnon ce l'hai che da succhiar. RIT\nOle, Oleanna,\nsei rimasta nel mio cuor\nsei la terra dove il cielo\nsplende sempre e ride il sol. RIT",
     "youtube": false,
-    "video": "https://www.bansiamo.it/video/oleanna.mp4",
-    "video-audio": "https://www.bansiamo.it/video/oleanna.webm"
+    "video": "https://mp4.s3.eu-de.cloud-object-storage.appdomain.cloud/oleanna.mp4",
+    "video-webm": "https://webm.s3.eu-de.cloud-object-storage.appdomain.cloud/oleanna.webm"
   },
   {
     "titolo": "Danza indiana",
     "descrizione": "Danza in stile \"indiano\", molto suggestiva! Guardatevi il video, non \u00e8 difficile!",
     "testo": "UOMINI: yeppa e tai tai yeppa e tuki tuki yeppa (da ripetere all'infinito)\nDONNE: yeppa e tai tai yeeee, yeppa e tai tai yeee. Yeppa e tai tai yeppa, e tuki tuki yepa, e tai tai yeee (da ripetere all'infinito)",
     "youtube": false,
-    "video": "https://www.bansiamo.it/video/danzaindiana.mp4",
-    "video-audio": "https://www.bansiamo.it/video/danzaindiana.webm"
+    "video": "https://mp4.s3.eu-de.cloud-object-storage.appdomain.cloud/danzaindiana.mp4",
+    "video-webm": "https://webm.s3.eu-de.cloud-object-storage.appdomain.cloud/danzaindiana.webm"
   },
   {
     "titolo": "Il capitano Acab",
     "descrizione": "Per tutti quelli che non conoscono la storia di Moby Dick e del capitano Acab, ecco un divertente ban che racconta la loro storia!",
     "testo": "Oooooh issa issa oooooh issa issa oooooh\nUna coppia di belle gambe aveva il capitano\nPrima di incontrare Moby Dick\nSette mari non basteranno\nLe tempeste non fermeranno\nIl capitano Acab\nE quando faccia a faccia la balena incontrer\u00e0\nNel colmo del furore le dir\u00e0\u00e0\u00e0\u00e0\u00e0\nDammi una pinna\nAl posto della gamba che mi hai preso\nDammi una pinna\nAl posto della gamba che mi hai preso\nSolo allora sar\u00f2 in pace con te!\nRIPETERE AUMENTANDO LA VELOCITA'!",
     "youtube": false,
-    "video": "https://www.bansiamo.it/video/Capitanoacab.mp4",
-    "video-audio": "https://www.bansiamo.it/video/Capitanoacab.webm"
+    "video": "https://mp4.s3.eu-de.cloud-object-storage.appdomain.cloud/Capitanoacab.mp4",
+    "video-webm": "https://webm.s3.eu-de.cloud-object-storage.appdomain.cloud/Capitanoacab.webm"
   },
   {
     "titolo": "Per gli uccellini",
     "descrizione": "Veloce preghiera da pasto!",
     "testo": "E per gli uccellini,\nper i fiorellini,\nper la gioia che \u00e8 nei nostri cuor\nnoi ti lodiamo\nnoi ti lodiamo\nnoi ti lodiam Signor.",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20User_e%20per%20gli%20uccellini.mp3"
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/User_e%20per%20gli%20uccellini.mp3"
   },
   {
     "titolo": "Ciucciua",
@@ -818,8 +818,8 @@
     "descrizione": "Un ban sulle note di Everybody dance now dei C & C Music factory!Adatto per testare la vostra coordinazione!",
     "testo": "Everybody dance now!\nCosce \u2013 mani \u2013 cosce\nTwo times!\nCosce cosce - mani \u2013 cosce\nThree times!\nCosce x2 \u2013 mani- cosce x3 \u2013 mani \u2013 cosce x3 \u2013 mani cosce.\nLet\u2019s go now!\n(ogni passaggio implica un battito di mani - )\nDx \u2013 sx, sx - dx  dx \u2013 sx sx sx, - dx \u2013 sx, sx \u2013.\nEve-ry-bo-dy!\nCosce - incrocio - cosce \u2013 schiocco\nBum clic clap, bumbum clic clap clic, bum clic clap, bumbum clic clap.\nPetto dita mano, petto petto dita mano dita, petto dita mano, petto petto dita mano.\nTam tam tam, tamtam tamtam tamtam, tam tam tam, tamtam tamtam tam.\nDx sx mani, dx sx, dx sx mani mani, dx sx mani, dx sx dx sx mani.\nShh!\nPetto dita mano, petto petto dita mano dita, petto dita mano, petto petto dita mano.\nDx sx mani, dx sx, dx sx mani mani, dx sx mani, dx sx dx sx mani.\nWow!",
     "youtube": false,
-    "video": "https://www.bansiamo.it/video/everybody_dance_now.mp4",
-    "video-audio": "https://www.bansiamo.it/video/everybody_dance_now.webm"
+    "video": "https://mp4.s3.eu-de.cloud-object-storage.appdomain.cloud/everybody_dance_now.mp4",
+    "video-webm": "https://webm.s3.eu-de.cloud-object-storage.appdomain.cloud/everybody_dance_now.webm"
   },
   {
     "titolo": "Luce rossa",
@@ -832,7 +832,7 @@
     "testo": "Disposizione in CERCHIO:\nZammi Nammina eh eh (braccia distese con pollici in alto e\nsuccessivamente in basso)\nWaka Waka eh eh (braccia conserte oscillandole a Dx e Sx a\nmo' di onda)\nZammi Nammina   (braccia distese con pollici in alto)\nZangalewa       (braccia distese con pollici in gi\u00f9)\nHai noa ahah    (braccia conserte oscillandole a Dx e Sx a mo' di\nonda)\nGiambooooooo     (prendere per mani i vicini e camminare in avanti)\nGiambooooooo     (prendere per mani i vicini e camminare indietro)\nHai noa ahah     (braccia conserte oscillandole a Dx e Sx a mo' di\nonda)\nRipetere il bans girandosi verso DESTRA\n(ripetendo tutti i movimenti )    sino a \"Hai noa ahah\"\nGirarsi con lo sguardo verso il centro del cerchio,\nprendersi per mano e compiere gli ultimi tre movimenti.\nRipetere il bans girandosi verso SINISTRA\n(ripetendo tutti i movimenti)    sino a \"Hai noa ahah\"\nGirarsi con lo sguardo verso il centro del cerchio,\nprendersi per mano e compiere gli ultimi tre movimenti.",
     "youtube": true,
     "video": "https://www.youtube.com/watch?v=2CEhADCSgx8",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20Sammi%20Dammina.mp3"
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/Sammi%20Dammina.mp3"
   },
   {
     "titolo": "papparappara piri pu",
@@ -849,8 +849,8 @@
     "descrizione": "Questo ban \u00e8 ambientato in uno stagno e il cerchio rappresenta una famiglia di rane.Ci si mette tutti in cerchio abbastanza vicini, girandosi tutti verso destra e mettendo le mani sulle spalle di colui che si ha davanti. Il bansista lancier\u00e0 la prima frase alla quale tutti risponderanno \"bac\u00ec!\" muovendo contemporaneamente un piede in avanti. Il bansista lancier\u00e0 una seconda frase alla quale si risponder\u00e0 tutti insieme di nuovo \"bac\u00ec!\" muovendo l'altro piede in avanti. alla terza frase si risponder\u00e0 \"bac\u00ec bac\u00ec bac\u00ec! bara bac\u00ec bac\u00ec bac\u00ec!\" e nel frattempo si camminer\u00e0 in avanti mantenendo il cerchio.",
     "testo": "Bansista: arriva mamma rana!\ntutti: bac\u00ec! (si muove un piede in avanti)\nB: arriva pap\u00e0 rana!\nt: bac\u00ec!( si muove in avanti l'altro piede)\nB: arrivano i girini!\nT :bac\u00ec bac\u00ec bac\u00ec! bara bac\u00ec bac\u00ec bac\u00ec!!(si cammina in avanti mantenendo il cerchio)\nsi pu\u00f2 ripetere mettendo le mani sui fianchi, sulle ginocchia, sulle caviglie, sui piedi di colui che abbiamo davanti.",
     "youtube": false,
-    "video": "https://www.bansiamo.it/video/baci_baci_baci.mp4",
-    "video-audio": "https://www.bansiamo.it/video/baci_baci_baci.webm"
+    "video": "https://mp4.s3.eu-de.cloud-object-storage.appdomain.cloud/baci_baci_baci.mp4",
+    "video-webm": "https://webm.s3.eu-de.cloud-object-storage.appdomain.cloud/baci_baci_baci.webm"
   },
   {
     "titolo": "La mucca nella prateria",
@@ -896,9 +896,9 @@
     "descrizione": "oltre ai movimenti proposti possono essere inseriti altri a fantasia dell'animatore",
     "testo": "(a)         (b)\nQuando si pianta la bella polenta\n(b)            (a)\nla bella polenta si pianta cos\u00ec oh oh oh\n(c)                 (d)\nla bella polenta cos\u00ec.\n(e)\nQuando germoglia la bella polenta\n(e)\nla bella polenta germoglia cos\u00ec\n(a)\nsi pianta cos\u00ec oh oh oh\n(c)                (d)\nla bella polenta cos\u00ec.\n(f)\nQuando si sgrana la bella polenta\nla bella polenta si sgrana cos\u00ec\ngermoglia cos\u00ec\nsi pianta cos\u00ec oh oh oh\nla bella polenta cos\u00ec.\n(g)\nQuando si gira la bella polenta\nla bella polenta si gira cos\u00ec\nsi sgrana cos\u00ec\ngermoglia cos\u00ec\nsi pianta cos\u00ec oh oh oh\nla bella polenta cos\u00ec.\n(h)\nQuando si taglia la bella polenta\nla bella polenta si taglia cos\u00ec\nsi gira cos\u00ec\nsi sgrana cos\u00ec\ngermoglia cos\u00ec\nsi pianta cos\u00ec oh oh oh\nla bella polenta cos\u00ec.\n(i)\nQuando si mangia la bella polenta\nla bella polenta si magia cos\u00ec\nsi taglia cos\u00ec\nsi gira cos\u00ec\nsi sgrana cos\u00ec\ngermoglia cos\u00ec\nsi pianta cos\u00ec oh oh oh\nla bella polenta cos\u00ec.\nMOVIMENTI :\n(a)    fare un passo verso destra, chinandosi in avanti come per piantare\nun seme\n(b)    fare un passo verso sinistra, come per piantare un seme\n(c)    agitrare la mano sinistra sulla pancia\n(d)    battere le mani tre volte\n(e)    sollevare le mani da terra coi palmi rivolti verso l'alto e muovendo le dita\n(f)     fare il gesto di sgranare una pannocchia\n(g)    in ginocchio agitare il mestolo in una pentola davanti a se\n(h)    tagliare la polenta con la destra\n(i)     portare la mano destra alla bocca",
     "youtube": false,
-    "video": "https://www.bansiamo.it/video/la_bella_polenta.mp4",
-    "video-audio": "https://www.bansiamo.it/video/la_bella_polenta.webm",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20La%20Bella%20Polenta.mp3"
+    "video": "https://mp4.s3.eu-de.cloud-object-storage.appdomain.cloud/la_bella_polenta.mp4",
+    "video-webm": "https://webm.s3.eu-de.cloud-object-storage.appdomain.cloud/la_bella_polenta.webm",
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/La%20Bella%20Polenta.mp3"
   },
   {
     "titolo": "O Sanpaolo",
@@ -911,7 +911,7 @@
     "testo": "Classico movimento da gallina con le braccia ad angolo e, al ritornello, far finta di CIAPAR la gallina: per il resto impera la fantasia.",
     "youtube": true,
     "video": "https://www.youtube.com/watch?v=VYPfmFYA65A",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20Ciapa%20la%20galeina.mp3"
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/Ciapa%20la%20galeina.mp3"
   },
   {
     "titolo": "Zumpap\u00e0",
@@ -935,16 +935,16 @@
     "descrizione": "Chi lancia il Ban comincia a girare nel cerchio cantando la canzoncina per poi chiamare un membro del cerchio e farlo aggiungere alla fila continuando a cantare e a fare le mosse.",
     "testo": "Padre Nettuno (camminando in tondo) ciccibum (sculettando di lato) cibum! (sculettando avanti e dietro) Nettuno dammi una mano (camminando in tondo) ciccibum (sculettando di lato) cibum! (sculettando avanti e dietro) Dammi una mano, Nettuno dammi una mano (camminando in tondo).\nPadre nettuno (camminando in tondo) ciccibum (sculettando di lato) cibum (sculettando avanti e dietro) Nettuno manda \"nome della persona es:Mario\" ciuccibum (sempre cm sopra) cibum! (sempre come sopra) mandami Mario, Nettuno mandami Mario (camminando in tondo).\nPoi il Ban continua chiamando altre persone e ripetendo le strofe.",
     "youtube": false,
-    "video": "https://www.bansiamo.it/video/padre_nettuno.mp4",
-    "video-audio": "https://www.bansiamo.it/video/padre_nettuno.webm"
+    "video": "https://mp4.s3.eu-de.cloud-object-storage.appdomain.cloud/padre_nettuno.mp4",
+    "video-webm": "https://webm.s3.eu-de.cloud-object-storage.appdomain.cloud/padre_nettuno.webm"
   },
   {
     "titolo": "Rotola gi\u00f9 dai monti",
     "descrizione": "In questo Ban si sta tutti in cerchio e si canta la canzone per presentare i membri del cerchio in quanto ogni volta che si canta la strofa, poi, si nomina un ragazzo e si continua la canzone chiamando tutti.",
     "testo": "Rotola gi\u00f9 dai monti (si frullano in avanti le mani), scivola verso il mare (sempre con le mani si fa un'onda in avanti), vado di qua e di la a far (si fanno delle onde con le mani prima a destra poi a sinistra) comunit\u00e0 !(movimento circolare verso l'alto con le mani)\nsi ripete la strofa\nc'\u00e8 \"nome della persona es:luca\",c'\u00e8 luca,a far comunit\u00e0!(battendo le mani) (si ripete 4 volte)\nsi ricomincia con rotola gi\u00f9 dai monti.",
     "youtube": false,
-    "video": "https://www.bansiamo.it/video/rotola_giu_dai_monti.mp4",
-    "video-audio": "https://www.bansiamo.it/video/rotola_giu_dai_monti.webm"
+    "video": "https://mp4.s3.eu-de.cloud-object-storage.appdomain.cloud/rotola_giu_dai_monti.mp4",
+    "video-webm": "https://webm.s3.eu-de.cloud-object-storage.appdomain.cloud/rotola_giu_dai_monti.webm"
   },
   {
     "titolo": "Laurenzia",
@@ -952,7 +952,7 @@
     "testo": "Laurenzia\nLaurenzia, cara Laurenzia mia,\nquando staremo di nuovo insiem\nil luned\u00ec! Ah se fosse gi\u00e0 luned\u00ec\ne avessi la mia Laurenzia,\nLaurenzia mia.\nLaurenzia, cara Laurenzia mia,\nquand'\u00e8 che staremo di nuovo insiem\nil marted\u00ec! Ah se fosse gi\u00e0 lune-marted\u00ec\ne avessi la mia Laurenzia,\nLaurenzia mia.\n(si continua con i giorni della settimana. Ogni volta che si nomina Laurenzia e quando si nomina un giorno della settimana si piegano le ginocchia )",
     "youtube": true,
     "video": "https://www.youtube.com/watch?v=z3h_sLpcDqY",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20Laurenzia%20Cara%20Laurenzia.mp3"
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/Laurenzia%20Cara%20Laurenzia.mp3"
   },
   {
     "titolo": "In un giardino(versione altre lingue)",
@@ -988,28 +988,28 @@
     "titolo": "Il fachiro casimiro",
     "descrizione": "La storia del fachiro Casimiro",
     "testo": "Do\nCommo commo lemme lemme\nSol\nviene da Gerusalemme\nil fachiro Casimiro\nDo\nche ipnotizza la citt\u00e0\nDo\nCumbala - cumbala \u2013 cumbalall\u00e0\nDo                              Sol\nO Abdull\u00e0 me s'addormenta 'sto braccio qua\nDo\nCommo commo lemme lemme...\nDo                           Sol\nO Abdull\u00e0 me s'addormenta 'sta gamba qua\n(Proseguire con altre parti del corpo)",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20Il%20Fachiro%20Casimiro.mp3"
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/Il%20Fachiro%20Casimiro.mp3"
   },
   {
     "titolo": "Guendalina amore mio",
     "descrizione": "La conoscete la storia di Guendalina?",
     "testo": "Vagando per le steppe e intorno al Polo\nsugli argini del Nilo e del Mar nero\nil Papero Augusto un d\u00ec trov\u00f2\nla papera che il cuore suo streg\u00f2\nLe piume di un tailleur di raso nero\ndue occhi grandi e azzurri come il cielo\ndue riccioli alla Marylin Monroe\nuno sguardo e Augusto si incendi\u00f2.\nGuendalina amore amore mio\nsenza di te qu\u00e0 qua\nmio Dio\nla vita mia\nche senso ha\nquaraquaraquaqu\u00e0.\nPassarono due anni entusiasmanti\nParigi Vienna e il Golfo degli Amanti\ngiravano il mondo senza meta\nfacevano l'amore e la dieta.\nMa una mattina triste di settembre\nAugusto si svegli\u00f2 un po' stranamente\nsul tavolo un biglietto lui trov\u00f2\ncon un tacchino in Australia lei scapp\u00f2.\nGuendalina amore...",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20User_Guendalina.mp3"
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/User_Guendalina.mp3"
   },
   {
     "titolo": "Il duca di barnab\u00f2",
     "descrizione": "La storia del duca di Barnab\u00f2.",
     "testo": "Il duca Barnab\u00f2 aveva una compagnia\nche stava su o gi\u00f9 oppure a mezzavia.\nQuando era su era su\nQuando era gi\u00f9 era gi\u00f9\nQuando era a mezzavia\nnon era n\u00e9 su n\u00e9 gi\u00f9.\nSi canta pi\u00f9 volte a velocit\u00e0 crescente.   Alla parola \"gi\u00f9\" si flettono le   ginocchia completamente. Alla parola \"su\" si torna in piedi. Alla parola \"mezzavia\" si flettono le ginocchia a met\u00e0.",
     "youtube": false,
-    "video": "https://www.bansiamo.it/video/il_duca_di_barnabo.mp4",
-    "video-audio": "https://www.bansiamo.it/video/il_duca_di_barnabo.webm",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20Il%20Duca%20Di%20Barnabo.mp3"
+    "video": "https://mp4.s3.eu-de.cloud-object-storage.appdomain.cloud/il_duca_di_barnabo.mp4",
+    "video-webm": "https://webm.s3.eu-de.cloud-object-storage.appdomain.cloud/il_duca_di_barnabo.webm",
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/Il%20Duca%20Di%20Barnabo.mp3"
   },
   {
     "titolo": "Banana cocco baobab",
     "descrizione": "Se sei dell'opinione che vivere sugl'alberi sia meglio che continuare a preoccuparsi...questo ban fa per te!",
     "testo": "Ero stanco di essere un uomo di citt\u00e0\nin questa gabbia di cemento\na vivere come si fa.\nTanti problemi inutili,\ntroppe preoccupazioni\ne\u2019 meglio stare sugli alberi\ne mettersi a penzoloni.\nUh-uh, ah-ah:    3V.\nBanana cocco baobab\nBanana:13 V  cocco baobab\nAndare con le liane invece che col tram\nal posto del vestito\nuna pelliccia di Pier-Tarzan\nE poi stare sugli alberi\ne tirare le banane in testa ai coccodrilli\nai bufali ai cinghiali e fare:\nUh-uh, ah-ah...",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20Banana%20Cocco%20Baobab.mp3"
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/Banana%20Cocco%20Baobab.mp3"
   },
   {
     "titolo": "Himalaya",
@@ -1021,9 +1021,9 @@
     "descrizione": "Il bansista conduce il canto, ma il gruppo copier\u00e0 contemporaneamente i suoi gesti.\n             \n\n             Questo bans non prevede quindi un 'botta e risposta' ma un'interazione contemporanea.",
     "testo": "Io ho un tic\nTatapum Tatapum\nChe fa cos\u00ec\nTatapum Tatapum\nSono andato dal dottore\nTatapum Tatapum\nChe mi ha detto: 'Fai cos\u00ec!'\nTatapum Tatapum\nIo ho due tic\nTatapum Tatapum\n.....\nIo ho tre - quattro- cinque tic\nUltima strofa\nIo sono un tic\nTatapum Tatapum etc...",
     "youtube": false,
-    "video": "https://www.bansiamo.it/video/io_ho_un_tic.mp4",
-    "video-audio": "https://www.bansiamo.it/video/io_ho_un_tic.webm",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20Io%20ho%20un%20tic.mp3"
+    "video": "https://mp4.s3.eu-de.cloud-object-storage.appdomain.cloud/io_ho_un_tic.mp4",
+    "video-webm": "https://webm.s3.eu-de.cloud-object-storage.appdomain.cloud/io_ho_un_tic.webm",
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/Io%20ho%20un%20tic.mp3"
   },
   {
     "titolo": "Trita el giaz",
@@ -1037,16 +1037,16 @@
     "descrizione": "Il ban racconta della pedalata di un orsetto, \u00e8 un ban molto semplice.",
     "testo": "Un orsetto sta   (mani sulla testa a fare l'orsetto e poi davanti al corpo)\nin biclietta va  (girare le mani a fare la bicicletta\ncon la coda fa  (simulare la coda con la mano)\nFirul\u00ec firul\u00e0  (muovere la coda a destra e sinistra girandosi sul fianco destro)\nAd ogni ripetizione si toglie una parola, fino ad arrivare a farlo muti.",
     "youtube": false,
-    "video": "https://www.bansiamo.it/video/orsetto_in_bicicletta.mp4",
-    "video-audio": "https://www.bansiamo.it/video/orsetto_in_bicicletta.webm"
+    "video": "https://mp4.s3.eu-de.cloud-object-storage.appdomain.cloud/orsetto_in_bicicletta.mp4",
+    "video-webm": "https://webm.s3.eu-de.cloud-object-storage.appdomain.cloud/orsetto_in_bicicletta.webm"
   },
   {
     "titolo": "Famiglia Sapo",
     "descrizione": "una famiglia alquanto particolare con personaggi ancora pi\u00f9 particolari...",
     "testo": "E c'era la famiglia Sapo  (battere le mani e un piede)\ne c'era pap\u00e0 Sapo\nSapo Sapo Sapo Sapo Sa (avanzare fumando una sigaretta)\nSapo Sapo Sapo Sapo Sa  (indietreggiare fumando una sigaretta)\nE c'era la famiglia Sapo\ne c'era mamma Sapo\nSapo Sapo Sapo Sapo Sa  (avanzare imitando la mamma che si arrabbia)\nSapo Sapo Sapo Sapo Sa  (indietreggiare imitando la mamma che si arrabbia)\nE c'era la famiglia Sapo\ne c'era figlio Sapo\nSapo Sapo Sapo Sapo Sa  (avanzare con le mani sulle orecchie)\nSapo Sapo Sapo Sapo Sa  (indietreggiare  con le mani sulle orecchie)\nE c'era la famiglia Sapo\ne c'era figlia Sapo\nSapo Sapo Sapo Sapo Sa  (avanzare girando su se stessi con le braccia sulla testa stile ballerina)\nSapo Sapo Sapo Sapo Sa  (indietreggiare girando su se stessi con le braccia sulla testa stile ballerina)\nE c'era la famiglia Sapo\ne c'era superman Sapo\nSapo Sapo Sapo Sapo Sa  (avanzare con il braccio teso e il pugno chiuso come superman)\nSapo Sapo Sapo Sapo Sa  (indietreggiare con il braccio teso e il pugno chiuso come superman)",
     "youtube": false,
-    "video": "https://www.bansiamo.it/video/famiglia_sapo.mp4",
-    "video-audio": "https://www.bansiamo.it/video/famiglia_sapo.webm"
+    "video": "https://mp4.s3.eu-de.cloud-object-storage.appdomain.cloud/famiglia_sapo.mp4",
+    "video-webm": "https://webm.s3.eu-de.cloud-object-storage.appdomain.cloud/famiglia_sapo.webm"
   },
   {
     "titolo": "La playa",
@@ -1078,7 +1078,7 @@
     "titolo": "Tralallalero",
     "descrizione": "Sei sicuro di reggere la velocit\u00e0 dei movimenti?",
     "testo": "Tralallalero tralallalero\n(batti 2 volte mani su ginocchia\nbatti 2 volte mano dx su spalla sx\nbatti 2 volte mani su ginocchia\nbatti 2 volte mano sx su spalla dx)\nTralallalero lero lero la\n(batti 1 volta mani su ginocchia\nbatti 1 volta mano dx su spalla sx\nbatti 1 volta mani su ginocchia\nbatti 1 volta mano sx su spalla dx\nbatti 1 volta mani su ginocchia\nbatti 1 volta mani incrociate sulle ginoc.\nbatti 1 volta mani su ginocchia schiocca le dita)\nTralallalero tralallalero tralallalero lall\u00e0\n(battere mani come piatti da orchestra dx dall\u2019alto sx dal basso\nbattere le mani come piatti da orchestra sx dall\u2019alto dx dal basso\nbraccia conserte ma gomiti alti\ncome prima andando avanti con busto\ncome prima andando dietro col busto\nsimula onda con braccio sx simula onda con braccio dx)\nBodon bodon bodon\n(ancheggia e muovi braccia)",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20Trallallallero.mp3"
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/Trallallallero.mp3"
   },
   {
     "titolo": "Iattata",
@@ -1094,7 +1094,7 @@
     "titolo": "Caterina alzati",
     "descrizione": "Ce la farai a reggere Caterina?",
     "testo": "RIT: Caterina alzati Caterina siediti Caterina oplalla Caterina oplalla (X2)\nAn: E chi \u00e8 nato in gennaio si alzi pure in pi\u00e8\nTutti: E chi \u00e8 nato in gennaio si alzi pure in pi\u00e8 E prenda la sua mano in man La alzi pure fino al ciel E alzala alzala alzala\u2026. RIT (con tutti i mesi)",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20Caterina%20Alzati.mp3"
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/Caterina%20Alzati.mp3"
   },
   {
     "titolo": "Nippon",
@@ -1116,8 +1116,8 @@
     "descrizione": "Balla con noi ti divertirai!",
     "testo": "Quando un cristiano baila baila baila baila Quando un cristiano baila baila baila bien\nPies \u2026. (piedi)\nRotilla\u2026 (rotula)\nCareira\u2026 (fianchi)\nCintura\u2026 (cintura)\nCodito\u2026 (sedere)\nEspalla (spalla)\nCaveza\u2026 (testa)\nmovimenti:\nBaila = muovere il sedere\nsi muove la parte del corpo indicata",
     "youtube": false,
-    "video": "https://www.bansiamo.it/video/CristianoBaila.mp4",
-    "video-audio": "https://www.bansiamo.it/video/CristianoBaila.webm"
+    "video": "https://mp4.s3.eu-de.cloud-object-storage.appdomain.cloud/CristianoBaila.mp4",
+    "video-webm": "https://webm.s3.eu-de.cloud-object-storage.appdomain.cloud/CristianoBaila.webm"
   },
   {
     "titolo": "la danza delle streghe",
@@ -1140,13 +1140,13 @@
     "titolo": "Padre Abramo",
     "descrizione": "Sei tu l' Abramo giusto?",
     "testo": "Padre Abramo ha tanti figli\nEh (giro su se stessi)\u2026\nhop (mani in alto)\nHa tanti figli padre Abramo\neh hop\nE tutti insieme camminiamo\nSulla strada dell\u2019amor\nBo bom bo bo bo bom bo bo\neh hop",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20Padre%20Abramo.mp3"
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/Padre%20Abramo.mp3"
   },
   {
     "titolo": "Sammi dammina",
     "descrizione": "Bans non molto facile da eseguire ma appena ci prendi dimestichezza \u00e8 divertentissimo",
     "testo": "Sammi dammina (gomitata indietro braccio dx)\nEh eh (gomitata indietro braccio sx)\nUakka uakka (mano nella mano colpetti sulla spalla dx)\nEh eh ehe (mano nella mano colpetti sulla spalla sx)\nSammi dammina (mano nella mano colpo su coscia dx)\nSanka leua (mano nella mano colpo su coscia sx)\nAnnaua (mani sui fianchi ruota il bacino)\nAh ah (battono le mani 2 volte)\nYangoooo (onda con la mano dx)\nYangoooo (onda con la mano sx)\nSammi dammina sanka leua Annaua ah ah",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20Sammi%20Dammina.mp3"
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/Sammi%20Dammina.mp3"
   },
   {
     "titolo": "Camerier porta un caff\u00e8",
@@ -1171,7 +1171,7 @@
     "testo": "Il mio pinguino blu\nIl mio pinguino blu\nsta col nasino in s\u00f9\nil mio pinguino blu sta col nasino in s\u00f9.\nIl mio pinguino blu\nsta col nasino in s\u00f9\nil mio pinguino blu sta col nasino in s\u00f9.",
     "youtube": true,
     "video": "https://www.youtube.com/watch?v=JSvTsVWk_9g",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20Il%20Mio%20Pinguino%20Blu.mp3"
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/Il%20Mio%20Pinguino%20Blu.mp3"
   },
   {
     "titolo": "Leone di cleopatra",
@@ -1183,75 +1183,75 @@
     "descrizione": "Ogni ripetizioe del testo del ban \u00e8 da effettuarsi con un diverso timbro d voce (es. voce grossa, muta, effeminata)",
     "testo": "Ho una maglietta gialla (tenere la maglietta dalle spalle)\na strisce rosse e blu  (segnare le strisce)\nio me la sono messa   (mettersi la maglietta)\nmettitela anche tu!   (invitare gli altri a metterla)",
     "youtube": false,
-    "video": "https://www.bansiamo.it/video/la_maglietta_gialla.mp4",
-    "video-audio": "https://www.bansiamo.it/video/la_maglietta_gialla.webm"
+    "video": "https://mp4.s3.eu-de.cloud-object-storage.appdomain.cloud/la_maglietta_gialla.mp4",
+    "video-webm": "https://webm.s3.eu-de.cloud-object-storage.appdomain.cloud/la_maglietta_gialla.webm"
   },
   {
     "titolo": "Il principino",
     "descrizione": "Ad ogni ripetizione del testo viene tolta l'ultima parola",
     "testo": "Un giorno (mano e indice verso l'altro)\nil re,    (mano all'altezza della spalla)\nla regina  (mano all'altezza della pancia)\ne il pincipino (mano all'altezza delle gambe)\nvennero da me  (indicarsi)\nper stringermi la mano (stringere le mani tra loro)\nma siccome ero partito (segno di \"andiamocene\")\nil principino disse (mano all'altezza della pancia)\ntornerem domani (girare l'idice su se stesso)\noppure post-domani (girare entrambi gli indici su se stessi)",
     "youtube": false,
-    "video": "https://www.bansiamo.it/video/il_principino.mp4",
-    "video-audio": "https://www.bansiamo.it/video/il_principino.webm"
+    "video": "https://mp4.s3.eu-de.cloud-object-storage.appdomain.cloud/il_principino.mp4",
+    "video-webm": "https://webm.s3.eu-de.cloud-object-storage.appdomain.cloud/il_principino.webm"
   },
   {
     "titolo": "La macchina del capo",
     "descrizione": "Ad ogni ripetizione del testo viene tolta la prima parola e sostituita con un suono possibilmente onomatopeico.\n             \n             Macchina > Brum\n             \n             Buco > Pss\n             \n             Gomma > mm\n             \n             chewing gum >mmm",
     "testo": "La macchina del capo ( guidare il volante  e saluto militare)\nha un buco nella gomma (indicare con l'indice e fare la gomma con un cerchio)\nLa macchina del capo\nha un buco nella gomma\nLa macchina del capo\nha un buco nella gomma\nRipariamola col chewing gum (allungare il chewing gum dalla bocca)",
     "youtube": false,
-    "video": "https://www.bansiamo.it/video/la_macchina_del_capo.mp4",
-    "video-audio": "https://www.bansiamo.it/video/la_macchina_del_capo.webm",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20La%20Macchina%20Del%20Capo.mp3"
+    "video": "https://mp4.s3.eu-de.cloud-object-storage.appdomain.cloud/la_macchina_del_capo.mp4",
+    "video-webm": "https://webm.s3.eu-de.cloud-object-storage.appdomain.cloud/la_macchina_del_capo.webm",
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/La%20Macchina%20Del%20Capo.mp3"
   },
   {
     "titolo": "Tre cinesi",
     "descrizione": "Il ban si esegue la prima volta cantandolo e mimandolo normalmente, dalla successiva invece lo si canta utilizzando solo una vocale (es: saamo tra cianasa can al cantrabbassa\u2026), fino all\u2019esaurimento delle stesse o della vostra pazienza.",
     "testo": "Siamo tre cinesi con il contrabbasso\nSiamo sulla strada ad aspettar\nPassa polizia: \u201c che fate qua?\u201d\nSiamo tre cinesi con il contrabbasso.\nSi indica il tre, si mimano gli occhi a mandorla, si mima il suonare un contrabbasso;\nSi mima una strada tortuosa col movimento delle mani, si batte il polso indicando l\u2019orologio;\nSi rotea una mano sopra la testa a mo di sirena della polizia, mano chiusa a \u201cbecco\u201d che indica il petto (classico gesto di disappunto), si indica il terreno con entrambe le mani;\nSi indica il tre, si mimano gli occhi a mandorla, si mima il suonare un contrabbasso.",
     "youtube": false,
-    "video": "https://www.bansiamo.it/video/tre_cinesi.mp4",
-    "video-audio": "https://www.bansiamo.it/video/tre_cinesi.webm",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20Tre%20Cinesi.mp3"
+    "video": "https://mp4.s3.eu-de.cloud-object-storage.appdomain.cloud/tre_cinesi.mp4",
+    "video-webm": "https://webm.s3.eu-de.cloud-object-storage.appdomain.cloud/tre_cinesi.webm",
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/Tre%20Cinesi.mp3"
   },
   {
     "titolo": "Ciccicicocca",
     "descrizione": "Questo ban molto divertente, si pu\u00f2 proporre quando si \u00e8 in tanti e richiede un minimo di coordinazione e senso del ritmo; \u00e8 definito \"a catena\" poich\u00e8 viene lanciato da una sola persona che inventa una mossa cantando la canzoncina.\n             \n             Le persone che si trovano al suo fianco canteranno insieme a lui il motivo copiando la mossa.",
     "testo": "ci ci ci...cicci..ci cocca    ( I mossa )\nci ci ci...cicci..ci cocca\nci ci ci...cicci..ci cocca\nci ci ci...cicci..ci cocca    ( II mossa )\nci ci ci...cicci..ci cocca\nci ci ci...cicci..ci cocca\nci ci ci...cicci..ci cocca    ( III mossa )\nci ci ci...cicci..ci cocca\nci ci ci...cicci..ci cocca\nA questo punto, il bansista continuer\u00e0 ad inventare mosse cantando la canzone, mentre le persone al suo fianco continueranno ad imitare le mosse.\nOgni persona all'interno del cerchio deve imitare la mossa del precedente fino a raggiungere la met\u00e0 del cerchio.",
     "youtube": false,
-    "video": "https://www.bansiamo.it/video/ciccicicocca.mp4",
-    "video-audio": "https://www.bansiamo.it/video/ciccicicocca.webm"
+    "video": "https://mp4.s3.eu-de.cloud-object-storage.appdomain.cloud/ciccicicocca.mp4",
+    "video-webm": "https://webm.s3.eu-de.cloud-object-storage.appdomain.cloud/ciccicicocca.webm"
   },
   {
     "titolo": "Shake shake dance",
     "descrizione": "Questo ban \u00e8 in realt\u00e0 un ballo. Inizia con una sorta di \"botta e risposta\" urlato dal bansista, attraverso il quale questo lancia un invito al cerchio a ballare con lui e al quale tutto il cerchio risponder\u00e0. Il bansista a questo punto, che si trova al centro del cerchio, inizia  il ballo seguito da tutti quanti, muovendo le braccia a pugni chiusi, incrociandole e facendole ruotare una appresso all' altra, ponendole nelle diverse direzioni (in alto, in basso, a destra, a sinistra ecc.) e cantando la canzone pronunciando prima la direzione in cui queste verranno mosse.\n             \n             Finito il ballo si ripete da capo facendolo lanciare ad un altro membro del cerchio.",
     "testo": "B: Explorers?  ( o il nome di un membro del cerchio )\nC: Che c'\u00e8?\nB: Volete ballare lo Shake shake Dance?\nC: Siii\nT: In alto Shake Shake       ( muovere le braccia in alto )\nIn basso Shake Shake   ( muovere le baccia in basso )\nA destra Shake Shake   ( muovere le braccia a desta )\nA sinistra Shake Shake  ( muovere le braccia a sinistra )",
     "youtube": false,
-    "video": "https://www.bansiamo.it/video/shake_shake_dance.mp4",
-    "video-audio": "https://www.bansiamo.it/video/shake_shake_dance.webm"
+    "video": "https://mp4.s3.eu-de.cloud-object-storage.appdomain.cloud/shake_shake_dance.mp4",
+    "video-webm": "https://webm.s3.eu-de.cloud-object-storage.appdomain.cloud/shake_shake_dance.webm"
   },
   {
     "titolo": "Famiglia Rana",
     "descrizione": "Questo ban racconta in modo divertente le particolarit\u00e0 della famiglia Rana.\n             \n             Il ban inizia con il ritmo dato dal battito di mani a tempo, da parte di tutto il cerchio, ad un certo punto il bansista si stacca e camminando verso il centro comincia ad imitare il primo componente della famiglia Rana cantando insieme il motivo, che poi il tutto il cerchio ripeter\u00e0 successivamente. Lo stesso si ripete per ogni personaggio della famiglia.",
     "testo": "T: battito di mani a tempo\nB: Arriva la famiglia Rana, arriva BABBO Rana!\nE Zighi (X6)...ZighiZighi, ZighiZ\u00ec!! ( mimare la guida di un auto )\nT: battito di mani a tempo\nB: Arriva la famiglia Rana, arriva MAMMA Rana!\nE Zighi (X6)...ZighiZighi, ZighiZ\u00ec!! ( mimare donna che gira il mestolo )\nT: battito di mani a tempo\nB: Arriva la famiglia Rana, arriva FIGLIO Rana\nE Zighi (X6)...ZighiZighi, ZighiZ\u00ec!! ( mimare ragazzo che ascolta musica )\nT: battito di mani a tempo\nB: Arriva la famiglia Rana, arriva FIGLIA Rana\nE Zighi (X6)...ZighiZighi, ZighiZ\u00ec!!  ( mimare ragazza che si mette il rimmel )\nT: battito di mani a tempo\nB: Arriva la famiglia Rana, arriva BEB\u00e9 Rana\nE Zighi (X6)...ZighiZighi, ZighiZ\u00ec!!  ( mimare bimbo che si succhia il dito )\nT: battito di mani a tempo\nB: Arriva la famiglia Rana, arriva NONNO Rana\nE Zighi (X6)...ZighiZighi, ZighiZ\u00ec!!  ( mimare un vecchietto che cammina col   bastone )",
     "youtube": false,
-    "video": "https://www.bansiamo.it/video/famiglia_rana.mp4",
-    "video-audio": "https://www.bansiamo.it/video/famiglia_rana.webm"
+    "video": "https://mp4.s3.eu-de.cloud-object-storage.appdomain.cloud/famiglia_rana.mp4",
+    "video-webm": "https://webm.s3.eu-de.cloud-object-storage.appdomain.cloud/famiglia_rana.webm"
   },
   {
     "titolo": "Bambino nella culla",
     "descrizione": "Questo ban consiste in una canzoncina. Questa, consiste nell'associazione dei numeri, dall'1 al 10, ai principali concetti e immagini cristiane.\n             \n             Il ban richiede un pizzico di memoria, ad ogni numero seguito dalla frase infatti, si inserir\u00e0 un nuovo numero ripetendo poi quello precedente, cos\u00ec facendo fino ad arrivare a 10, cercando anche di ricordare tutti i gesti!!",
     "testo": "Uno, uno  (mimare il numero con la mano)\nBAMBINO NELLA CULLA, (fare un ovale con le braccia e muoverle a destra e sinistra)\nla luna e il sole,   (tracciare con il dito nell'aria mezzo cerchio e poi uno intero)\nchi ha inventato  (incrociare le braccia a pugni chiusi, e girarle una appresso all'altra)\nil mondo  (chiudere le braccia a tondo davanti a se)\n\u00e8 stato (incrociare le braccia a pugni chiusi, e girarle una appresso all'altra)\nil Signor, (indice rivolto verso l'alto)\nchi ha inventato il mondo \u00e8 stato il Signor!\nDue, due\nl'asino E IL BUE, (mimare le orecchie muovendo le mani e le corna)\nbambino nella culla,\nla luna e il sol,\nchi ha inventato il mondo \u00e8 stato il Signor! (x2)\nTre, tre, tre (mimare numero con la mano)\ni RE MAGI, (mimare una corona in testa con le mani)\nl' asino il bue,\nbambino nella culla,\nla luna e il sol,\nchi ha inventato il mondo \u00e8 stato il Signor! (x2)\nQuattro, quattro, quattro gli EVANGELISTI.. (con la mano destra scrivere nell'aria)\nCinque, cinque, cinque i PRECETTI.. (battere il dorso della mano destra su quella sinistra)\nSei, sei , sei i FILISTEI.. (mimare un uomo muscoloso)\nSette, sette, sette i SACRAMENTI.. (tenere uniti l'indice e il medio e simulare il segno della croce)\nOtto, otto, otto le BEATITUDINI.. (mani giunte a preghiera davanti a s\u00e9 )\nNove, nove, nove i CORI ANGELICI.. ( mani alzate all'altezza delle spalle con i palmi girati leggermente verso l'alto)\nDieci, dieci, dieci i COMANDAMENTI.. ( indice alzato che ammonisce)",
     "youtube": false,
-    "video": "https://www.bansiamo.it/video/bambino_nella_culla.mp4",
-    "video-audio": "https://www.bansiamo.it/video/bambino_nella_culla.webm",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20Bambino%20Nella%20Culla.mp3"
+    "video": "https://mp4.s3.eu-de.cloud-object-storage.appdomain.cloud/bambino_nella_culla.mp4",
+    "video-webm": "https://webm.s3.eu-de.cloud-object-storage.appdomain.cloud/bambino_nella_culla.webm",
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/Bambino%20Nella%20Culla.mp3"
   },
   {
     "titolo": "Auanagalupa",
     "descrizione": "Questo ban, nonostante le poche parole che lo compongono (infatti sono solo 4!), risulta divertentissimo grazie ai suoi curiosi gesti e soprattutto ai versi che con un pizzico di coordinazione e memoria verranno ripetuti sempre pi\u00f9 velocemente dal bansista e dal cerchio, in un unico coro!",
     "testo": "AUNAGALUPA\n...WROON  (fare il verso del MAIALE, alzare il braccio, unendo i polpastrelli di tutte le dita, tenendo il dorso della mano verso di se)\n...PRRR (fare una PERNACCHIA e alzare il braccio, unendo i polpastrelli di tutte le dita, tenendo il dorso della mano verso il cerchio)\n...PSSS (fare un SIBILO e alzare il braccio, unendo i polpastrelli di tutte le dita, tenendo il dorso della mano verso di se)\nAMEPA... (battito le mani sulle cosce  x1)\n...WROON (fare il verso del MAIALE, alzare il braccio, unendo i polpastrelli di tutte le dita, tenendo il dorso della mano verso di se)\n...PRRR (fare una PERNACCHIA e alzare il braccio, unendo i polpastrelli di tutte le dita, tenendo il dorso della mano verso il cerchio)\n...PSSS (fare un SIBILO e alzare il braccio, unendo i polpastrelli di tutte le dita, tenendo il dorso della mano verso di se)\nAFATA..(battito le mani sulle cosce  x1)\n...WROON  (fare il verso del MAIALE, alzare il braccio, unendo i polpastrelli di tutte le dita, tenendo il dorso della mano verso di se)\n...PRRR (fare una PERNACCHIA e alzare il braccio, unendo i polpastrelli di tutte le dita, tenendo il dorso della mano verso il cerchio)\n...PSSS (fare un SIBILO e alzare il braccio, unendo i polpastrelli di tutte le dita, tenendo il dorso della mano verso di se)\nAUANAGALU -U -U !! (simulare una camminata con le braccia raccolte e pugni chiusi)\nSi pu\u00f2 aggiungere ogni volta un gesto del corpo qualsiasi...",
     "youtube": false,
-    "video": "https://www.bansiamo.it/video/Auanagalupa.mp4",
-    "video-audio": "https://www.bansiamo.it/video/Auanagalupa.webm"
+    "video": "https://mp4.s3.eu-de.cloud-object-storage.appdomain.cloud/Auanagalupa.mp4",
+    "video-webm": "https://webm.s3.eu-de.cloud-object-storage.appdomain.cloud/Auanagalupa.webm"
   },
   {
     "titolo": "Conga conga",
@@ -1263,20 +1263,20 @@
     "descrizione": "\u00e8 un ban botta e risposta...la persona che lancia il ban inizia e gli altri rispondono",
     "testo": "lanciatore:pollice destro avanti!!!\naltri:pollice destro avanti!!!\nlanciatore:eciu ciuah  ciu ciu ah ciu ciu ah ah ah\naltri:eciu ciuah  ciu ciu ah ciu ciu ah ah ah\ncontinuare aggiungendo pollice sinistro,gambe piegate,sedere all infuori,fuori la lingua",
     "youtube": false,
-    "video": "https://www.bansiamo.it/video/pollice_destro_avanti.mp4",
-    "video-audio": "https://www.bansiamo.it/video/pollice_destro_avanti.webm"
+    "video": "https://mp4.s3.eu-de.cloud-object-storage.appdomain.cloud/pollice_destro_avanti.mp4",
+    "video-webm": "https://webm.s3.eu-de.cloud-object-storage.appdomain.cloud/pollice_destro_avanti.webm"
   },
   {
     "titolo": "Buco nel secchio",
     "descrizione": "dialogo infinito fra arturo e ofelia.Ofelia deve  risolvere la questione del buco nel secchio e non pu\u00f2 prendere l'acqua,arturo prova a suggerire la soluzione ... ma ofelia \u00e8 un po imbranata.....povero arturo",
     "testo": "arturo...\nc'\u00e8 un buco nel secchio arturo arturo\nc'\u00e8 un buco nel secchio arturo artu.\ne tappa quel buco ofelia ofelia\ne tappa quel buco ofelia ofe\nma come lo tappo arturo arturo\nma come lo tappo arturo artu\nma usa quel tappo ofelia ofelia\nma usa quel tappo ofelia ofe\nil tappo non entra arturo arturo\nil tappo non entra arturo artu\ne taglia quel tappo ofelia ofelia\ne taglia quel tappo ofelia ofe\nma come lo taglio arturo arturo\nma come lo taglio arturo artu\ne usa il coltello ofelia ofelia\ne usa il coltello ofelia ofe\nil coltello non taglia arturo arturo\nil coltello non taglia arturo artu\nma usa la mola ofelia ofelia\nma usa la mola ofelia ofe\nla mola non mola arturo arturo\nla mola non mola arturo artu\ne bagna la mola ofelia ofelia\ne bagna la mola ofelia ofe\nma come la bagno arturo arturo\nma come la bagno arturo artu\nla bagni con l'acqua ofelia ofelia\nla bagni con l'acqua ofelia ofe\nma come la prendo arturo arturo\nma come la prendo arturo artu\ne usa quel secchio ofelia ofelia\ne usa quel secchio ofelia ofe\narturo......c'\u00e8 un buco nel secchio......\nRipetere da capo",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20Arturo%20E%20Geltrude.mp3"
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/Arturo%20E%20Geltrude.mp3"
   },
   {
     "titolo": "Giro tondo a 4 voci",
     "descrizione": "\u00e8 la solita tititera ma a 4 voci a cappella, semplice e divertente adatto per i pi\u00f9 piccini.",
     "testo": "Si esegue formando 4 cerchi uno dentro l'altro.\nIl 1\u00b0 in mezzo gira in senso orario e canta pronunciando la parola \"giro\" sullo stesso tono fino alla fine.\nIl 2\u00b0 esterno 8 battute dopo gira in senso antiorario e canta pronunciando la parola \"tondo\" in risposta a \"giro\" sempre sullo stesso tono fino alla fine.\nIl 3\u00b0 pi\u00f9 esterno 16 battute dopo gira in senso orario e canta la strofe ripetendo la prima 2 volte ma sulla dominante rispetto alle prime voci e sempre mantenendo la stessa nota fino alla fine.\nIl 4\u00b0 il pi\u00f9 grande sempre all'esterno 24 battute dopo gira in senso antiorario e inizia a cantare le strofe normalmente fino alla fine.\ntesto:\nGiro giro tondo,\ncasca il mondo,\ncasca la terra,\ntutti gi\u00f9 per terra!\ngiro giro tondo,\nil mare \u00e8 fondo,\ntonda \u00e8 la terra,\ntutti gi\u00f9 per terra!\ngiro giro tondo,\nL'angelo \u00e8 biondo,\nbiondo \u00e8 il grano,\ntutti ci sediamo!\ngiro giro tondo,\nil pane \u00e8 cotto in forno,\nbuona \u00e8 la ciambella,\ntutti gi\u00f9 per terra!",
-    "audio": "https://www.bansiamo.it/audio/Bansiamo.it%20-%20girogiro%20tondo.mp3"
+    "audio": "https://audioban.s3.eu-de.cloud-object-storage.appdomain.cloud/girogiro%20tondo.mp3"
   },
   {
     "titolo": "Cucaragna",

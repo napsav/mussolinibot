@@ -228,16 +228,16 @@ var embed = new Discord.MessageEmbed()
 	if (ban["testo"].length < 1023) {
     embed.addField("Testo", `${ban["testo"]}`, false)
 	} else {
-message.channel.send("Sì è verificato un problema che al momento non voglio risolvere");
+    embed.addField("Testo", "Sì è verificato un problema che al momento non voglio risolvere.", false);
 	}
 	if (ban["youtube"]) {
-    	embed.addField("Video", `${ban["video"]}`, false)
+    	embed.addField("Video", `[YouTube](${ban["video"]})`, false)
 	} else {
 		if (ban.hasOwnProperty('video')) {
-	embed.addField("Video", `${ban["video"]}\n${ban["video-audio"]}`, true)
+	embed.addField("Video", `[mp4](${ban["video"]})\n[webm](${ban["video-webm"]})`, true)
 		}
 		if (ban.hasOwnProperty('audio')) {
-	embed.addField("Audio", `${ban["audio"]}`, true)
+	embed.addField("Audio", `[mp3](${ban["audio"]})`, true)
 		}
 	}
 console.log("kek");
