@@ -4,6 +4,7 @@ const client = new Discord.Client();
 'use strict';
 const fs = require('fs');
 var bodyParser = require("body-parser");
+var lunr = require("lunr")
 var path = require('path');
 var santi = require('./santi.js');
 var morse = require('./morse.js');
@@ -27,12 +28,47 @@ function isEmpty(obj) {
   return Object.keys(obj).length === 0;
 }
 
+async function addSearchReactions(msg) {
+  try {
+    await msg.react('1️⃣');
+    await msg.react('2️⃣');
+    await msg.react('3️⃣');
+    await msg.react('4️⃣');
+    await msg.react('5️⃣');
+  } catch (error) {
+    console.error('One of the emojis failed to react.');
+  }
+}
+
+const reactionsEnum = {
+  '1️⃣':1,
+  '2️⃣':2,
+  '3️⃣':3,
+  '4️⃣':4,
+  '5️⃣':5
+}
+
 // --------------PANNELLO MUSSOLINIBOT---------------
 
 // Bans
 
 const bans_data = fs.readFileSync('bans.json', 'utf-8');
 const bans = JSON.parse(bans_data);
+
+// Indexing dei bans
+
+var index = lunr(function() {
+  this.ref("id")
+  this.field("titolo")
+  this.field("testo")
+  this.field("descrizione")
+
+  bans.forEach(element => {
+    this.add(element)
+  });
+})
+
+
 
 // Funzioni per il parsing dei comandi dal file commands.json
 
@@ -216,15 +252,82 @@ client.on('message', async message => {
       const messaggioMorse = morse.crypt(args);
       message.channel.send(messaggioMorse);
     }
-	}
-if (message.content.toLowerCase().includes("ban")) {
-var ban = bans[Math.floor(Math.random()*bans.length)];
-var embed = new Discord.MessageEmbed()
-.setTitle(`${ban["titolo"]}`)
-    .setDescription(`${ban["descrizione"]}`)
-    .setTimestamp()
-    .setFooter("Ho sprecato una notte per questa funzione", "https://cdn.discordapp.com/embed/avatars/0.png")
-    .setAuthor("GiacomoBOT x bansiamoscraper","https://cdn.discordapp.com/embed/avatars/0.png", "https://github.com/napsav/bansiamoscraper")
+  }
+
+  // ------------------------RICERCA BAN----------------------------------
+
+  if (message.content.startsWith('cercaban')) {
+    const args = message.content.slice(8).trim().toLowerCase();
+      if (!args.length) {
+        return message.channel.send(`Non puoi eseguire una ricerca vuota ${message.author}`);
+      } else {
+        const filter = (reaction, user) => (user.id == message.author.id) && (reaction.emoji.name == '1️⃣' || reaction.emoji.name == '2️⃣' || reaction.emoji.name == '3️⃣'|| reaction.emoji.name == '4️⃣'|| reaction.emoji.name == '5️⃣')
+        var embed = new Discord.MessageEmbed()
+        .setTitle(`Risultati della ricerca`)
+        .setTimestamp()
+        .setFooter("La vera domanda è: perchè no?", "https://cdn.discordapp.com/embed/avatars/0.png")
+        .setAuthor("GiacomoBOT x ALGORITMI INCREDIBILI (e dove trovarli)","https://cdn.discordapp.com/embed/avatars/0.png", "https://github.com/napsav/mussolinibot/tree/scout")
+        
+        var search = index.search(args+"~1")
+        if(search.length <= 4) {
+          embed.setDescription(`Trovati ${search.length} risultati: `)
+          search.forEach((elem, i) => {
+          embed.addField(`${i+1} - ${bans[elem["ref"]]["titolo"]}`, `${bans[elem["ref"]]["descrizione"]}`, false)
+          })
+        } else {
+          for (var i = 0; i <= 4; i++) {
+            embed.setDescription(`Trovati ${search.length} risultati, ma ne verranno mostrati solo 5: `)
+            embed.addField(`${i+1} - ${bans[search[i]["ref"]]["titolo"]}`, `${bans[search[i]["ref"]]["descrizione"]}`, false)
+          }
+        }
+      var embedFinale = new Discord.MessageEmbed()
+        .setTimestamp()
+        .setFooter("La vera domanda è: perchè no? (Intanto hai trovato il ban)", "https://cdn.discordapp.com/embed/avatars/0.png")
+        .setAuthor("GiacomoBOT x ALGORITMI INCREDIBILI (li hai trovati)","https://cdn.discordapp.com/embed/avatars/0.png", "https://github.com/napsav/mussolinibot/tree/scout")
+      var mess = await message.channel.send({embed}) //.then(mess => 
+      addSearchReactions(mess)
+      const collector = mess.createReactionCollector(filter, {time: 300000});
+      collector.on('collect', (reaction, user) => {
+         collector.stop()
+         console.log(reactionsEnum[reaction.emoji.name])
+         mess.reactions.removeAll().catch(error => console.error('Failed to clear reactions: ', error));
+         var selezionato = bans[search[reactionsEnum[reaction.emoji.name]-1]["ref"]]
+         if (selezionato["testo"].length < 1023) {
+          embedFinale.addField("Testo", `${selezionato["testo"]}\n\nPerfavore ignora gli altri tasti in basso.`, false)
+        } else {
+          embedFinale.addField("Testo", "Sì è verificato un problema che al momento non voglio risolvere. Questo problema è invece il cugino dell'altro. Sono le 4 di notte e gestire le eccezioni non è la mia priorità. Quindi quello che si merita è questo: un error handling di merda. In effetti potresti chiederti, perchè scrivi questo messaggio inutile al posto di risolvere il problema? Domanda perfettamente valida.", false);
+        }
+        if (selezionato["youtube"]) {
+            embedFinale.addField("Video", `[YouTube](${selezionato["video"]})`, false)
+        } else {
+          if (selezionato.hasOwnProperty('video')) {
+        embedFinale.addField("Video", `[mp4](${selezionato["video"]})\n[webm](${selezionato["video-webm"]})`, true)
+          }
+          if (selezionato.hasOwnProperty('audio')) {
+        embedFinale.addField("Audio", `[mp3](${selezionato["audio"]})`, true)
+          }
+        }
+         embedFinale.setTitle(`${selezionato["titolo"]}`)
+         embedFinale.setDescription(`${selezionato["descrizione"]}`)
+         
+         mess.edit(embedFinale)
+         
+      })
+      collector.on('end', collected => {
+      });
+    }
+  }
+
+    // -------------------------BAN CASUALE---------------------------------
+
+  if (message.content.toLowerCase() === "ban") {
+  var ban = bans[Math.floor(Math.random()*bans.length)];
+  var embed = new Discord.MessageEmbed()
+      .setTitle(`${ban["titolo"]}`)
+      .setDescription(`${ban["descrizione"]}`)
+      .setTimestamp()
+      .setFooter("Ho sprecato una notte per questa funzione", "https://cdn.discordapp.com/embed/avatars/0.png")
+      .setAuthor("GiacomoBOT x bansiamoscraper","https://cdn.discordapp.com/embed/avatars/0.png", "https://github.com/napsav/bansiamoscraper")
 	if (ban["testo"].length < 1023) {
     embed.addField("Testo", `${ban["testo"]}`, false)
 	} else {
@@ -243,6 +346,11 @@ var embed = new Discord.MessageEmbed()
 console.log("kek");
 message.channel.send({embed});
 }
+
+
+// -----------------------PUNTEGGI-----------------------------
+
+
   if (message.content.toLowerCase() === 'punteggi' || message.content.toLowerCase() === 'punteggio' || message.content.toLowerCase() === 'punti') {
     var punti = refreshPuntiFile(message);
     if (!isEmpty(punti)) {
