@@ -261,10 +261,11 @@ client.on('message', async message => {
       if (!args.length) {
         return message.channel.send(`Non puoi eseguire una ricerca vuota ${message.author}`);
       } else {
-        const filter = (reaction, user) => (user.id == message.author.id) && (reaction.emoji.name == '1️⃣' || reaction.emoji.name == '2️⃣' || reaction.emoji.name == '3️⃣'|| reaction.emoji.name == '4️⃣'|| reaction.emoji.name == '5️⃣')
+        const filter = (reaction, user) => (user.id == message.author.id) && (reaction.emoji.name == '1️⃣' || reaction.emoji.name == '2️⃣' || reaction.emoji.name == '3️⃣'|| reaction.emoji.name == '4️⃣'|| reaction.emoji.name == '5️⃣' || reaction.emoji.name == '◀️')
         var embed = new Discord.MessageEmbed()
         .setTitle(`Risultati della ricerca`)
         .setTimestamp()
+        .setColor("#f5b041")
         .setFooter("La vera domanda è: perchè no?", "https://cdn.discordapp.com/embed/avatars/0.png")
         .setAuthor("GiacomoBOT x ALGORITMI INCREDIBILI (e dove trovarli)","https://cdn.discordapp.com/embed/avatars/0.png", "https://github.com/napsav/mussolinibot/tree/scout")
         
@@ -286,12 +287,16 @@ client.on('message', async message => {
         .setAuthor("GiacomoBOT x ALGORITMI INCREDIBILI (li hai trovati)","https://cdn.discordapp.com/embed/avatars/0.png", "https://github.com/napsav/mussolinibot/tree/scout")
       var mess = await message.channel.send({embed}) //.then(mess => 
       addSearchReactions(mess)
-      const collector = mess.createReactionCollector(filter, {time: 300000});
+      const collector = mess.createReactionCollector(filter, {time: 30000});
       collector.on('collect', (reaction, user) => {
-         collector.stop()
+        if(reaction.emoji.name == '◀️') {
+          mess.edit(embed)
+          mess.reactions.removeAll().catch(error => console.error('Failed to clear reactions: ', error));
+          addSearchReactions(mess)
+        } else {
          console.log(reactionsEnum[reaction.emoji.name])
          mess.reactions.removeAll().catch(error => console.error('Failed to clear reactions: ', error));
-         var selezionato = bans[search[reactionsEnum[reaction.emoji.name]-1]["ref"]]
+         const selezionato = bans[search[reactionsEnum[reaction.emoji.name]-1]["ref"]]
          if (selezionato["testo"].length < 1023) {
           embedFinale.addField("Testo", `${selezionato["testo"]}\n\nPerfavore ignora gli altri tasti in basso.`, false)
         } else {
@@ -311,9 +316,11 @@ client.on('message', async message => {
          embedFinale.setDescription(`${selezionato["descrizione"]}`)
          
          mess.edit(embedFinale)
-         
+         mess.react("◀️")
+      }
       })
       collector.on('end', collected => {
+        
       });
     }
   }
