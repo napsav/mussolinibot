@@ -24,6 +24,10 @@ client.on('ready', () => {
   logChannel = client.channels.cache.get('777307224564695071');
 });
 
+// -------------------------------------
+//             FUNZIONI
+// -------------------------------------
+
 function isEmpty(obj) {
   return Object.keys(obj).length === 0;
 }
@@ -41,12 +45,49 @@ async function addSearchReactions(msg) {
 }
 
 const reactionsEnum = {
-  '1️⃣':1,
-  '2️⃣':2,
-  '3️⃣':3,
-  '4️⃣':4,
-  '5️⃣':5
+  '1️⃣': 1,
+  '2️⃣': 2,
+  '3️⃣': 3,
+  '4️⃣': 4,
+  '5️⃣': 5
 }
+
+function getEmbedRisultato() {
+  var embedFinale = new Discord.MessageEmbed()
+    .setTimestamp()
+    .setFooter("La vera domanda è: perchè no? (Intanto hai trovato il ban)", "https://cdn.discordapp.com/embed/avatars/0.png")
+    .setAuthor("GiacomoBOT x ALGORITMI INCREDIBILI (li hai trovati)", "https://cdn.discordapp.com/embed/avatars/0.png", "https://github.com/napsav/mussolinibot/tree/scout")
+  return embedFinale
+}
+
+function dividiArray(array, k) {
+  var n = array.length
+  var resto = n % k
+  const final = []
+  if (resto === 0) {
+    var daDividere = array
+    var restantiArray = []
+  } else {
+    var daDividere = array
+    var restantiArray = []
+    for (var i = 0; i < resto; i++) {
+      restantiArray.push(daDividere.pop())
+    }
+  }
+  for (let i = 0; i < daDividere.length; i += k) {
+    final.push(daDividere.slice(i, i + k))
+  }
+  restantiArray.forEach((elem, index) => final[final.length - 1 - index].push(elem))
+  return final;
+}
+
+function shuffleArray(array) {
+	for (let i = array.length - 1; i > 0; i--) {
+		const j = Math.floor(Math.random() * (i + 1));
+		[array[i], array[j]] = [array[j], array[i]];
+	}
+}
+
 
 // --------------PANNELLO MUSSOLINIBOT---------------
 
@@ -57,7 +98,7 @@ const bans = JSON.parse(bans_data);
 
 // Indexing dei bans
 
-var index = lunr(function() {
+var index = lunr(function () {
   this.ref("id")
   this.field("titolo")
   this.field("testo")
@@ -67,7 +108,6 @@ var index = lunr(function() {
     this.add(element)
   });
 })
-
 
 
 // Funzioni per il parsing dei comandi dal file commands.json
@@ -173,54 +213,54 @@ app.get('/ferrenz/delete', (req, res) => {
 
 
 // Aggiunta comandi
-app.post("/", function(req, res) {
+app.post("/", function (req, res) {
   console.log("Ricevuto una richiesta POST");
   console.log(req.body);
   var com;
   com = refreshCommandsFile();
   var comando = req.body.comando.trim().toLowerCase();
   var risposta = req.body.risposta.trim();
-	if (comando.length === 0 || risposta.length === 0) {
-		var alert = "Il comando e la risposta non possono essere vuoti!";
-		res.render('index', {
-			commands:com,
-			alert:alert
-		});
-	} else {
-		  com[comando] = risposta;
-		  console.log(req.body.risposta);
-		  fs.writeFileSync('commands.json', JSON.stringify(com))
-		  res.redirect('/')
-		  logChannel.send(":white_check_mark: " + comando + ": " + risposta + " aggiunto");
-	}
+  if (comando.length === 0 || risposta.length === 0) {
+    var alert = "Il comando e la risposta non possono essere vuoti!";
+    res.render('index', {
+      commands: com,
+      alert: alert
+    });
+  } else {
+    com[comando] = risposta;
+    console.log(req.body.risposta);
+    fs.writeFileSync('commands.json', JSON.stringify(com))
+    res.redirect('/')
+    logChannel.send(":white_check_mark: " + comando + ": " + risposta + " aggiunto");
+  }
 });
 
 // Aggiunta parole filtrate
-app.post("/ferrenz", function(req, res) {
+app.post("/ferrenz", function (req, res) {
   console.log("Ricevuto una richiesta POST a Ferrenz Filter");
   console.log(req.body);
   var par;
   par = refreshParoleFile();
   var parola = req.body.parola.trim().toLowerCase();
   var punteggio = parseInt(req.body.punteggio);
-	if (parola.length === 0 || punteggio.length === 0) {
-		var alert = "La parola e il punteggio devono avere un valore";
-		res.render('parole', {
-			parole:par,
-			alert:alert
-		});
-	} else if (!Number.isInteger(punteggio)) {
+  if (parola.length === 0 || punteggio.length === 0) {
+    var alert = "La parola e il punteggio devono avere un valore";
+    res.render('parole', {
+      parole: par,
+      alert: alert
+    });
+  } else if (!Number.isInteger(punteggio)) {
     var alert = "Il punteggio deve essere un numero senza valori decimali, ad esempio -10, +10 o 5";
-		res.render('parole', {
-			parole:par,
-			alert:alert
-		});
+    res.render('parole', {
+      parole: par,
+      alert: alert
+    });
   } else {
-		  par[parola] = punteggio;
-		  fs.writeFileSync('parole.json', JSON.stringify(par))
-		  res.redirect('/ferrenz')
-		  logChannel.send(":white_check_mark: " + parola + " - " + punteggio + " aggiunto");
-	}
+    par[parola] = punteggio;
+    fs.writeFileSync('parole.json', JSON.stringify(par))
+    res.redirect('/ferrenz')
+    logChannel.send(":white_check_mark: " + parola + " - " + punteggio + " aggiunto");
+  }
 });
 
 
@@ -233,19 +273,19 @@ app.listen(port, () => {
 let msg = null;
 
 client.on('message', async message => {
-	// Se il messaggio è stato scritto dal bot, verrà ignorato
-  if(message.author.bot) return;
-  
+  // Se il messaggio è stato scritto dal bot, verrà ignorato
+  if (message.author.bot) return;
+
   // Parsing comandi e parole
   parseCommands(message);
   parseParole(message);
 
-	// Codice morse, permette di tradurre in tutti e due i versi
-	if (message.content.startsWith('morse')) {
-	const args = message.content.slice(6).trim();
+  // Codice morse, permette di tradurre in tutti e due i versi
+  if (message.content.toLowerCase().startsWith('morse')) {
+    const args = message.content.slice(6).trim();
     if (!args.length) {
       return message.channel.send(`Il messaggio non può essere vuoto! ${message.author}!`);
-    } else if(args.startsWith("-") || args.startsWith(".")) {
+    } else if (args.startsWith("-") || args.startsWith(".")) {
       const messaggioMorse = morse.decrypt(args);
       message.channel.send(messaggioMorse);
     } else {
@@ -254,108 +294,159 @@ client.on('message', async message => {
     }
   }
 
+  if (message.content.toLowerCase().startsWith("dividi")) {
+    const args = message.content.toLowerCase().slice(6).trim().split(" ")
+    const comando = args.shift().trim()
+    console.log(comando)
+    console.log(args)
+    const voiceChannel = message.member.voice.channel;
+    var k = Number.parseInt(args)
+    if (!args.length) {
+      return message.channel.send("Devi inserire un numero, ad esempio: 'dividi in 5' o 'dividi per', e il bot dividerà le persone connesse al canale vocale in gruppi da 5.")
+    } else if (isNaN(k)) {
+      return message.channel.send("Devi inserire un numero valido! Ricorda: sono ammessi solo numeri interi.")
+    } else if (voiceChannel === null) {
+      return message.channel.send("Vi dovete tutti trovare in un canale vocale affinchè il comando funzioni.")
+    } else {
+      var membriMap = voiceChannel.members
+      var membriArray = Array.from(membriMap.values())
+      shuffleArray(membriArray)
+      console.log(membriArray)
+      if (membriArray.length < k) {
+        message.channel.send("Non puoi inserire un numero più grande (o uguale) di quello delle persone disponibili")
+      } else {
+        if(comando === "per") {
+          var final = dividiArray(membriArray, k)
+          console.log(final)
+          final.forEach((sub, index)=> {
+            var messaggio = `${index+1}° gruppo: `
+            sub.forEach(user => messaggio+=`${user.user} `)
+            message.channel.send(messaggio)
+          })
+        } else if (comando === "in") {
+          var final = dividiArray(membriArray, Math.floor(membriArray.length / k))
+          console.log(final)
+          final.forEach((sub, index)=> {
+            var messaggio = `${index+1}° gruppo: `
+            sub.forEach(user => messaggio+=`${user.user} `)
+            message.channel.send(messaggio)
+          })
+        } else {
+          message.channel.send(`Comando ${comando} non riconosciuto. Puoi scrivere "dividi in <numero>" per stabilire il numero di gruppi, o "dividi per <numero>" per stabilire il numero di persone in un gruppo.`)
+        }
+      }
+    }
+  }
+
+  if (message.content.toLowerCase() === "testa o croce") {
+    var ris = Math.round(Math.random())
+    console.log(ris)
+    if (ris) {
+      message.channel.send("Croce")
+    } else {
+      message.channel.send("Testa")
+    }
+  }
+
   // ------------------------RICERCA BAN----------------------------------
 
   if (message.content.startsWith('cercaban')) {
     const args = message.content.slice(8).trim().toLowerCase();
-      if (!args.length) {
-        return message.channel.send(`Non puoi eseguire una ricerca vuota ${message.author}`);
-      } else {
-        const filter = (reaction, user) => (user.id == message.author.id) && (reaction.emoji.name == '1️⃣' || reaction.emoji.name == '2️⃣' || reaction.emoji.name == '3️⃣'|| reaction.emoji.name == '4️⃣'|| reaction.emoji.name == '5️⃣' || reaction.emoji.name == '◀️')
-        var embed = new Discord.MessageEmbed()
+    if (!args.length) {
+      return message.channel.send(`Non puoi eseguire una ricerca vuota ${message.author}`);
+    } else {
+      const filter = (reaction, user) => (user.id == message.author.id) && (reaction.emoji.name == '1️⃣' || reaction.emoji.name == '2️⃣' || reaction.emoji.name == '3️⃣' || reaction.emoji.name == '4️⃣' || reaction.emoji.name == '5️⃣' || reaction.emoji.name == '◀️')
+      var embed = new Discord.MessageEmbed()
         .setTitle(`Risultati della ricerca`)
         .setTimestamp()
         .setColor("#f5b041")
         .setFooter("La vera domanda è: perchè no?", "https://cdn.discordapp.com/embed/avatars/0.png")
-        .setAuthor("GiacomoBOT x ALGORITMI INCREDIBILI (e dove trovarli)","https://cdn.discordapp.com/embed/avatars/0.png", "https://github.com/napsav/mussolinibot/tree/scout")
-        
-        var search = index.search(args+"~1")
-        if(search.length <= 4) {
-          embed.setDescription(`Trovati ${search.length} risultati: `)
-          search.forEach((elem, i) => {
-          embed.addField(`${i+1} - ${bans[elem["ref"]]["titolo"]}`, `${bans[elem["ref"]]["descrizione"]}`, false)
-          })
-        } else {
-          for (var i = 0; i <= 4; i++) {
-            embed.setDescription(`Trovati ${search.length} risultati, ma ne verranno mostrati solo 5: `)
-            embed.addField(`${i+1} - ${bans[search[i]["ref"]]["titolo"]}`, `${bans[search[i]["ref"]]["descrizione"]}`, false)
-          }
+        .setAuthor("GiacomoBOT x ALGORITMI INCREDIBILI (e dove trovarli)", "https://cdn.discordapp.com/embed/avatars/0.png", "https://github.com/napsav/mussolinibot/tree/scout")
+
+      var search = index.search(args + "~1")
+      if (search.length <= 4) {
+        embed.setDescription(`Trovati ${search.length} risultati: `)
+        search.forEach((elem, i) => {
+          embed.addField(`${i + 1} - ${bans[elem["ref"]]["titolo"]}`, `${bans[elem["ref"]]["descrizione"]}`, false)
+        })
+      } else {
+        for (var i = 0; i <= 4; i++) {
+          embed.setDescription(`Trovati ${search.length} risultati, ma ne verranno mostrati solo 5: `)
+          embed.addField(`${i + 1} - ${bans[search[i]["ref"]]["titolo"]}`, `${bans[search[i]["ref"]]["descrizione"]}`, false)
         }
-      var embedFinale = new Discord.MessageEmbed()
-        .setTimestamp()
-        .setFooter("La vera domanda è: perchè no? (Intanto hai trovato il ban)", "https://cdn.discordapp.com/embed/avatars/0.png")
-        .setAuthor("GiacomoBOT x ALGORITMI INCREDIBILI (li hai trovati)","https://cdn.discordapp.com/embed/avatars/0.png", "https://github.com/napsav/mussolinibot/tree/scout")
-      var mess = await message.channel.send({embed}) //.then(mess => 
+      }
+      var embedFinale = getEmbedRisultato()
+      var mess = await message.channel.send({ embed }) //.then(mess => 
       addSearchReactions(mess)
-      const collector = mess.createReactionCollector(filter, {time: 30000});
+      const collector = mess.createReactionCollector(filter, { time: 300000 });
       collector.on('collect', (reaction, user) => {
-        if(reaction.emoji.name == '◀️') {
+        if (reaction.emoji.name == '◀️') {
           mess.edit(embed)
+          embedFinale = getEmbedRisultato()
           mess.reactions.removeAll().catch(error => console.error('Failed to clear reactions: ', error));
           addSearchReactions(mess)
         } else {
-         console.log(reactionsEnum[reaction.emoji.name])
-         mess.reactions.removeAll().catch(error => console.error('Failed to clear reactions: ', error));
-         const selezionato = bans[search[reactionsEnum[reaction.emoji.name]-1]["ref"]]
-         if (selezionato["testo"].length < 1023) {
-          embedFinale.addField("Testo", `${selezionato["testo"]}\n\nPerfavore ignora gli altri tasti in basso.`, false)
-        } else {
-          embedFinale.addField("Testo", "Sì è verificato un problema che al momento non voglio risolvere. Questo problema è invece il cugino dell'altro. Sono le 4 di notte e gestire le eccezioni non è la mia priorità. Quindi quello che si merita è questo: un error handling di merda. In effetti potresti chiederti, perchè scrivi questo messaggio inutile al posto di risolvere il problema? Domanda perfettamente valida.", false);
-        }
-        if (selezionato["youtube"]) {
+          console.log(reactionsEnum[reaction.emoji.name])
+          mess.reactions.removeAll().catch(error => console.error('Failed to clear reactions: ', error));
+          const selezionato = bans[search[reactionsEnum[reaction.emoji.name] - 1]["ref"]]
+          if (selezionato["testo"].length < 1023) {
+            embedFinale.addField("Testo", `${selezionato["testo"]}\n\nPerfavore ignora gli altri tasti in basso.`, false)
+          } else {
+            embedFinale.addField("Testo", "Sì è verificato un problema che al momento non voglio risolvere. Questo problema è invece il cugino dell'altro. Sono le 4 di notte e gestire le eccezioni non è la mia priorità. Quindi quello che si merita è questo: un error handling di merda. In effetti potresti chiederti, perchè scrivi questo messaggio inutile al posto di risolvere il problema? Domanda perfettamente valida.", false);
+          }
+          if (selezionato["youtube"]) {
             embedFinale.addField("Video", `[YouTube](${selezionato["video"]})`, false)
-        } else {
-          if (selezionato.hasOwnProperty('video')) {
-        embedFinale.addField("Video", `[mp4](${selezionato["video"]})\n[webm](${selezionato["video-webm"]})`, true)
+          } else {
+            if (selezionato.hasOwnProperty('video')) {
+              embedFinale.addField("Video", `[mp4](${selezionato["video"]})\n[webm](${selezionato["video-webm"]})`, true)
+            }
+            if (selezionato.hasOwnProperty('audio')) {
+              embedFinale.addField("Audio", `[mp3](${selezionato["audio"]})`, true)
+            }
           }
-          if (selezionato.hasOwnProperty('audio')) {
-        embedFinale.addField("Audio", `[mp3](${selezionato["audio"]})`, true)
-          }
+          embedFinale.setTitle(`${selezionato["titolo"]}`)
+          embedFinale.setDescription(`${selezionato["descrizione"]}`)
+
+          mess.edit(embedFinale)
+          mess.react("◀️")
         }
-         embedFinale.setTitle(`${selezionato["titolo"]}`)
-         embedFinale.setDescription(`${selezionato["descrizione"]}`)
-         
-         mess.edit(embedFinale)
-         mess.react("◀️")
-      }
       })
       collector.on('end', collected => {
-        
+
       });
     }
   }
 
-    // -------------------------BAN CASUALE---------------------------------
+  // -------------------------BAN CASUALE---------------------------------
 
   if (message.content.toLowerCase() === "ban") {
-  var ban = bans[Math.floor(Math.random()*bans.length)];
-  var embed = new Discord.MessageEmbed()
+    var ban = bans[Math.floor(Math.random() * bans.length)];
+    var embed = new Discord.MessageEmbed()
       .setTitle(`${ban["titolo"]}`)
       .setDescription(`${ban["descrizione"]}`)
-      .setTimestamp()
       .setFooter("Ho sprecato una notte per questa funzione", "https://cdn.discordapp.com/embed/avatars/0.png")
-      .setAuthor("GiacomoBOT x bansiamoscraper","https://cdn.discordapp.com/embed/avatars/0.png", "https://github.com/napsav/bansiamoscraper")
-	if (ban["testo"].length < 1023) {
-    embed.addField("Testo", `${ban["testo"]}`, false)
-	} else {
-    embed.addField("Testo", "Sì è verificato un problema che al momento non voglio risolvere.", false);
-	}
-	if (ban["youtube"]) {
-    	embed.addField("Video", `[YouTube](${ban["video"]})`, false)
-	} else {
-		if (ban.hasOwnProperty('video')) {
-	embed.addField("Video", `[mp4](${ban["video"]})\n[webm](${ban["video-webm"]})`, true)
-		}
-		if (ban.hasOwnProperty('audio')) {
-	embed.addField("Audio", `[mp3](${ban["audio"]})`, true)
-		}
-	}
-console.log("kek");
-message.channel.send({embed});
-}
+      .setAuthor("GiacomoBOT x bansiamoscraper", "https://cdn.discordapp.com/embed/avatars/0.png", "https://github.com/napsav/bansiamoscraper")
+      .setTimestamp()
+    if (ban["testo"].length < 1023) {
+      embed.addField("Testo", `${ban["testo"]}`, false)
+    } else {
+      embed.addField("Testo", "Sì è verificato un problema che al momento non voglio risolvere.", false);
+    }
+    if (ban["youtube"]) {
+      embed.addField("Video", `[YouTube](${ban["video"]})`, false)
+    } else {
+      if (ban.hasOwnProperty('video')) {
+        embed.addField("Video", `[mp4](${ban["video"]})\n[webm](${ban["video-webm"]})`, true)
+      }
+      if (ban.hasOwnProperty('audio')) {
+        embed.addField("Audio", `[mp3](${ban["audio"]})`, true)
+      }
+    }
+    message.channel.send({ embed });
+  }
 
 
-// -----------------------PUNTEGGI-----------------------------
+  // -----------------------PUNTEGGI-----------------------------
 
 
   if (message.content.toLowerCase() === 'punteggi' || message.content.toLowerCase() === 'punteggio' || message.content.toLowerCase() === 'punti') {
@@ -363,30 +454,30 @@ message.channel.send({embed});
     if (!isEmpty(punti)) {
       var descr = "";
       var sorted = [];
-      punti = Object.entries(punti).sort(([,a],[,b]) => a - b);
+      punti = Object.entries(punti).sort(([, a], [, b]) => a - b);
       console.log(punti);
       for (entry of punti) {
         var str = `${entry[0]}: ${entry[1]}\n`;
         descr += str;
       }
-        var embed = new Discord.MessageEmbed()
-          .setTitle("Punteggi")
-          .setDescription(descr)
-          .setAuthor("GiacomoBOT x Filtro Ferrenz", "https://i.imgur.com/1FmyBHi.jpeg", "http://resetfocus.duckdns.org:8070/ferrenz")
-          .setColor("#ecff00")
-          .setFooter("Sponsorizzato da LilFerrenz", "https://i.imgur.com/1FmyBHi.jpeg")
-          .setTimestamp()
-        message.channel.send({
-          embed
-        })
+      var embed = new Discord.MessageEmbed()
+        .setTitle("Punteggi")
+        .setDescription(descr)
+        .setAuthor("GiacomoBOT x Filtro Ferrenz", "https://i.imgur.com/1FmyBHi.jpeg", "http://resetfocus.duckdns.org:8070/ferrenz")
+        .setColor("#ecff00")
+        .setFooter("Sponsorizzato da LilFerrenz", "https://i.imgur.com/1FmyBHi.jpeg")
+        .setTimestamp()
+      message.channel.send({
+        embed
+      })
     } else {
       message.channel.send("Tabella dei punti vuota");
     }
   }
-  if (message.content.toLowerCase()=== 'viva il duce' || message.content.toLowerCase()=== 'dvx' || message.content.toLowerCase()=== 'duce') {
+  if (message.content.toLowerCase() === 'viva il duce' || message.content.toLowerCase() === 'dvx' || message.content.toLowerCase() === 'duce') {
     message.reply('https://www.youtube.com/watch?v=LBl64DBHtTk');
   }
-  if (message.content.toLowerCase()=== 'bestemmia') {
+  if (message.content.toLowerCase() === 'bestemmia') {
     message.channel.send(santi.santo() + " " + santi.nome() + " " + santi.agg());
   }
   if (message.content.toLowerCase().includes("broccolo") || message.content.toLowerCase().includes("broccoli")) {
@@ -399,7 +490,7 @@ message.channel.send({embed});
     message.reply(`Il broccolo in mezzo al cerchio è: ${user}`);
     user.voice.setChannel(null);
   }
-  if (message.content.toLowerCase()=== 'orario') {
+  if (message.content.toLowerCase() === 'orario') {
     const embed = new Discord.MessageEmbed()
       .setTitle("Orario della classe con le pause")
       .setDescription("**1.** 9:10 - 10:00\n**2.** 10:00 - 10:40 **PAUSA** 10:40 - 10.50\n**3.** 10:50 - 11.40\n**4.** 11:40 - 12:20 **PAUSA** 12:20-12:30\n**5.** 12:30 - 13:20")
@@ -412,8 +503,8 @@ message.channel.send({embed});
       embed
     })
   }
-  if (message.content.toLowerCase()=== 'akinator') {
-    (async function() {
+  if (message.content.toLowerCase() === 'akinator') {
+    (async function () {
       try {
         await aki.start();
         var embed = {
@@ -432,19 +523,19 @@ message.channel.send({embed});
             "icon_url": "https://i.ibb.co/VYt8mSx/akinator.png"
           },
           "fields": [{
-              "name": "Risposte:",
-              "value": "👍 Sì\n👎 No\n🤔 Non lo so"
-            },
-            {
-              "name": "Per cancellare il gioco, semplicemente non aggiungere reazioni. Il bot chiuderà la partita da solo.",
-              "value": "kek debug"
-            }
+            "name": "Risposte:",
+            "value": "👍 Sì\n👎 No\n🤔 Non lo so"
+          },
+          {
+            "name": "Per cancellare il gioco, semplicemente non aggiungere reazioni. Il bot chiuderà la partita da solo.",
+            "value": "Odio javascript"
+          }
           ]
         };
         msg = await message.channel.send({
           embed
         });
-       // Funzione per generare il messaggio finale di vittoria 
+        // Funzione per generare il messaggio finale di vittoria 
         function genFinalMessage(title, tentativi) {
           const newEmbdFinal = new Discord.MessageEmbed()
             .setTitle(`${title}`)
@@ -453,11 +544,11 @@ message.channel.send({embed});
             .setColor("#ecff00")
             .setFooter("MussoliniBOT approva i patti Lateranensi", "https://i.ibb.co/VYt8mSx/akinator.png")
             .setTimestamp()
-            return newEmbdFinal;
+          return newEmbdFinal;
         }
-        
+
         var answer = 0;
-	// Funzione per aggiungere le reazioni all'embed della domanda
+        // Funzione per aggiungere le reazioni all'embed della domanda
         async function addReactions() {
           try {
             await msg.react('👍');
@@ -468,14 +559,14 @@ message.channel.send({embed});
           }
         }
 
-	addReactions();
-        
-	// Collector di reazioni per ottenere la risposta dell'utente      
-	const filter = (reaction, user) => (user.id == message.author.id) && (reaction.emoji.name == '👍' || reaction.emoji.name == '👎' || reaction.emoji.name == '🤔')
-        const collector = msg.createReactionCollector(filter, {time: 300000});
+        addReactions();
+
+        // Collector di reazioni per ottenere la risposta dell'utente      
+        const filter = (reaction, user) => (user.id == message.author.id) && (reaction.emoji.name == '👍' || reaction.emoji.name == '👎' || reaction.emoji.name == '🤔')
+        const collector = msg.createReactionCollector(filter, { time: 300000 });
         collector.on('collect', (reaction, user) => {
           if (aki.progress >= 70 || aki.currentStep >= 78) {
-            (async function() {
+            (async function () {
               await aki.win();
               console.log('firstGuess:', aki.answers);
               console.log('guessCount:', aki.guessCount);
@@ -484,10 +575,10 @@ message.channel.send({embed});
               collector.stop();
             })()
           }
-          
+
           // ---------------SI--------------------
           else if (reaction.emoji.name == '👍') {
-            (async function() {
+            (async function () {
               answer = 0;
               await aki.step(answer);
               const newEmbd = new Discord.MessageEmbed();
@@ -500,7 +591,7 @@ message.channel.send({embed});
 
             // ---------------NO--------------------  
           } else if (reaction.emoji.name == '👎') {
-            (async function() {
+            (async function () {
               answer = 1;
               await aki.step(answer);
               const newEmbd = new Discord.MessageEmbed();
@@ -513,7 +604,7 @@ message.channel.send({embed});
 
             // ---------------NON LO SO--------------------  
           } else if (reaction.emoji.name == '🤔') {
-            (async function() {
+            (async function () {
               answer = 2;
               await aki.step(answer);
               const newEmbd = new Discord.MessageEmbed();
