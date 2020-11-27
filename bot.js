@@ -474,12 +474,6 @@ client.on('message', async message => {
       message.channel.send("Tabella dei punti vuota");
     }
   }
-  if (message.content.toLowerCase() === 'viva il duce' || message.content.toLowerCase() === 'dvx' || message.content.toLowerCase() === 'duce') {
-    message.reply('https://www.youtube.com/watch?v=LBl64DBHtTk');
-  }
-  if (message.content.toLowerCase() === 'bestemmia') {
-    message.channel.send(santi.santo() + " " + santi.nome() + " " + santi.agg());
-  }
   if (message.content.toLowerCase().includes("broccolo") || message.content.toLowerCase().includes("broccoli")) {
     const voiceChannel = message.member.voice.channel;
     if (voiceChannel === null) {
@@ -489,19 +483,6 @@ client.on('message', async message => {
     console.log(`${user}`);
     message.reply(`Il broccolo in mezzo al cerchio è: ${user}`);
     user.voice.setChannel(null);
-  }
-  if (message.content.toLowerCase() === 'orario') {
-    const embed = new Discord.MessageEmbed()
-      .setTitle("Orario della classe con le pause")
-      .setDescription("**1.** 9:10 - 10:00\n**2.** 10:00 - 10:40 **PAUSA** 10:40 - 10.50\n**3.** 10:50 - 11.40\n**4.** 11:40 - 12:20 **PAUSA** 12:20-12:30\n**5.** 12:30 - 13:20")
-      .setAuthor("MussoliniBOT", "https://www.sottosoprabrindisi.it/wp-content/uploads/2016/06/Orari_LP.png", "https://bestemmie.ga")
-      .setColor("#ecff00")
-      .setFooter("MussoliniBOT al tuo servizio", "https://www.sottosoprabrindisi.it/wp-content/uploads/2016/06/Orari_LP.png")
-      .setImage("https://i.imgur.com/4yl1j1C.png")
-      .setTimestamp()
-    message.channel.send({
-      embed
-    })
   }
   if (message.content.toLowerCase() === 'akinator') {
     (async function () {
