@@ -6,7 +6,6 @@ const fs = require('fs');
 var bodyParser = require("body-parser");
 var lunr = require("lunr")
 var path = require('path');
-var santi = require('./santi.js');
 var morse = require('./morse.js');
 client.login(process.env.BOT_TOKEN); //BOT_TOKEN is the Client Secret
 var url = "https://api.mcsrvstat.us/2/resetfocus.duckdns.org";
