@@ -1,3 +1,3 @@
 # GiacomoBOT
 
-La versione family-friendly del famoso MUSSOLINIBOT. Incredibile (quanto fa cagare).
+Un bot di Discord in javascript. Incredibile (quanto fa cagare).
