@@ -155,6 +155,18 @@ client.on('message', async message => {
       embed
     })
   }
+  if (message.content.toLowerCase()=== 'orario carducci' || message.content.toLowerCase() === 'orario c') {
+    const embed = new Discord.MessageEmbed()
+      .setTitle("Orario carducci")
+      .setAuthor("MussoliniBOT x CarducciGaming", "https://www.sottosoprabrindisi.it/wp-content/uploads/2016/06/Orari_LP.png", "https://bestemmie.ga")
+      .setColor("#ecffff")
+      .setFooter("MussoliniBOT al tuo servizio", "https://www.sottosoprabrindisi.it/wp-content/uploads/2016/06/Orari_LP.png")
+      .setImage("https://i.imgur.com/UEDFIy3.png")
+      .setTimestamp()
+    message.channel.send({
+      embed
+    })
+  }
   if (message.content.toLowerCase()=== 'stato server') {
     request.get({
       url: url,
