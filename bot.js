@@ -161,7 +161,7 @@ client.on('message', async message => {
       .setAuthor("MussoliniBOT x CarducciGaming", "https://www.sottosoprabrindisi.it/wp-content/uploads/2016/06/Orari_LP.png", "https://bestemmie.ga")
       .setColor("#ecffff")
       .setFooter("MussoliniBOT al tuo servizio", "https://www.sottosoprabrindisi.it/wp-content/uploads/2016/06/Orari_LP.png")
-      .setImage("https://i.imgur.com/UEDFIy3.png")
+      .setImage("https://i.imgur.com/9rVcn62.png")
       .setTimestamp()
     message.channel.send({
       embed
