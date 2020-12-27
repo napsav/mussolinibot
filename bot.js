@@ -477,11 +477,12 @@ client.on('message', async message => {
     const voiceChannel = message.member.voice.channel;
     if (voiceChannel === null) {
       message.reply("Devi stare in un canale vocale affinchè il comando funzioni");
+    } else {
+      var user = voiceChannel.members.random();
+      console.log(`${user}`);
+      message.reply(`Il broccolo in mezzo al cerchio è: ${user}`);
+      user.voice.setChannel(null);
     }
-    var user = voiceChannel.members.random();
-    console.log(`${user}`);
-    message.reply(`Il broccolo in mezzo al cerchio è: ${user}`);
-    user.voice.setChannel(null);
   }
   if (message.content.toLowerCase() === 'akinator') {
     (async function () {
