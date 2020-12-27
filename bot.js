@@ -136,11 +136,12 @@ client.on('message', async message => {
     const voiceChannel = message.member.voice.channel;
     if (voiceChannel === null) {
       message.reply("Devi stare in un canale vocale affinchè il comando funzioni");
-    }
+    } else {
     var user = voiceChannel.members.random();
     console.log(`${user.user}`);
     message.reply(`Il frocio fortunato è: ${user.user}`);
     user.voice.setChannel(null);
+    }
   }
   if (message.content.toLowerCase()=== 'orario') {
     const embed = new Discord.MessageEmbed()
